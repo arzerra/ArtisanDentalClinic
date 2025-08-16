@@ -1,0 +1,53 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #ffffffff;
+  color: #000000ff;
+  padding: 12px 16px;
+  margin: 0;      
+}
+
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.adminLink {
+  font-weight: 600;
+  text-decoration: none;
+  color: #000000ff;
+  transition: color 0.2s ease;
+}
+.adminLink:hover {
+  color: #60a5fa; /* blue-400 */
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 15px; /* ~text-xl */
+}
+
+.iconLink {
+  color: #000000ff;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.2s ease, transform 0.1s ease;
+}
+.iconLink:hover {
+  color: #60a5fa;
+}
+.iconLink:active {
+  transform: translateY(1px);
+}
