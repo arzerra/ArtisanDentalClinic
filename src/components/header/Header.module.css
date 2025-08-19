@@ -161,12 +161,16 @@ nav ul li.dropdown {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 1px;
   }
 
   nav ul li {
     border: none;
     text-align: center;
+  }
+
+  nav ul li a {
+    font-size: 0.85rem; /* smaller text on mobile */
   }
 
   .dropdown-menu {
@@ -183,6 +187,7 @@ nav ul li.dropdown {
   }
 
   .dropdown-menu li a {
+    font-size: 0.8rem;
     padding: 5px 10px;
   }
 
