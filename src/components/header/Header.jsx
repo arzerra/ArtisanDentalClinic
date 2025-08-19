@@ -10,10 +10,10 @@ function Header() {
   return (
     <>
       <header className={style.header}>
-        <a href="/" className={style.logo}>Artisan Dental Clinic</a>
-        {/* <a href="/" className={style.logo}>
-          <img src="/images/adc.png" alt="Artisan Dental Clinic Logo" />
-        </a> */}
+        <a href="/" className={style.logo}>
+          <span className={style.logoArtisan}>Artisan</span>
+          <span className={style.logoClinic}>Dental Clinic</span>
+        </a>
         <button
           className={style["menu-toggle"]}
           onClick={() => setMenuOpen(!menuOpen)}
@@ -24,10 +24,10 @@ function Header() {
         <nav className={menuOpen ? style["nav-open"] : ""}>
           <ul>
             <li className={currentPath === "/" ? style.active : ""}><Link  to="/">Home</Link ></li>
-            {/* <li className={currentPath === "/appointment" ? style.active : ""}><Link  to="/appointment">Book Appointment</Link ></li> */}
+            <li className={currentPath === "/appointments" ? style.active : ""}><Link  to="/appointments">Appointments</Link ></li>
             <li className={currentPath === "/about" ? style.active : ""}><Link  to="/about">About Us</Link ></li>
             <li className={currentPath === "/contact" ? style.active : ""}><Link  to="/contact">Contact Us</Link ></li>
-            <li className={currentPath === "/login" ? style.active : ""}><Link  to="/login">Login</Link ></li>
+            {/* <li className={currentPath === "/login" ? style.active : ""}><Link  to="/login">Login</Link ></li> */}
           </ul>
         </nav>
       </header>
