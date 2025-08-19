@@ -3,7 +3,7 @@
 .header {
   position: sticky;
   top: 0;
-  background-color: hsla(0, 0%, 100%, 0.50);
+  background-color: transparent;
   backdrop-filter: blur(5px);
   display: flex;
   align-items: center;
@@ -48,7 +48,7 @@
 nav {
   background: hsla(0, 0%, 74%, 0.80); /* white semi-transparent background */
   border-radius: 50px;
-  padding: 15px 20px; /* add spacing so background looks rounded */
+  padding: 15px 30px; /* add spacing so background looks rounded */
 }
 
 nav ul {
