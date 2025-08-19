@@ -85,8 +85,9 @@ nav ul li a:hover::after {
   width: 100%;
 }
 
-.active {
-  font-weight: bold;
+/* Active link: keep underline visible */
+nav ul li.active a::after {
+  width: 100%;
 }
 
 /* Dropdown for desktop */
@@ -142,7 +143,7 @@ nav ul li.dropdown {
   nav {
     display: none;
     position: fixed;
-    top: 90px;
+    top: 100px;
     left: 50%;
     transform: translateX(-50%);
     background: hsla(0, 0%, 74%, 0.80);
