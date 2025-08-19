@@ -29,7 +29,7 @@
   font-family: 'Allura', cursive;
   font-weight: 400;
   line-height: 1.1; /* smaller than default 1.4–1.6 */
-  margin-bottom: -14px; /* tweak to tighten space */
+  margin-bottom: -12px; /* tweak to tighten space */
 }
 
 .logoClinic {
@@ -136,7 +136,7 @@ nav ul li.dropdown {
   nav {
     display: none;
     position: fixed;
-    top: 110px;
+    top: 90px;
     left: 50%;
     transform: translateX(-50%);
     background: hsla(0, 0%, 0%, 0.9);
