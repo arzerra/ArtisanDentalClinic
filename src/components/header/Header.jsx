@@ -27,7 +27,6 @@ function Header() {
             <li className={currentPath === "/appointments" ? style.active : ""}><Link  to="/appointments">Appointments</Link ></li>
             <li className={currentPath === "/about" ? style.active : ""}><Link  to="/about">About Us</Link ></li>
             <li className={currentPath === "/contact" ? style.active : ""}><Link  to="/contact">Contact Us</Link ></li>
-            {/* <li className={currentPath === "/login" ? style.active : ""}><Link  to="/login">Login</Link ></li> */}
           </ul>
         </nav>
       </header>
