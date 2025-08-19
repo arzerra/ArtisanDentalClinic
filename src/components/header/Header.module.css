@@ -24,20 +24,23 @@
   align-items: center;
 }
 
-.logoArtisan{
-  font-size: 3rem;
+.logoArtisan {
+  font-size: 2.8rem;
   font-family: 'Allura', cursive;
   font-weight: 400;
+  line-height: 1.1; /* smaller than default 1.4–1.6 */
+  margin-bottom: -14px; /* tweak to tighten space */
 }
 
 .logoClinic {
   font-family: 'system-ui', sans-serif;
   font-size: 1.2rem;
+  line-height: 1.2;
+  margin-top: 0; /* remove extra top margin */
 }
 
 .logo img {
   height: 100px;
-  /* adjust to your liking */
   width: auto;
   display: block;
 }
