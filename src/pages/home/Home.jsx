@@ -1,10 +1,10 @@
 import styles from './Home.module.css';
-import toothImg from '../assets/images/toothTitle.png';
+import toothImg from '../../assets/images/toothTitle.png';
 
 export default function Home(){
     return(
         <div className={styles.container}>
-        <div className={styles.home}>
+        <div className={styles.title}>
             <div className={styles.left}>
                 <h1>
                     "Time Heals Everything"

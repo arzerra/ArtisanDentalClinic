@@ -24,10 +24,15 @@ function Header() {
         <nav className={menuOpen ? style["nav-open"] : ""}>
           <ul>
             <li className={currentPath === "/" ? style.active : ""}><Link  to="/">Home</Link ></li>
-            <li className={currentPath === "/appointments" ? style.active : ""}><Link  to="/appointments">Appointments</Link ></li>
+            {/* <li className={currentPath === "/appointments" ? style.active : ""}><Link  to="/appointments">Appointments</Link ></li> */}
             <li className={currentPath === "/about" ? style.active : ""}><Link  to="/about">About Us</Link ></li>
+            <li className={currentPath === "/about" ? style.active : ""}><Link  to="/about">Services</Link ></li>
+            <li className={currentPath === "/about" ? style.active : ""}><Link  to="/about">Dentist</Link ></li>
             <li className={currentPath === "/contact" ? style.active : ""}><Link  to="/contact">Contact Us</Link ></li>
+            <li>|</li>
+            <li className={currentPath === "/appointments" ? style.active : ""}><Link  to="/appointments">Appointments</Link ></li>
           </ul>
+          <h1>|</h1>
         </nav>
       </header>
     </>

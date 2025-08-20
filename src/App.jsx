@@ -5,10 +5,10 @@ import viteLogo from "/vite.svg";
 import TopBar from "./components/topBar/TopBar.jsx";
 import Header from "./components/header/Header.jsx";
 import Footer from "./components/footer/Footer.jsx";
-import Home from "./pages/Home.jsx";
-import Appointments from "./pages/Appointments.jsx";
-import AboutUs from "./pages/AboutUs.jsx";
-import ContactUs from "./pages/ContactUs.jsx";
+import Home from "./pages/home/Home.jsx";
+import Appointments from "./pages/appointments/Appointments.jsx";
+import AboutUs from "./pages/aboutUs/AboutUs.jsx";
+import ContactUs from "./pages/ContactUs/ContactUs.jsx";
 
 
 function App() {
