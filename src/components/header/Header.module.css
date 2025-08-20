@@ -40,11 +40,6 @@
   margin-top: 0; /* remove extra top margin */
 }
 
-.logo img {
-  height: 100px;
-  width: auto;
-  display: block;
-}
 
 /* nav {
   background: hsla(0, 0%, 74%, 0.80);
