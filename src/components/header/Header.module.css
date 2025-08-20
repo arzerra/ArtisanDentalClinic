@@ -133,8 +133,25 @@ nav ul li.dropdown {
   }
 }
 
-/* Responsive mobile nav */
 @media (max-width: 768px) {
+
+  
+
+    .logo {
+        margin-left: 120px;
+        /* pushes logo to the right */
+      }
+
+    .logoArtisan {
+      font-size: 3.2rem;
+      /* bigger main text */
+    }
+
+    .logoClinic {
+      font-size: 1.4rem;
+      /* bigger subtext */
+    }
+
   .menu-toggle {
     display: block;
   }
@@ -145,12 +162,13 @@ nav ul li.dropdown {
     top: 90px;
     left: 50%;
     transform: translateX(-50%);
-    background: hsla(0, 0%, 74%, 0.80);
+    background: hsla(0, 0%, 100%, 0.8);
     width: 100%;
     max-width: 500px;
     border-radius: 10px;
     padding: 10px;
     z-index: 1000;
+    border-top: 1px solid;
   }
 
   nav.nav-open {
@@ -158,40 +176,59 @@ nav ul li.dropdown {
   }
 
   nav ul {
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
   }
 
   nav ul li {
     border: none;
     text-align: center;
+    width: 100%;
   }
 
   nav ul li a {
-    font-size: 0.85rem; /* smaller text on mobile */
+    font-size: 1rem;
+    display: block;
+    width: 100%;
+    padding: 10px;
   }
 
   .dropdown-menu {
     position: static;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     background: none;
-    padding: 0;
-  }
-
-  .dropdown-menu li {
-    border: none;
+    padding: 10px 0;
+    gap: 8px;
   }
 
   .dropdown-menu li a {
-    font-size: 0.8rem;
-    padding: 5px 10px;
+    font-size: 0.9rem;
+    padding: 8px 12px;
+    text-align: center;
+    width: 100%;
   }
 
   .dropdown:hover .dropdown-menu {
     display: flex;
   }
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: 4px;
+  left: 50%;
+  width: 0;
+  height: 1px;
+  background-color: #555555ff;
+  transform: translateX(-50%);
+  transition: width 0.3s ease-in-out;
+}
+
+nav ul li a:hover::after,
+nav ul li.active a::after {
+  width: 20%;
+}
 }

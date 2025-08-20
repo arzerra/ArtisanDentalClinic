@@ -57,13 +57,41 @@
 }
 
 @media (max-width: 768px) {
-  .title{
-        flex-direction: column;
-          /* stack image and text */
-          align-items: center;
-          /* center children horizontally */
-          justify-content: center;
-          /* center children vertically */
-          text-align: center;
+  .title {
+    position: relative;
+    /* so absolute children stay inside */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .right {
+    position: absolute;
+    /* put image behind */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    /* background layer */
+    opacity: 0.15;
+    /* make it subtle */
+  }
+
+  .right img {
+    max-width: 250px;
+    /* smaller size for mobile */
+    height: auto;
+  }
+
+  .left {
+    position: relative;
+    z-index: 1;
+    /* keep text above */
+  }
+
+  .left h1 {
+    font-size: 1.8rem;
+    /* smaller for mobile */
   }
 }
