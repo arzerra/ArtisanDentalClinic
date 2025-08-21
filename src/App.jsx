@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; // <-- add this
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import TopBar from "./components/topBar/TopBar.jsx";
@@ -9,24 +9,28 @@ import Home from "./pages/home/Home.jsx";
 import Appointments from "./pages/appointments/Appointments.jsx";
 import AboutUs from "./pages/aboutUs/AboutUs.jsx";
 import ContactUs from "./pages/ContactUs/ContactUs.jsx";
+import Services from "./pages/services/Services.jsx";
+import Dentist from "./pages/dentist/Dentist.jsx";
 
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
+            
     <Router>
-      <Header />
-
+      <Header/>
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/appointments" element={<Appointments/>} />
           <Route path="/about" element={<AboutUs/>} />
+          <Route path="/services" element={<Services/>} />
+          <Route path="/dentist" element={<Dentist/>} />
           <Route path="/contact" element={<ContactUs/>} />
         </Routes>
-
-      <Footer />
+      <Footer/>
     </Router>
+     
   );
 }
 

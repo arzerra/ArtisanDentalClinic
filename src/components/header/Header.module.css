@@ -1,17 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
 
 .header {
-  position: sticky;
+  position: fixed;
   top: 0;
-  background-color: #ffffffff;
+  left: 0;
+  width: 100%;
+  padding: 15px 5%;
+  box-sizing: border-box;
+  background-color: rgba(161, 213, 255, 0.3);
   backdrop-filter: blur(5px);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 5%;
-  color: white;
   z-index: 1000;
-  flex-wrap: wrap;
   cursor: url(../toothbrush.png), auto;
 }
 
@@ -26,7 +27,7 @@
 }
 
 .logoArtisan {
-  font-size: 2.8rem;
+  font-size: 3rem;
   font-family: 'Allura', cursive;
   font-weight: 400;
   line-height: 1.1; /* smaller than default 1.4–1.6 */
@@ -35,17 +36,10 @@
 
 .logoClinic {
   font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   line-height: 1.2;
   margin-top: 0; /* remove extra top margin */
 }
-
-
-/* nav {
-  background: hsla(0, 0%, 74%, 0.80);
-  border-radius: 50px;
-  padding: 15px 30px;
-} */
 
 nav ul {
   list-style: none;
@@ -65,7 +59,6 @@ nav ul li a {
   color: #000000ff;
   display: inline-block;
     cursor: url(../tooth.png), pointer;
-  
 }
 
 nav ul li a::after {
@@ -99,11 +92,13 @@ nav ul li.dropdown {
   display: none;
   position: absolute;
   top: 100%;
-  left: 0;
+  left: 50%;                 /* center reference */
+  transform: translateX(-50%); /* shift back by half width */
   background: hsla(0, 0%, 0%, 0.7);
   min-width: 180px;
   list-style: none;
   padding: 0;
+  text-align: center; 
 }
 
 .dropdown-menu li a {
@@ -126,6 +121,31 @@ nav ul li.dropdown {
   color: black;
 }
 
+nav span {
+  margin-left: 15px;
+  padding: 0px 15px;
+  background: transparent;
+  border: none;
+  font-size: 1.8rem;
+  margin: 0 10px;
+  color: #333;
+}
+
+nav button {
+  cursor: pointer;
+  color: #000000ff;
+  background: transparent;
+  border: none;
+  padding: 10px 20px;
+  border: 1px solid gray;
+  border-radius: 15px;
+  transition: background 0.3s;
+}
+
+nav button:hover {
+  background: rgb(221, 221, 221);
+}
+
 /* Desktop only adjustment */
 @media (min-width: 769px) {
   .header {
@@ -137,20 +157,17 @@ nav ul li.dropdown {
 
   
 
-    .logo {
-        margin-left: 120px;
-        /* pushes logo to the right */
-      }
-
-    .logoArtisan {
-      font-size: 3.2rem;
-      /* bigger main text */
+  .logo {
+      margin-left: 30px;
     }
 
-    .logoClinic {
-      font-size: 1.4rem;
-      /* bigger subtext */
-    }
+  .logoArtisan {
+    font-size: 3.2rem;
+  }
+
+  .logoClinic {
+    font-size: 1.4rem;
+  }
 
   .menu-toggle {
     display: block;
@@ -159,10 +176,10 @@ nav ul li.dropdown {
   nav {
     display: none;
     position: fixed;
-    top: 90px;
+    top: 100px;
     left: 50%;
     transform: translateX(-50%);
-    background: hsla(0, 0%, 100%, 0.8);
+    background: rgba(161, 213, 255, 0.3);
     width: 100%;
     max-width: 500px;
     border-radius: 10px;
@@ -183,12 +200,12 @@ nav ul li.dropdown {
 
   nav ul li {
     border: none;
-    text-align: center;
-    width: 100%;
+    text-align: left;
   }
 
   nav ul li a {
-    font-size: 1rem;
+    font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.1rem;
     display: block;
     width: 100%;
     padding: 10px;
@@ -215,20 +232,30 @@ nav ul li.dropdown {
     display: flex;
   }
 
-nav ul li a::after {
-  content: "";
-  position: absolute;
-  bottom: 4px;
-  left: 50%;
-  width: 0;
-  height: 1px;
-  background-color: #555555ff;
-  transform: translateX(-50%);
-  transition: width 0.3s ease-in-out;
-}
+  nav ul li a {
+    position: relative;
+    text-decoration: none;
+    padding: 5px 0;
+  }
 
-nav ul li a:hover::after,
-nav ul li.active a::after {
-  width: 20%;
-}
-}
+  nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: #555555ff;
+    transition: width 0.3s ease-in-out;
+  }
+
+  nav ul li a:hover::after,
+  nav ul li.active a::after {
+    width: 100%;
+  }
+
+  nav span,
+  nav button {
+    display: none;
+  }
+  }
