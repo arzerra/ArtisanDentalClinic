@@ -5,7 +5,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: 15px 20%;
+  padding: 15px 5%;
   box-sizing: border-box;
   background-color: rgba(138, 238, 255, 0.3);
   backdrop-filter: blur(5px);
@@ -144,6 +144,13 @@ nav button {
 
 nav button:hover {
   background: rgb(221, 221, 221);
+}
+
+/* Desktop only adjustment */
+@media (min-width: 769px) {
+  .header {
+    padding: 40px 20%; /* increase % to push both inward */
+  }
 }
 
 @media (max-width: 768px) {
