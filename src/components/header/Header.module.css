@@ -10,7 +10,6 @@
   justify-content: space-between;
   background-color: #b1b1b1ff;
   z-index: 1000;
-  padding: 20px 10%;
 }
 
 .logo {
@@ -136,11 +135,42 @@ nav button:hover {
 }
 
 @media (max-width: 600px) {
-  .header{
-    padding: 10px 5%;
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 10%;
   }
 
-  .appointment{
+  nav {
+    position: absolute;
+    top: 90px; /* below header */
+    left: 0;
+    width: 100%;
+    background: #b1b1b1ff;
+    max-height: 0;
+    overflow: hidden;
+    flex-direction: column;
+    transition: max-height 0.3s ease;
+  }
+
+  nav.nav-open {
+    max-height: 300px; /* adjust to fit menu items */
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav button {
     display: none;
+  }
+  nav span {
+    font-size: 0px;
   }
 }
