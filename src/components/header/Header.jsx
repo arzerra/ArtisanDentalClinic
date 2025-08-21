@@ -18,6 +18,14 @@ function Header() {
         <span className={style.logoClinic}>Dental Clinic</span>
       </Link>
 
+      <button
+        className={style["menu-toggle"]}
+        onClick={() => setMenuOpen(!menuOpen)}
+        aria-label="Toggle Menu"
+      >
+        {menuOpen ? "✖" : "☰"}
+      </button>
+
       <nav className={menuOpen ? style["nav-open"] : ""}>
         <ul>
           <li className={currentPath === "/" ? style.active : ""}>
@@ -40,13 +48,7 @@ function Header() {
         </ul>
       </nav>
 
-        <button
-        className={style["menu-toggle"]}
-        onClick={() => setMenuOpen(!menuOpen)}
-        aria-label="Toggle Menu"
-      >
-        {menuOpen ? "✖" : "☰"}
-      </button>
+
     </header>
   );
 }
