@@ -5,8 +5,8 @@
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(1px);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -139,18 +139,43 @@ nav button:hover {
   background: rgb(221, 221, 221);
 }
 
-/* Desktop spacing */
-@media (min-width: 769px) {
+/* Desktop (≥1025px) */
+@media (min-width: 1025px) {
   .header {
     padding: 40px 20%;
   }
 }
 
-/* Mobile styles */
+/* Tablet (769px–1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .header {
+    padding: 30px 12%;
+  }
+
+  .logoArtisan {
+    font-size: 2.7rem;
+  }
+
+  .logoClinic {
+    font-size: 1.1rem;
+  }
+
+  nav ul {
+    gap: 15px;
+  }
+
+  nav button {
+    padding: 8px 16px;
+    border-radius: 12px;
+  }
+}
+
+/* Mobile (≤768px) */
 @media (max-width: 768px) {
 
   .header {
-    padding: 30px 10%;
+    padding: 20px 10%;
+    background-color: green;
   }
 
   .logoArtisan {
@@ -173,14 +198,12 @@ nav button:hover {
     transform: translateY(-10px);
     transition: max-height 0.4s ease, opacity 0.3s ease, transform 0.3s ease;
     position: fixed;
-    top: 110px;
+    top: 90px;
     left: 50%;
     transform: translateX(-50%) translateY(-10px);
     background: rgba(255, 255, 255, 0.3);
     width: 100%;
     max-width: 500px;
-    border-radius: 10px;
-    padding: 0 10px;
     z-index: 1000;
   }
 
@@ -235,4 +258,3 @@ nav button:hover {
     display: none;
   }
 }
-
