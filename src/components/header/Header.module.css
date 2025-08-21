@@ -193,6 +193,11 @@ nav button:hover {
   nav ul li a {
     font-size: .8rem;
   }
+
+  nav button {
+  padding: 4px 9px;
+  font-size: .8rem;
+}
 }
 
 @media (min-width: 1025px) and (max-width: 1194px){
