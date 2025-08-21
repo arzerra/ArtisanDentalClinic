@@ -7,7 +7,7 @@ export default function Home(){
         <div className={styles.homeContainer}> 
             <div className={styles.titleContainer}>
                 <div className={styles.titleLeft}>
-                <h1>"Time Heals Everthing" Except cavities, those need a dentist.</h1>
+                <h1>"Time Heals Everthing" Except cavities, those need a dentist</h1>
                 <button>Book Now!</button>
                 </div>
                 <div className={styles.titleRight}>

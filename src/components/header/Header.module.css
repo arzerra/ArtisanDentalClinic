@@ -253,3 +253,32 @@ nav button:hover {
     display: none;
   }
   }
+
+  /* Tablet (iPads, etc.) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .header {
+    padding: 20px 10%; /* smaller padding than desktop */
+  }
+
+  .logoArtisan {
+    font-size: 2.5rem;
+  }
+
+  .logoClinic {
+    font-size: 1.1rem;
+  }
+
+  nav ul {
+    gap: 15px; /* reduce spacing */
+  }
+
+  nav ul li a {
+    font-size: 0.95rem;
+    padding: 6px 10px;
+  }
+
+  nav button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
