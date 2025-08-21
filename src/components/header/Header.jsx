@@ -7,7 +7,6 @@ function Header() {
   const currentPath = location.pathname;
   const [menuOpen, setMenuOpen] = useState(false);
 
-  // Close mobile menu when a link is clicked
   const handleLinkClick = () => {
     setMenuOpen(false);
   };

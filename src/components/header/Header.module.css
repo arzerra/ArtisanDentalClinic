@@ -5,16 +5,15 @@
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px 20%;
+  background-color: rgba(69, 236, 241, 1);
   backdrop-filter: blur(1px);
   display: flex;
   align-items: center;
   justify-content: space-between;
   z-index: 1000;
-  cursor: url(../toothbrush.png), auto;
 }
 
-/* Logo */
 .logo {
   color: black;
   margin: 0;
@@ -40,7 +39,6 @@
   margin-top: 0;
 }
 
-/* Nav (desktop) */
 nav ul {
   list-style: none;
   padding: 0;
@@ -80,7 +78,6 @@ nav ul li.dropdown {
   position: relative;
 }
 
-/* Dropdown (desktop) */
 .dropdown-menu {
   display: none;
   position: absolute;
@@ -104,7 +101,6 @@ nav ul li.dropdown {
   display: block;
 }
 
-/* Toggle button (hamburger) */
 .menu-toggle {
   display: none;
   font-size: 24px;
@@ -116,7 +112,7 @@ nav ul li.dropdown {
 
 nav span {
   margin-left: 15px;
-  padding: 0px 15px;
+  padding: 0px 10px;
   background: transparent;
   border: none;
   font-size: 1.8rem;
@@ -139,43 +135,83 @@ nav button:hover {
   background: rgb(221, 221, 221);
 }
 
-/* Desktop (≥1025px) */
-@media (min-width: 1025px) {
+/* Small screens (≤600px) */
+@media (max-width: 600px) {
   .header {
-    padding: 40px 20%;
-  }
-}
-
-/* Tablet (769px–1024px) */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .header {
-    padding: 30px 12%;
+    padding: 15px 8%;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(69, 236, 241, 0.9);
   }
 
   .logoArtisan {
-    font-size: 2.7rem;
+    font-size: 2rem;
   }
 
   .logoClinic {
-    font-size: 1.1rem;
+    font-size: 0.85rem;
+  }
+
+  .menu-toggle {
+    display: block;
+    font-size: 22px;
+  }
+
+  nav {
+    position: fixed;
+    top: 60px; /* just below header */
+    left: 0;
+    width: 100%;
+    background-color: rgba(69, 236, 241, 0.95);
+    max-height: 0;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: max-height 0.4s ease, opacity 0.3s ease, transform 0.3s ease;
+    z-index: 999;
+    padding: 0;
+  }
+
+  nav.nav-open {
+    max-height: 500px;
+    opacity: 1;
+    transform: translateY(0);
+    padding: 10px 0;
   }
 
   nav ul {
-    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  nav ul li a {
+    width: 100%;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 0.95rem;
+  }
+
+  nav span {
+    display: none; /* hide the separator on small screens */
   }
 
   nav button {
-    padding: 8px 16px;
-    border-radius: 12px;
+    width: 90%;
+    margin: 10px 0;
+    padding: 8px 0;
+    font-size: 0.95rem;
   }
 }
 
-/* Mobile (≤768px) */
-@media (max-width: 768px) {
-
+/* Tablets (601px–1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
   .header {
-    padding: 20px 10%;
-    background-color: green;
+    padding: 25px 12%;
+    background-color: rgba(69, 236, 241, 0.95);
   }
 
   .logoArtisan {
@@ -186,75 +222,34 @@ nav button:hover {
     font-size: 1rem;
   }
 
-  .menu-toggle {
-    display: block;
-  }
-
-  /* Animate nav open/close */
-  nav {
-    max-height: 0;
-    opacity: 0;
-    overflow: hidden;
-    transform: translateY(-10px);
-    transition: max-height 0.4s ease, opacity 0.3s ease, transform 0.3s ease;
-    position: fixed;
-    top: 90px;
-    left: 50%;
-    transform: translateX(-50%) translateY(-10px);
-    background: rgba(255, 255, 255, 0.3);
-    width: 100%;
-    max-width: 500px;
-    z-index: 1000;
-  }
-
-  nav.nav-open {
-    max-height: 500px;
-    opacity: 1;
-    transform: translateX(-50%) translateY(0);
-    padding: 10px;
-  }
-
   nav ul {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-
-  nav ul li {
-    border: none;
-    text-align: center;
+    gap: 15px; /* reduce spacing between links */
   }
 
   nav ul li a {
-    font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1rem;
-    display: block;
-    width: 100%;
+    font-size: 0.95rem;
     padding: 6px 10px;
   }
 
-  .dropdown-menu {
-    max-height: 0;
-    opacity: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease, opacity 0.3s ease;
-    flex-direction: column;
-    align-items: center;
-    background: none;
-    gap: 8px;
-  }
-
-  .dropdown.open .dropdown-menu {
-    max-height: 300px;
-    opacity: 1;
-  }
-
-  nav ul li a::after {
-    height: 1px;
-  }
-
-  nav span,
   nav button {
-    display: none;
+    padding: 8px 16px;
+    font-size: 0.95rem;
+    border-radius: 12px;
+  }
+
+  .menu-toggle {
+    display: none; /* usually show full nav on tablets */
+  }
+
+  nav {
+    position: static;
+    max-height: none;
+    opacity: 1;
+    transform: none;
+    background: transparent;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: auto;
+    padding: 0;
   }
 }
