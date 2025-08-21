@@ -146,13 +146,6 @@ nav button:hover {
   background: rgb(221, 221, 221);
 }
 
-/* Desktop only adjustment */
-@media (min-width: 769px) {
-  .header {
-    padding: 20px 10%; /* increase % to push both inward */
-  }
-}
-
 @media (max-width: 768px) {
 
   .logoArtisan {
