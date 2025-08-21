@@ -180,3 +180,10 @@ nav button:hover {
   padding: 30px 20%;
   }
 }
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .header {
+    font-size: 0.95rem;
+    padding: 10px 10px;
+  }
+}
