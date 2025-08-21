@@ -149,7 +149,6 @@ nav button:hover {
 @media (min-width: 769px) {
   .header {
     padding: 40px 20%; /* increase % to push both inward */
-    gap: 1px;
   }
 }
 
@@ -254,10 +253,9 @@ nav button:hover {
   }
   }
 
-  /* Tablet (iPads, etc.) */
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (max-width: 1024px) {
   .header {
-    padding: 20px 10%; /* smaller padding than desktop */
+    padding: 30px 10%; /* smaller padding than desktop */
   }
 
   .logoArtisan {
