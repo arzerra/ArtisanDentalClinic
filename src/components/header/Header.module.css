@@ -174,3 +174,9 @@ nav button:hover {
     font-size: 0px;
   }
 }
+
+@media (min-width: 1025px) {
+  .header {
+  padding: 30px 20%;
+  }
+}
