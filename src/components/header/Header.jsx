@@ -45,7 +45,7 @@ function Header() {
           </li>
         </ul>
       </nav>
-      <button>Appointment</button>
+      <button className={style.appointment}>Appointment</button>
 
     </header>
   );
