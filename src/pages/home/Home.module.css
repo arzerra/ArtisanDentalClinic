@@ -1,0 +1,34 @@
+/* HOME */
+.homeContainer{
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-top: 145px;
+    border: 1px solid;
+}
+
+@media (max-width: 768px) {
+    .homeContainer{
+        margin-top: 100px;
+    }
+}
+
+/* TITLE */
+.titleContainer {
+    width: 100%;
+    height: 60vh;
+    /* adjust for hero height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: top;
+    /* show top of image */
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+/* CAROUSEL */
+/* MAPS */
