@@ -149,7 +149,7 @@ nav button:hover {
 /* Desktop only adjustment */
 @media (min-width: 769px) {
   .header {
-    padding: 40px 20%; /* increase % to push both inward */
+    padding: 20px 10%; /* increase % to push both inward */
   }
 }
 
