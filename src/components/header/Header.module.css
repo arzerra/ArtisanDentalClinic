@@ -179,14 +179,13 @@ nav button:hover {
 
 @media (min-width: 1025px) {
   .header {
-  padding: 50px 10%;
-  font-size: 0.95rem;
+  padding: 30px 20%;
   }
 }
 
 @media (min-width: 601px) and (max-width: 1194px) {
   .header {
     font-size: 0.95rem;
-    padding: 0 10%;
+    padding: 30px 0%;
   }
 }
