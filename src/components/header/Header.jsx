@@ -43,9 +43,11 @@ function Header() {
           <li className={currentPath === "/contact" ? style.active : ""}>
             <Link to="/contact" onClick={handleLinkClick}>Contact Us</Link>
           </li>
+          <span>|</span>
+          <button>Appointment</button>
         </ul>
       </nav>
-      <button className={style.appointment}>Appointment</button>
+
 
     </header>
   );

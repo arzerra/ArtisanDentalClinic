@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: blue;
+  background-color: #b1b1b1ff;
   z-index: 1000;
 }
 
@@ -54,7 +54,84 @@ nav ul li a {
   color: black;
   display: inline-block;
   cursor: pointer;
-  border: 1px solid red;
+}
+
+nav ul li a:hover::after,
+nav ul li.active a::after {
+  width: 100%;
+}
+
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0; 
+  width: 0;
+  height: 2px; 
+  background-color: #555555ff;
+  transition: width 0.3s ease-in-out; 
+}
+
+nav ul li.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: hsla(0, 0%, 0%, 0.7);
+  min-width: 180px;
+  list-style: none;
+  padding: 0;
+  text-align: center; 
+}
+
+.dropdown-menu li a {
+  padding: 8px 12px;
+  display: block;
+  color: #000000ff;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;  
+  color: black;
+}
+
+nav span {
+  margin-left: 15px;
+  padding: 0px 15px;
+  background: transparent;
+  border: none;
+  font-size: 1.8rem;
+  margin: 0 10px;
+  color: #333;
+}
+
+nav button {
+  cursor: pointer;
+  color: #000000ff;
+  background: transparent;
+  border: none;
+  padding: 10px 20px;
+  border: 1px solid gray;
+  border-radius: 15px;
+  transition: background 0.3s;
+}
+
+nav button:hover {
+  background: rgb(221, 221, 221);
 }
 
 @media (max-width: 600px) {
