@@ -145,7 +145,7 @@ nav button:hover {
 
   nav {
     position: absolute;
-    top: 90px; /* below header */
+    top: 80px; /* below header */
     left: 0;
     width: 100%;
     background: #b1b1b1ff;
