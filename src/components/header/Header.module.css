@@ -8,7 +8,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #b1b1b1ff;
+  background: hsl(0, 0%, 100%);
+  backdrop-filter: blur(5px);
   z-index: 1000;
 }
 
@@ -135,7 +136,7 @@ nav button {
 nav button:hover {
   background: rgb(221, 221, 221);
 }
-
+/* mobile */
 @media (max-width: 600px){
   .header {
     flex-direction: row;
@@ -176,7 +177,7 @@ nav button:hover {
     font-size: 0px;
   }
 }
-
+/* ipad portrait */
 @media (min-width: 601px) and (max-width: 1024px){
   .header{
     padding: 20px 10%;
@@ -200,12 +201,14 @@ nav button:hover {
 }
 }
 
+/* ipad landscape */
 @media (min-width: 1025px) and (max-width: 1194px){
   .header {
   padding: 30px 10%;
   }
 }
 
+/*  */
 @media (min-width: 1195px) {
   .header {
     padding: 30px 20%;
