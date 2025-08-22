@@ -148,10 +148,14 @@
     grid-template-columns: repeat(2, 1fr);
 }
 
+/* ipad landscape */
 @media (min-width: 1025px) and (max-width: 1194px){
-
+  .footer {
+    padding: 40px 20%;
+  }
 }
 
+/* desktop */
 @media (min-width: 1195px) {
   .footer{
       padding: 40px 20%;
