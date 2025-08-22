@@ -50,7 +50,7 @@ export default function Footer() {
         <div className={style.col}>
           <h4>Quick Links</h4>
           <ul className={style.quicklinks}>
-            <li><a href="/">Home</a></li>
+            <li ><a href="/">Home</a></li>
             <li><a href="/about">About Us</a></li>
             <li><a href="/services">Services</a></li>
             <li><a href="/dentist">Dentist</a></li>

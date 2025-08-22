@@ -69,13 +69,34 @@
 }
 
 .quicklinks a {
+  position: relative;
   color: #fff;
   text-decoration: none;
+  display: inline-block;
+  padding: 4px 8px;
+  cursor: pointer;
 }
 
-.quicklinks a:hover {
-  text-decoration: underline;
+.quicklinks a:hover::after,
+.quicklinks li.active a::after {
+  width: 100%;
 }
+
+.quicklinks li.active a {
+  font-weight: bold;
+}
+
+.quicklinks a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0; 
+  width: 0;
+  height: 2px; 
+  background-color: white;
+  transition: width 0.3s ease-in-out; 
+}
+
 
 .bottom {
   border-top: 1px solid #333;

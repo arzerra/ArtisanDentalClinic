@@ -81,6 +81,10 @@ nav ul li.active a::after {
   width: 100%;
 }
 
+nav ul li.active a {
+  font-weight: 700;
+}
+
 
 nav ul li a::after {
   content: "";
