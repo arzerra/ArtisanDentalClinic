@@ -54,5 +54,7 @@
 }
 
 @media (max-width: 600px) {
-
+    .contactTopMargin{
+        height: 80px;
+    }
 }
