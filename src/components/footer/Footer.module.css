@@ -153,7 +153,7 @@
 /* ipad landscape */
 @media (min-width: 1025px) and (max-width: 1194px){
   .footer {
-    padding: 40px 20%;
+    padding: 40px 10%;
   }
 }
 
