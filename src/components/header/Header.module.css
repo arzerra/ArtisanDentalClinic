@@ -233,6 +233,10 @@ nav button:hover {
   padding: 5px 12px;
   font-size: .8rem;
 }
+
+nav ul {
+  gap: 10px;
+}
 }
 
 /* ipad landscape */
