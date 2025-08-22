@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import style from "./Header.module.css";
 import { Link, useLocation } from "react-router-dom";
 
@@ -6,13 +6,31 @@ function Header() {
   const location = useLocation();
   const currentPath = location.pathname;
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   const handleLinkClick = () => {
     setMenuOpen(false);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) { // scroll threshold
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header className={style.header}>
+    <header
+      className={`${style.header} ${scrolled ? style.scrolled : ""} ${
+        menuOpen ? style["nav-open"] : ""
+      }`}
+    >
       <Link to="/" className={style.logo} onClick={handleLinkClick}>
         <span className={style.logoArtisan}>Artisan</span>
         <span className={style.logoClinic}>Dental Clinic</span>
@@ -47,8 +65,6 @@ function Header() {
           <button>Appointment</button>
         </ul>
       </nav>
-
-
     </header>
   );
 }
