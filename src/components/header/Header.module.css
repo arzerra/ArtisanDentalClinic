@@ -10,7 +10,7 @@
   justify-content: space-between;
   background: linear-gradient(
     to bottom,
-    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0)
   );
   z-index: 1000;
@@ -170,20 +170,28 @@ nav button:hover {
     top: 90px; /* below header */
     left: 0;
     width: 100%;
-    background: rgba(128, 128, 128, 0.95);
+    background: linear-gradient(
+      to bottom,
+      rgba(128, 128, 128, 0.95),
+      rgba(128, 128, 128, 0.95) /* same trick here */
+    );
     max-height: 0;
     overflow: hidden;
     flex-direction: column;
-    transition: max-height 0.3s ease;
+    transition: max-height 0.3s ease, background 0.4s ease;
   }
 
   nav.nav-open {
     max-height: 300px; /* adjust to fit menu items */
-    
+    opacity: 1;
   }
 
-  .header.nav-open{
-        background: rgba(128, 128, 128, 0.95);
+  .header.nav-open {
+    background: linear-gradient(
+      to bottom,
+      rgba(128, 128, 128, 0.95),
+      rgba(128, 128, 128, 0.95)
+    );
   }
 
   nav ul {

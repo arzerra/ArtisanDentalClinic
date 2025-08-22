@@ -16,14 +16,20 @@
   color: white;
   font-size: 3rem;
 
-  background-image: url("/images/background/contactUs.jpg");
+  background-image: 
+    linear-gradient(
+      to bottom,
+      rgba(128, 128, 128, 0.3),   /* darker at top */
+      rgba(128, 128, 128, 0.0)    /* lighter at bottom */
+    ),
+    url("/images/background/contactUs.jpg");
+    
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
   background-attachment: fixed; /* 👈 keeps it behind while scrolling */
-  
 }
+
 
 
 
