@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Hand:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 
 .contactContainer {
     width: 100%;
@@ -37,8 +39,14 @@
   color: white;
   font-size: 4rem;
   font-weight: bold;
-  font-family: 'Quicksand';
+  font-family: "Dancing Script", cursive;
   text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+.contentTitle{
+  margin-top: 30px;
+  font-size: 1.7rem;
+  font-family: "Dancing Script", cursive;
 }
 
 .contactContent {
