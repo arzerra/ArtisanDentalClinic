@@ -7,6 +7,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+
 }
 
 .contactBackground {
@@ -46,7 +47,7 @@
     align-items: flex-start;
     gap: 40px;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 50px auto;
     padding: 0 20px;
 }
