@@ -5,6 +5,7 @@ const Form = () => {
   return (
     <StyledWrapper>
       <form className="form">
+        <h1>Send us a message</h1>
           <label>
             <input required placeholder type="text" className="input" />
             <span>Name</span>
@@ -14,7 +15,7 @@ const Form = () => {
           <span>Email</span>
         </label> 
         <label>
-          <input required type="tel" placeholder className="input" />
+          <input required type="number" placeholder className="input" />
           <span>Contact Number</span>
         </label>
         <label>
@@ -33,12 +34,20 @@ const Form = () => {
 }
 
 const StyledWrapper = styled.div`
-.form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  width: 100%;
-}
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .form h1{
+    margin-bottom: 20px;
+      text-align: center;
+      align-items: center;
+          font-family: 'Quicksand', sans-serif;
+
+  }
 
   .message {
     color: rgba(88, 87, 87, 0.822);

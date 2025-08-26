@@ -13,22 +13,22 @@ export default function ContactUs() {
       {/* Flex row wrapper */}
       <div className={styles.contactContent}>
         {/* Left: Form */}
-        <div className={styles.contactForm}>
-          <Form />
-        </div>
-
-        {/* Right: Info */}
         <div className={styles.contactInfo}>
           <div>
             <h1>Clinic Hours</h1>
-            <span>• Morning: 10:00AM - 12:00PM</span><br />
-            <span>• Afternoon: 1:00PM - 5:00PM</span>
+            <span>Morning: 10:00AM - 12:00PM</span><br />
+            <span>Afternoon: 1:00PM - 5:00PM</span>
           </div>
 
           <div>
             <h1>Contact Number</h1>
-            <span>• 0917 717 5300</span><br />
-            <span>• 0961 943 7592</span>
+            <span>0917 717 5300</span><br />
+            <span>0961 943 7592</span>
+          </div>
+
+          <div>
+            <h1>Email</h1>
+            <span>artisan.8800@gmail.com</span>
           </div>
 
           <div>
@@ -40,6 +40,10 @@ export default function ContactUs() {
             <h1>Follow us</h1>
             <button>Facebook</button>
           </div>
+           {/* Right: Info */}
+        </div>
+                <div className={styles.contactForm}>
+          <Form />
         </div>
       </div>
     </div>
