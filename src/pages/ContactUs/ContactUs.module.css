@@ -84,16 +84,44 @@
     font-weight: bold;
 }
 
-.contactInfo span{
+.contactInfo span {
+  display: flex;
+  /* makes icon + text sit side by side */
+  align-items: center;
+  /* vertically centers them */
+  gap: 8px;
+  /* space between icon and text */
   font-size: 1.3rem;
   font-family: 'Quicksand', sans-serif;
-      color: rgba(88, 87, 87, 0.822);
-      
+  color: rgba(88, 87, 87, 0.822);
 }
+
 .hoursRow {
   display: flex;
   justify-content: space-between;
   width: 110%;
+}
+
+.contactInfo button{
+      cursor: pointer;
+      color: rgba(88, 87, 87, 0.822);
+      background: transparent;
+      border: none;
+      padding: 8px 18px;
+      border: 1px solid rgb(0, 0, 0);
+      border-radius: 15px;
+      transition: background 0.3s;
+      font-size: 1rem;
+      font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.contactInfo button:hover {
+  background: hsla(0, 0%, 89%, 0.3);
+}
+
+.contactInfo a.fancy {
+  margin-top: 10px;
+  display: inline-block;
 }
 
 @media (max-width: 600px) {
@@ -137,5 +165,17 @@
       display: flex;
       justify-content: space-between;
       width: 103%;
+    }
+    .contactInfo span {
+      display: flex;
+      /* makes icon + text sit side by side */
+      justify-content: center;
+      align-items: center;
+      /* vertically centers them */
+      gap: 8px;
+      /* space between icon and text */
+      font-size: 1.3rem;
+      font-family: 'Quicksand', sans-serif;
+      color: rgba(88, 87, 87, 0.822);
     }
 }

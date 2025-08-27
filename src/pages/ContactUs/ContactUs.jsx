@@ -1,3 +1,4 @@
+import { FaPhone, FaEnvelope } from "react-icons/fa";
 import styles from './ContactUs.module.css';
 import Form from './Form';
 
@@ -32,13 +33,13 @@ export default function ContactUs() {
 
           <div>
             <h1>Contact Number</h1>
-            <span>0917 717 5300</span><br />
-            <span>0961 943 7592</span>
+            <span><FaPhone/>0917 717 5300</span><br />
+            <span><FaPhone/>0961 943 7592</span>
           </div>
 
           <div>
             <h1>Email</h1>
-            <span>artisan.8800@gmail.com</span>
+            <span><FaEnvelope/>artisan.8800@gmail.com</span>
           </div>
 
           <div>
