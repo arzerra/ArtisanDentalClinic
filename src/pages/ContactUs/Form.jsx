@@ -7,19 +7,19 @@ const Form = () => {
       <form className="form">
         <h1>Send us a message</h1>
           <label>
-            <input required placeholder type="text" className="input" />
+            <input required  type="text" className="input" />
             <span>Name</span>
           </label>
         <label>
-          <input required placeholder type="email" className="input" />
+          <input required  type="email" className="input" />
           <span>Email</span>
         </label> 
         <label>
-          <input required type="number" placeholder className="input" />
+          <input required type="number"  className="input" />
           <span>Contact Number</span>
         </label>
         <label>
-          <textarea required rows={3} placeholder className="input01" defaultValue={""} />
+          <textarea required rows={3}  className="input01" defaultValue={""} />
           <span>Message</span>
         </label>
         <button className="fancy" href="#">
@@ -43,9 +43,9 @@ const StyledWrapper = styled.div`
 
   .form h1{
     margin-bottom: 20px;
-      text-align: center;
-      align-items: center;
-          font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
 
   }
 

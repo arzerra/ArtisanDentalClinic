@@ -14,11 +14,21 @@ export default function ContactUs() {
       <div className={styles.contactContent}>
         {/* Left: Form */}
         <div className={styles.contactInfo}>
-          <div>
-            <h1>Clinic Hours</h1>
-            <span>Morning: 10:00AM - 12:00PM</span><br />
-            <span>Afternoon: 1:00PM - 5:00PM</span>
+        <div>
+          <h1>Clinic Hours</h1>
+          <div className={styles.hoursRow}>
+            <span>Mon - Fri:</span>
+            <span>10:00AM - 5:00PM</span>
           </div>
+          <div className={styles.hoursRow}>
+            <span>Sat:</span>
+            <span>12:00AM - 4:00PM</span>
+          </div>
+          <div className={styles.hoursRow}>
+            <span>Sun:</span>
+            <span>Close</span>
+          </div>
+        </div>
 
           <div>
             <h1>Contact Number</h1>

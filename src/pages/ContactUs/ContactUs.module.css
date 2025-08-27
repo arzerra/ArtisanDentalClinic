@@ -78,9 +78,22 @@
 }
 
 .contactInfo h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 8px;
     font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+}
+
+.contactInfo span{
+  font-size: 1.3rem;
+  font-family: 'Quicksand', sans-serif;
+      color: rgba(88, 87, 87, 0.822);
+      
+}
+.hoursRow {
+  display: flex;
+  justify-content: space-between;
+  width: 110%;
 }
 
 @media (max-width: 600px) {
@@ -91,23 +104,38 @@
   .contactBackground h1 {
   font-size: 3rem;
 }
-  .contactContent {
+    .contactContent {
       flex-direction: column;
+      /* stack items */
       align-items: center;
+      /* center them */
       text-align: center;
-  }
-
+      /* center text */
+      gap: 20px;
+      /* reduce spacing */
+      padding: 20px;
+      /* smaller padding */
+      max-width: 100%;
+      /* take full width */
+    }
   .contactInfo {
       text-align: center;
       align-items: center;
+      width: 100%;
   }
 
     .contactForm {
+      margin-top: 15px;
       flex: 1;
       background: rgba(255, 255, 255, 0.9);
       padding: 40px 20px;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-      max-width: 1000px;
+      width: 90%;
+    }
+    .hoursRow {
+      display: flex;
+      justify-content: space-between;
+      width: 103%;
     }
 }
