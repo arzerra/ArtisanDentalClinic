@@ -19,12 +19,12 @@ const Form = () => {
           <span>Contact Number</span>
         </label>
         <label>
-          <textarea required rows={3}  className="input01" defaultValue={""} />
+          <textarea required rows={10}  className="input01" defaultValue={""} />
           <span>Message</span>
         </label>
         <button className="fancy" href="#">
           <span className="top-key" />
-          <span className="text">submit</span>
+          <span className="text">Submit</span>
           <span className="bottom-key-1" />
           <span className="bottom-key-2" />
         </button>
@@ -39,6 +39,7 @@ const StyledWrapper = styled.div`
     flex-direction: column;
     gap: 10px;
     width: 100%;
+    height: 580px
   }
 
   .form h1{
@@ -102,7 +103,7 @@ const StyledWrapper = styled.div`
   .form label .input01 + span {
     position: absolute;
     left: 10px;
-    top: 50px;
+    top: 15px;
     color: grey;
     font-size: 0.9em;
     cursor: text;
@@ -110,12 +111,12 @@ const StyledWrapper = styled.div`
   }
 
   .form label .input01:placeholder-shown + span {
-    top: 40px;
+    top: 15px;
     font-size: 0.9em;
   }
 
   .form label .input01:focus + span,.form label .input01:valid + span {
-    top: 50px;
+    top: 250px;
     font-size: 0.7em;
     font-weight: 600;
   }

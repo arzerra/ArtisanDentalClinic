@@ -60,12 +60,12 @@
 }
 
 .contactForm {
-    flex: 1;
+    flex: 2;
     background: rgba(255, 255, 255, 0.9);
     padding: 40px 20px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    max-width: 600px;
+    max-width: 100%;
 }
 
 .contactInfo {
@@ -103,16 +103,16 @@
 }
 
 .contactInfo button{
-      cursor: pointer;
-      color: rgba(88, 87, 87, 0.822);
-      background: transparent;
-      border: none;
-      padding: 8px 18px;
-      border: 1px solid rgb(0, 0, 0);
-      border-radius: 15px;
-      transition: background 0.3s;
-      font-size: 1rem;
-      font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  cursor: pointer;
+  color: rgba(88, 87, 87, 0.822);
+  background: transparent;
+  border: none;
+  padding: 8px 100px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 15px;
+  transition: background 0.3s;
+  font-size: 1rem;
+  font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .contactInfo button:hover {
