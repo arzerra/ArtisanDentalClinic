@@ -1,4 +1,4 @@
-import { FaPhone, FaEnvelope } from "react-icons/fa";
+import { FaPhone, FaEnvelope, FaFacebookMessenger, FaFacebook   } from "react-icons/fa";
 import styles from './ContactUs.module.css';
 import Form from './Form';
 
@@ -44,14 +44,13 @@ export default function ContactUs() {
 
           <div>
             <h1>Message Us</h1>
-            <button>Messenger</button>
+            <button><FaFacebookMessenger />@ArtisanDental</button>
           </div>
 
           <div>
             <h1>Follow us</h1>
-            <button>Facebook</button>
+            <button><FaFacebook />@ArtisanDental</button>
           </div>
-           {/* Right: Info */}
         </div>
                 <div className={styles.contactForm}>
           <Form />

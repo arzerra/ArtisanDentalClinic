@@ -8,7 +8,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-
+    background-color: #f8f9fa;
+    padding-bottom: 100px;
 }
 
 .contactBackground {
@@ -86,11 +87,8 @@
 
 .contactInfo span {
   display: flex;
-  /* makes icon + text sit side by side */
   align-items: center;
-  /* vertically centers them */
   gap: 8px;
-  /* space between icon and text */
   font-size: 1.3rem;
   font-family: 'Quicksand', sans-serif;
   color: rgba(88, 87, 87, 0.822);
@@ -103,11 +101,14 @@
 }
 
 .contactInfo button{
+  display: flex;
+  align-items: center;
+   gap: 8px;
   cursor: pointer;
   color: rgba(88, 87, 87, 0.822);
   background: transparent;
   border: none;
-  padding: 8px 100px;
+  padding: 8px 85px;
   border: 1px solid rgb(0, 0, 0);
   border-radius: 15px;
   transition: background 0.3s;
