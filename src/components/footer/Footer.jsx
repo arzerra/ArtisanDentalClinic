@@ -62,7 +62,7 @@ export default function Footer() {
 
       {/* Bottom */}
     <div className={style.bottom}>
-    <p>Artisan Dental Clinic &copy; {new Date().getFullYear()} - All Rights Reserved</p>
+    <p> &copy; Artisan Dental Clinic {new Date().getFullYear()} - All Rights Reserved</p>
     <div className={style.socials}>
         <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
         <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
