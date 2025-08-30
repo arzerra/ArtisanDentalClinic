@@ -4,9 +4,9 @@ import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 export default function Footer() {
   return (
     <footer className={style.footer}>
-      <div className={style.upper}>
+      {/* <div className={style.upper}>
         <h1>Your smile deserves expert care and open conversation.</h1>
-      </div>
+      </div> */}
       <div className={style.container}>
         {/* Column 1 - Logo */}
     <div className={style.col}>
