@@ -1,3 +1,34 @@
 /* HOME */
+.homeContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #f8f9fa;
+    padding-bottom: 100px;
+}
+
+.homeBackground {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 90px; 
+
+  background-image: 
+    linear-gradient(
+      to bottom,
+      rgba(128, 128, 128, 0.3),  
+      rgba(128, 128, 128, 0.0)   
+    ),
+    url("/images/background/contactUs.jpg");
+    
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+}
 /* CAROUSEL */
 /* MAPS */
