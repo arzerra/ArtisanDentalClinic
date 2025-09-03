@@ -4,13 +4,15 @@ export default function Home() {
   return (
     <div className="w-full flex flex-col items-center justify-start bg-gray-100 pb-[100px]">
         {/* Background */}
-<div className="w-full max-h-[200px] overflow-hidden">
-  <img
-    src="/images/pages/home/bg/1.jpg"
-    alt="background"
-    className="w-full h-[200px] object-cover"
-  />
-</div>
+    <div className="w-full max-h-[800px] overflow-hidden">
+      <img
+        src="/images/pages/home/bg/1.jpg"
+        alt="background"
+        className="w-full h-[800px] object-cover object-[center_20%] transition-transform duration-[4000ms] ease-in-out hover:scale-110"
+      />
+    </div>
+
+    
 
 
       <div className="max-w-[1100px] w-full h-auto">

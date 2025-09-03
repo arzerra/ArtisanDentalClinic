@@ -19,8 +19,9 @@
 }
 
 .logoImg {
-  width: 140px;
+  width: 150px;
   margin-bottom: 10px;
+  
 }
 
 .payments {
@@ -33,7 +34,7 @@
 .row {
   display: flex;
   align-items: center;
-  gap: 10px; /* space between items in each row */
+  gap: 15px; /* space between items in each row */
 }
 
 .row img {

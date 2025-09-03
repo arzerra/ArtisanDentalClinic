@@ -10,7 +10,7 @@ export default function Footer() {
       <div className={style.container}>
         {/* Column 1 - Logo */}
     <div className={style.col}>
-      <img src="/artisandental.png" alt="Artisan Dental" className={style.logoImg} />
+      <img src="/images/logo/artisandental.png" alt="Artisan Dental" className={style.logoImg} />
 
       <div className={style.payments}>
         <div className={style.row}>            
