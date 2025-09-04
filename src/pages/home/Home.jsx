@@ -28,14 +28,14 @@ export default function Home() {
           alt="background"
           className="
             object-cover w-full lg:blur-[1.5px] sm:blur-[0.5px]
-            h-[500px] sm:h-[300px] md:h-[700px] lg:h-[700px] 
+            h-[500px] sm:h-[300px] md:h-[650px] lg:h-[700px] 
             scale-120 sm:scale-150 md:scale-100 lg:scale-100
             transition-transform duration-4000 ease-in-out
             hover:scale-110
           "
         />
 
-        <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-black/10 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-black/10 to-transparent"></div>
 
         <div className="absolute inset-0 flex flex-col items-center justify-start mt-35 sm:mt-65 px-4 text-center">
           <h1 className="font-['Archivo_Black'] text-white text-md sm:text-xl md:text-xl drop-shadow-lg">
@@ -53,7 +53,7 @@ export default function Home() {
               }}
             />
           </h1>
-          <p className="text-white text-lg sm:text-lg md:text-2xl font-bold drop-shadow-lg mt-5 sm:mt-10">
+          <p className="text-white font-light text-lg sm:text-lg md:text-2xl font-bold drop-shadow-lg mt-5 sm:mt-10">
             As your dental care partner, we’re dedicated to keeping your smile strong and healthy.
           </p>
         </div>
@@ -72,7 +72,20 @@ export default function Home() {
       </div>
       <div className="bg-white shadow-lg rounded-2xl p-10 sm:p-10 text-center hover:scale-105 transition-transform">
         <h2 className="text-xl font-bold mb-2">Open from 10am to 5pm</h2>
-        <p className="text-gray-600">We’re open daily from 10:00 AM to 5:00 PM to care for your smile.</p>
+        <div className="text-gray-600 space-y-2">
+        <div className="flex justify-between">
+          <span>Mon - Fri:</span>
+          <span>10:00 AM - 5:00 PM</span>
+        </div>
+        <div className="flex justify-between">
+          <span>Sat:</span>
+          <span>12:00 AM - 4:00 PM</span>
+        </div>
+        <div className="flex justify-between">
+          <span>Sun:</span>
+          <span>Closed</span>
+        </div>
+      </div>
       </div>
     </div>
   </div>
@@ -81,6 +94,7 @@ export default function Home() {
       <div className="max-w-[1100px] w-full h-auto">
         {/* TITLE */}
         <div className="container h-[350px] mt-40">
+          
         </div>
 
         {/* <Carousel /> */}
