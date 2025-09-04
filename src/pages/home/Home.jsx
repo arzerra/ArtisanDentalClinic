@@ -110,14 +110,29 @@ export default function Home() {
     </div>
 
       <div className="max-w-[1100px] w-full h-auto mt-30 flex flex-col items-center text-center">
-        <h1 ref={ref} className="font-['Smooch_Sans'] text-black text-4xl sm:text-3xl md:text-5xl drop-shadow-lg mt-1 sm:mt-4" data-aos="zoom-in-up">Our Work</h1>
+        <h1 ref={ref} className="font-['Smooch_Sans'] text-black text-4xl sm:text-3xl md:text-5xl drop-shadow-lg mt-1 sm:mt-3" data-aos="zoom-in-up">Our Work</h1>
         <p className="text-gray-600 text-md sm:text-xl mt-2 sm:mt-4 px-10" data-aos="zoom-in-up"> Take a look at some of the results we’ve achieved for our patients. </p>
         <Carousel/>
       </div>
 
-      <div className="w-full h-[600px] border-1 mt-30">
+      <div
+        className="w-full h-[280px] sm:h-[400px] mt-20 sm:mt-30 relative overflow-hidden bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: "url('/images/pages/home/bg/8.jpg')" }}
+      >
+        {/* Overlay filter */}
+        <div className="absolute inset-0 bg-black/50"></div> {/* black overlay with 40% opacity */}
 
+        {/* Text */}
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
+          <h1 className="text-white text-3xl sm:text-6xl font-bold drop-shadow-lg">
+            "Time heals everything" 
+          </h1>
+          <p className="text-white text-md sm:text-3xl mt-2 sm:mt-4 drop-shadow-md">
+            ...except cavities, they need a dentist!
+          </p>
+        </div>
       </div>
+
 
       <div className="max-w-[1100px] w-full mx-auto mt-10 items-center text-center px-3">
         <h1 ref={ref} className="font-['Smooch_Sans'] text-black text-4xl sm:text-3xl md:text-5xl drop-shadow-lg mt-1 sm:mt-4" data-aos="zoom-in-up">Our Location</h1>
@@ -133,13 +148,13 @@ export default function Home() {
         </div>
       </div>
 
-      {/* <div className="relative w-full h-[350px] mt-40 bg-cover bg-center bg-no-repeat overflow-hidden"
+      <div className="relative w-full h-[350px] mt-40 bg-cover bg-center bg-no-repeat overflow-hidden"
         style={{ backgroundImage: "url('/images/pages/home/bg/6.jpg')" }}>
       <div className="absolute inset-0 bg-black/30"></div>
 
         <div className="max-w-[1100px] w-full h-auto">
         </div>
-      </div> */}
+      </div>
 
 
     </div>
