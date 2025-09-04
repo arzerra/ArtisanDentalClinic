@@ -52,7 +52,7 @@ export default function ContactUs() {
             <button><FaFacebook />@ArtisanDental</button>
           </div>
         </div>
-        <div className={styles.contactForm} data-aos="fade-right">
+        <div className={styles.contactForm} data-aos="zoom-in">
           <Form />
         </div>
       </div>
