@@ -23,7 +23,7 @@ export default function ContactUs() {
           </div>
           <div className={styles.hoursRow}>
             <span>Sat:</span>
-            <span>12:00AM - 4:00PM</span>
+            <span>12:00PM - 4:00PM</span>
           </div>
           <div className={styles.hoursRow}>
             <span>Sun:</span>

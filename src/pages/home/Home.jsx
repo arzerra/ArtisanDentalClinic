@@ -97,7 +97,7 @@ export default function Home() {
             </div>
             <div className="flex justify-between">
               <span>Sat:</span>
-              <span>12:00 AM - 4:00 PM</span>
+              <span>12:00 PM - 4:00 PM</span>
             </div>
             <div className="flex justify-between">
               <span>Sun:</span>
@@ -111,7 +111,7 @@ export default function Home() {
 
       <div className="max-w-[1100px] w-full h-auto mt-30 flex flex-col items-center text-center">
         <h1 ref={ref}
-            className={`font-['Archivo_Black'] text-black text-3xl sm:text-3xl md:text-5xl drop-shadow-lg mt-1 sm:mt-4 ${
+            className={`font-['Archivo_Black'] text-black text-2xl sm:text-3xl md:text-5xl drop-shadow-lg mt-1 sm:mt-4 ${
             inView ? "slide-up" : ""}`}>Samples</h1>
             <Carousel/>
       </div>

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-export default function ImageCarousel() {
+export default function CenteredCarousel() {
   const images = [
     "/images/pages/home/carousel/carousel1.jpg",
     "/images/pages/home/carousel/carousel2.jpg",
@@ -12,43 +12,61 @@ export default function ImageCarousel() {
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Auto-slide every 3 seconds
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3000);
+  const prevIndex = (currentIndex - 1 + images.length) % images.length;
+  const nextIndex = (currentIndex + 1) % images.length;
 
-    return () => clearInterval(interval);
-  }, []);
+  const prevSlide = () => {
+    setCurrentIndex(prevIndex);
+  };
+
+  const nextSlide = () => {
+    setCurrentIndex(nextIndex);
+  };
+
+    useEffect(() => {
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 3000); // Change 3000 to whatever delay you want in ms
+
+    return () => clearInterval(interval); // Cleanup
+  }, [currentIndex]); // Re-run when currentIndex changes
 
   return (
-  <div className="max-w-[600px] w-full h-[600px] relative overflow-hidden rounded-xl mt-10 border-10 border-white rounded-3xl">
-    {images.map((img, index) => (
-      <div
-        key={index}
-        className={`absolute top-0 left-0 w-full h-full transition-opacity duration-1000 ${
-          index === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0"
-        }`}
-      >
-        <img
-          src={img}
-          alt={`Carousel ${index + 1}`}
-          className="w-full h-full object-contain mx-auto"
-        />
-      </div>
-      ))}
+    <div className="relative max-w-[1100px] w-full h-full mx-auto mt-5 sm:mt-10 flex items-center justify-center overflow-hidden">
+      {/* Left image (previous) */}
+      <img
+        src={images[prevIndex]}
+        alt="Previous"
+        className="absolute left-3 w-1/3 h-full object-cover scale-90 blur-sm rounded-2xl transition-all duration-500"
+      />
 
-      {/* Optional: navigation dots */}
-      <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 flex space-x-3">
-        {images.map((_, idx) => (
-          <span
-            key={idx}
-            className={`w-3 h-3 rounded-full ${
-              idx === currentIndex ? "bg-white" : "bg-gray-400"
-            }`}
-          />
-        ))}
-      </div>
+      {/* Center image (current) */}
+      <img
+        src={images[currentIndex]}
+        alt="Current"
+        className="relative z-10 w-1/2 h-full object-cover rounded-3xl transition-all duration-500 border-5 sm:border-10 border-white"
+      />
+
+      {/* Right image (next) */}
+      <img
+        src={images[nextIndex]}
+        alt="Next"
+        className="absolute right-3 w-1/3 h-full object-cover scale-90 blur-sm rounded-2xl transition-all duration-500"
+      />
+
+      {/* Navigation */}
+      <button
+        onClick={prevSlide}
+        className="absolute top-1/2 left-60 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full"
+      >
+        &#10094;
+      </button>
+      <button
+        onClick={nextSlide}
+        className="absolute top-1/2 right-60 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full"
+      >
+        &#10095;
+      </button>
     </div>
   );
 }
