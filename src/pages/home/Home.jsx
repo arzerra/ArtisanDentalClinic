@@ -46,7 +46,7 @@ export default function Home() {
           alt="background"
           className="
             object-cover object-[50%_100%]  w-full  blur-[1px] lg:blur-[1.6px]
-            h-[600px] sm:h-[600px] md:h-[600px] lg:h-[800px] 
+            h-[550px] sm:h-[600px] md:h-[600px] lg:h-[800px] 
             scale-100 sm:scale-150 md:scale-100 lg:scale-100
             transition-transform duration-4000 ease-in-out
             hover:scale-120 slide-up-scale
@@ -55,14 +55,14 @@ export default function Home() {
 
         <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-black/10 to-transparent"></div>
 
-        <div className="absolute inset-0 flex flex-col items-center justify-start mt-60 sm:mt-75 px-4 text-center" >
-          <h1 className="font-['Archivo_Black'] text-white text-md sm:text-xl md:text-xl drop-shadow-lg">
+        <div className="absolute inset-0 flex flex-col items-center justify-start mt-40 sm:mt-75 px-4 text-center" >
+          <h1 className="font-['Archivo_Black'] text-white text-sm sm:text-xl md:text-xl drop-shadow-lg">
             Today is {day} of {month}
           </h1>
           <h1 className="font-['Archivo_Black'] text-white text-3xl sm:text-3xl md:text-5xl drop-shadow-lg mt-1 sm:mt-4">
             Your Trusted Dental Care that is
           </h1>
-          <h1 className="font-['Archivo_Black'] text-white text-3xl sm:text-3xl md:text-5xl drop-shadow-lg mt-5 sm:mt-10">
+          <h1 className="font-['Archivo_Black'] text-white text-3xl sm:text-3xl md:text-5xl drop-shadow-lg mt-2 sm:mt-10">
             <Typewriter
               options={{
                 strings: ["Quality", "Affordable", "Exceptional"],
@@ -71,14 +71,14 @@ export default function Home() {
               }}
             />
           </h1>
-          <p className="text-white font-light text-lg sm:text-lg md:text-2xl font-bold drop-shadow-lg mt-5 sm:mt-10">
+          <p className="text-white font-light text-lg sm:text-lg md:text-2xl font-bold drop-shadow-lg mt-8 sm:mt-10">
             As your dental care partner, we’re dedicated to keeping your smile strong and healthy.
           </p>
         </div>
       </div>
     <div>
 
-      <div className="max-w-[1100px] w-full -mt-20 sm:-mt-25 px-9 sm:px-4 relative z-10">
+      <div className="max-w-[1100px] w-full -mt-25 sm:-mt-25 px-9 sm:px-4 relative z-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 sm:gap-10">
           <div className="bg-white shadow-lg rounded-2xl p-10 sm:p-10 text-center hover:scale-105 transition-transform" data-aos="fade-up">
             <h2 className="text-xl font-bold mb-2">High Quality Dental Care</h2>
@@ -110,22 +110,28 @@ export default function Home() {
     </div>
 
       <div className="max-w-[1100px] w-full h-auto mt-30 flex flex-col items-center text-center">
-        <h1 ref={ref}
-            className="font-['Archivo_Black'] text-black text-2xl sm:text-3xl md:text-5xl drop-shadow-lg mt-1 sm:mt-4" data-aos="fade-up">Samples</h1>
-            <Carousel/>
+        <h1 ref={ref} className="font-['Smooch_Sans'] text-black text-4xl sm:text-3xl md:text-5xl drop-shadow-lg mt-1 sm:mt-4" data-aos="zoom-in-up">Our Work</h1>
+        <p className="text-gray-600 text-md sm:text-xl mt-2 sm:mt-4 px-10" data-aos="zoom-in-up"> Take a look at some of the results we’ve achieved for our patients. </p>
+        <Carousel/>
       </div>
 
-      {/* <div className="max-w-[1100px] w-full mx-auto mt-10">
-        <div className="w-full aspect-[16/9]">
+      <div className="w-full h-[600px] border-1 mt-30">
+
+      </div>
+
+      <div className="max-w-[1100px] w-full mx-auto mt-10 items-center text-center px-3">
+        <h1 ref={ref} className="font-['Smooch_Sans'] text-black text-4xl sm:text-3xl md:text-5xl drop-shadow-lg mt-1 sm:mt-4" data-aos="zoom-in-up">Our Location</h1>
+        <p className="text-gray-600 text-md sm:text-xl mt-2 sm:mt-4 px-2" data-aos="zoom-in-up"> Room 8, 2nd Floor, Emilia Mindanao Souvenir Center, CM Recto St., Claveria, Davao City</p>
+        <div className="w-full max-w-[1100px] mx-auto rounded-3xl overflow-hidden border-5 sm:border-8 border-[#FFFFF0] mt-5 sm:mt-10 ">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2061.4304467370603!2d125.61204895455377!3d7.071562200446328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32f96d5c7123831b%3A0xd48a43fd8d616825!2sEmilia%20Mindanao%20Souvenir%20Center!5e1!3m2!1sen!2sph!4v1756973264394!5m2!1sen!2sph"
-            className="w-[550px] h-[600px] border-10 border-white rounded-3xl"
+            className="w-full h-[300px] sm:h-[400px] md:h-[500px]"
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
-      </div> */}
+      </div>
 
       {/* <div className="relative w-full h-[350px] mt-40 bg-cover bg-center bg-no-repeat overflow-hidden"
         style={{ backgroundImage: "url('/images/pages/home/bg/6.jpg')" }}>

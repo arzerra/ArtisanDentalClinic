@@ -45,21 +45,21 @@ export default function CenteredCarousel() {
       <img
         src={images[prevIndex]}
         alt="Previous"
-        className="absolute left-5 sm:left-0 w-1/3 h-full object-cover scale-90 blur-sm rounded-2xl transition-all duration-500"
+        className="absolute left-1 sm:left-0 w-1/3 h-full object-cover scale-90 blur-sm rounded-2xl transition-all duration-500"
       />
 
       {/* Center image (current) */}
       <img
         src={images[currentIndex]}
         alt="Current"
-        className="relative z-10 w-[300px] sm:w-1/2 h-full object-cover rounded-3xl transition-all duration-500 border-5 sm:border-10 border-white"
+        className="relative z-10 w-[300px] sm:w-1/2 h-full object-cover rounded-3xl transition-all duration-500 border-5 sm:border-10 border-[#FFFFF0]"
       />
 
       {/* Right image (next) */}
       <img
         src={images[nextIndex]}
         alt="Next"
-        className="absolute right-5 sm:right-0 w-1/3 h-full object-cover scale-90 blur-sm rounded-2xl transition-all duration-500"
+        className="absolute right-1 sm:right-0 w-1/3 h-full object-cover scale-90 blur-sm rounded-2xl transition-all duration-500"
       />
 
       {/* Navigation */}
