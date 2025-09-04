@@ -28,16 +28,16 @@ export default function Home() {
           alt="background"
           className="
             object-cover w-full lg:blur-[1.5px] sm:blur-[0.5px]
-            h-[500px] sm:h-[300px] md:h-[650px] lg:h-[700px] 
-            scale-120 sm:scale-150 md:scale-100 lg:scale-100
+            h-[600px] sm:h-[600px] md:h-[650px] lg:h-[700px] 
+            scale-100 sm:scale-150 md:scale-100 lg:scale-100
             transition-transform duration-4000 ease-in-out
-            hover:scale-110
+            hover:scale-110 slide-up-scale
           "
         />
 
         <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-black/10 to-transparent"></div>
 
-        <div className="absolute inset-0 flex flex-col items-center justify-start mt-35 sm:mt-65 px-4 text-center">
+        <div className="absolute inset-0 flex flex-col items-center justify-start mt-60 sm:mt-65 px-4 text-center">
           <h1 className="font-['Archivo_Black'] text-white text-md sm:text-xl md:text-xl drop-shadow-lg">
             Today is {day} of {month}
           </h1>
@@ -60,17 +60,17 @@ export default function Home() {
       </div>
     <div>
 
-  <div className="max-w-[1100px] w-full -mt-20 sm:-mt-25 px-4 relative z-10">
+  <div className="max-w-[1100px] w-full -mt-20 sm:-mt-25 px-7 sm:px-4 relative z-10">
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 sm:gap-10">
-      <div className="bg-white shadow-lg rounded-2xl p-10 sm:p-10 text-center hover:scale-105 transition-transform">
+      <div className="bg-white shadow-lg rounded-2xl p-10 sm:p-10 text-center hover:scale-105 transition-transform slide-up">
         <h2 className="text-xl font-bold mb-2">High Quality Dental Care</h2>
         <p className="text-gray-600">Delivering exceptional dental treatments with precision, care, and compassion.</p>
       </div>
-      <div className="bg-white shadow-lg rounded-2xl p-10 sm:p-10 text-center hover:scale-105 transition-transform">
+      <div className="bg-white shadow-lg rounded-2xl p-10 sm:p-10 text-center hover:scale-105 transition-transform slide-up" style={{ animationDelay: '0.1s' }}>
         <h2 className="text-xl font-bold mb-2">Experienced Professional</h2>
         <p className="text-gray-600">Providing trusted dental care backed by years of skill and expertise.</p>
       </div>
-      <div className="bg-white shadow-lg rounded-2xl p-10 sm:p-10 text-center hover:scale-105 transition-transform">
+      <div className="bg-white shadow-lg rounded-2xl p-10 sm:p-10 text-center hover:scale-105 transition-transform slide-up" style={{ animationDelay: '0.2s' }}>
         <h2 className="text-xl font-bold mb-2">Open from 10am to 5pm</h2>
         <div className="text-gray-600 space-y-2">
         <div className="flex justify-between">
