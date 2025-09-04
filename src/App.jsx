@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import TopBar from "./components/topBar/TopBar.jsx";
 import Header from "./components/header/Header.jsx";
@@ -9,10 +9,16 @@ import AboutUs from "./pages/aboutUs/AboutUs.jsx";
 import ContactUs from "./pages/ContactUs/ContactUs.jsx";
 import Services from "./pages/services/Services.jsx";
 import Dentist from "./pages/dentist/Dentist.jsx";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 
 function App() {
-  const [count, setCount] = useState(0);
+  
+  useEffect(() => {
+    AOS.init({ duration: 1500 });
+    AOS.refresh();
+  }, []);
 
   return (
             

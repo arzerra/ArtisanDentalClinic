@@ -46,7 +46,7 @@ export default function Home() {
           alt="background"
           className="
             object-cover object-[50%_100%]  w-full  blur-[1px] lg:blur-[1.6px]
-            h-[600px] sm:h-[600px] md:h-[650px] lg:h-[800px] 
+            h-[600px] sm:h-[600px] md:h-[600px] lg:h-[800px] 
             scale-100 sm:scale-150 md:scale-100 lg:scale-100
             transition-transform duration-4000 ease-in-out
             hover:scale-120 slide-up-scale
@@ -55,7 +55,7 @@ export default function Home() {
 
         <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-black/10 to-transparent"></div>
 
-        <div className="absolute inset-0 flex flex-col items-center justify-start mt-60 sm:mt-75 px-4 text-center">
+        <div className="absolute inset-0 flex flex-col items-center justify-start mt-60 sm:mt-75 px-4 text-center" >
           <h1 className="font-['Archivo_Black'] text-white text-md sm:text-xl md:text-xl drop-shadow-lg">
             Today is {day} of {month}
           </h1>
@@ -80,15 +80,15 @@ export default function Home() {
 
       <div className="max-w-[1100px] w-full -mt-20 sm:-mt-25 px-9 sm:px-4 relative z-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 sm:gap-10">
-          <div className="bg-white shadow-lg rounded-2xl p-10 sm:p-10 text-center hover:scale-105 transition-transform slide-up">
+          <div className="bg-white shadow-lg rounded-2xl p-10 sm:p-10 text-center hover:scale-105 transition-transform" data-aos="fade-up">
             <h2 className="text-xl font-bold mb-2">High Quality Dental Care</h2>
             <p className="text-gray-600">Delivering exceptional dental treatments with precision, care, and compassion.</p>
           </div>
-          <div className="bg-white shadow-lg rounded-2xl p-10 sm:p-10 text-center hover:scale-105 transition-transform slide-up" style={{ animationDelay: '0.1s' }}>
+          <div className="bg-white shadow-lg rounded-2xl p-10 sm:p-10 text-center hover:scale-105 transition-transform" data-aos="fade-up" data-aos-duration="2000">
             <h2 className="text-xl font-bold mb-2">Experienced Professional</h2>
             <p className="text-gray-600">Providing trusted dental care backed by years of skill and expertise.</p>
           </div>
-          <div className="bg-white shadow-lg rounded-2xl p-10 sm:p-10 text-center hover:scale-105 transition-transform slide-up" style={{ animationDelay: '0.2s' }}>
+          <div className="bg-white shadow-lg rounded-2xl p-10 sm:p-10 text-center hover:scale-105 transition-transform"  data-aos="fade-up" data-aos-duration="2500">
             <h2 className="text-xl font-bold mb-2">Open from 10am to 5pm</h2>
             <div className="text-gray-600 space-y-2">
             <div className="flex justify-between">
@@ -111,8 +111,7 @@ export default function Home() {
 
       <div className="max-w-[1100px] w-full h-auto mt-30 flex flex-col items-center text-center">
         <h1 ref={ref}
-            className={`font-['Archivo_Black'] text-black text-2xl sm:text-3xl md:text-5xl drop-shadow-lg mt-1 sm:mt-4 ${
-            inView ? "slide-up" : ""}`}>Samples</h1>
+            className="font-['Archivo_Black'] text-black text-2xl sm:text-3xl md:text-5xl drop-shadow-lg mt-1 sm:mt-4" data-aos="fade-up">Samples</h1>
             <Carousel/>
       </div>
 
