@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 
 .contactContainer {
     width: 100%;
@@ -39,7 +40,7 @@
   color: white;
   font-size: 4rem;
   font-weight: bold;
-  font-family: "Fantasy", sans-serif;
+  font-family: "Archivo Black", sans-serif;
   text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.4);
 }
 
