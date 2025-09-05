@@ -246,7 +246,7 @@ export default function Home() {
     </div>
     </div>
 
-      <div className="max-w-[1100px] w-full h-auto mt-20 flex flex-col items-center text-center">
+      <div className="max-w-[1100px] w-full h-auto mt-10 sm:mt-20 flex flex-col items-center text-center">
         <h1 ref={ref} className="font-['Smooch_Sans'] text-black text-4xl sm:text-3xl md:text-5xl drop-shadow-lg" data-aos="zoom-in-up">Our Work</h1>
         <p className="text-gray-600 text-md sm:text-xl mt-2 sm:mt-4 px-10" data-aos="zoom-in-up"> Take a look at some of the results we’ve achieved for our patients. </p>
         <Carousel/>
@@ -272,28 +272,22 @@ export default function Home() {
         <p className="text-white text-md sm:text-3xl mt-2 sm:mt-4 drop-shadow-md" data-aos="fade-left">
           ...except cavities, they need a dentist!
         </p>
-      </div>
-    </div>
-
-    <div className="w-[95%] sm:w-full max-w-[1080px] h-auto sm:h-[130px] bg-white shadow-md rounded-2xl mt-20 mx-auto flex flex-col sm:flex-row items-center sm:justify-between justify-center text-center sm:text-center px-6 sm:px-10 py-6 sm:py-6">
-      <p className="text-gray-700 text-2xl sm:text-4xl font-medium mb-4 sm:mb-0" data-aos="fade-right">
-        Follow us on Facebook
-      </p>
-        <a
-          href="https://www.facebook.com/iamartisandentalclinic"
+        <Link
+          to="/appointments"
           target="_blank"
           rel="noopener noreferrer"
           data-aos="fade-left"
-          className="relative flex items-center gap-x-2 px-8 py-4 overflow-hidden group bg-blue-600 hover:bg-blue-700 text-white text-xl font-semibold rounded-full transition-all ease-out duration-300"
+          className="relative flex items-center gap-x-2 px-6 sm:px-8 py-3 sm:py-4 mt-5 overflow-hidden group bg-[#B87C4C] text-white text-xl font-semibold rounded-full transition-all ease-out duration-300"
         >
           <span
             className="absolute right-0 w-10 h-full top-0 transition-all duration-1000 transform translate-x-12 bg-white opacity-20 -skew-x-12 group-hover:-translate-x-40 ease"
           ></span>
-
-          <FaFacebook className="relative text-xl" />
-          <span className="relative">@ArtisanDental</span>
-        </a>
+          <span className="relative">Book Now!</span>
+        </Link>
       </div>
+    </div>
+
+
 
       <div className="max-w-[1100px] w-full mx-auto mt-20 items-center text-center px-3" >
         <h1 ref={ref} className="font-['Smooch_Sans'] text-black text-4xl sm:text-3xl md:text-5xl drop-shadow-lg mt-1 sm:mt-4" data-aos="zoom-in-up">Our Location</h1>
@@ -307,6 +301,26 @@ export default function Home() {
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
+      </div>
+
+      <div className="w-[90%] sm:w-full max-w-[1080px] h-auto sm:h-[130px] bg-white shadow-md rounded-4xl mt-20 mx-auto flex flex-col sm:flex-row items-center sm:justify-between justify-center text-center px-6 sm:px-10 py-6 sm:py-6">
+      <p className="text-gray-700 text-2xl sm:text-3xl font-medium mb-4 sm:mb-0" data-aos="fade-right">
+        Follow us on Facebook
+      </p>
+        <a
+          href="https://www.facebook.com/iamartisandentalclinic"
+          target="_blank"
+          rel="noopener noreferrer"
+          data-aos="fade-left"
+          className="relative flex items-center gap-x-2 px-6 sm:px-8 py-3 sm:py-4 overflow-hidden group bg-blue-600 hover:bg-blue-700 text-white text-xl font-semibold rounded-full transition-all ease-out duration-300"
+        >
+          <span
+            className="absolute right-0 w-10 h-full top-0 transition-all duration-1000 transform translate-x-12 bg-white opacity-20 -skew-x-12 group-hover:-translate-x-40 ease"
+          ></span>
+
+          <FaFacebook className="relative text-xl" />
+          <span className="relative">@ArtisanDental</span>
+        </a>
       </div>
 
     </div>
