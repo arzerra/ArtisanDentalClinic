@@ -61,7 +61,7 @@ export default function Home() {
           <h1 className="font-medium text-[#E8D4B7] text-sm sm:text-xl md:text-xl drop-shadow-lg">
             {day} of {month}
           </h1>
-          <h1 className="font-['Archivo_Black'] text-white text-3xl sm:text-3xl md:text-5xl drop-shadow-lg mt-1 sm:mt-4">
+          <h1 className="font-['Archivo_Black'] text-white text-3xl sm:text-5xl md:text-5xl drop-shadow-lg mt-1 sm:mt-4">
             Your Trusted Dental Care that is
           </h1>
           <h1 className="font-['Archivo_Black'] text-white text-3xl sm:text-3xl md:text-5xl drop-shadow-lg">
