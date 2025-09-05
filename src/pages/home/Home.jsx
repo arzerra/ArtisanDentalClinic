@@ -56,7 +56,7 @@ export default function Home() {
 
         <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-black/10 to-transparent"></div>
 
-        <div className="absolute inset-0 flex flex-col items-center justify-start mt-40 sm:mt-80 md:mt-50 px-4 text-center" >
+        <div className="absolute inset-0 flex flex-col items-center justify-center px-4 text-center" >
           <h1 className="font-medium text-white text-sm sm:text-xl md:text-xl drop-shadow-lg">
             Today is {day} of {month}
           </h1>
