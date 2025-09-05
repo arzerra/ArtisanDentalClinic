@@ -38,7 +38,7 @@ export default function Home() {
   const month = today.toLocaleString("default", { month: "long" });
 
   return (
-    <div className="w-full flex flex-col items-center justify-start bg-gray-100 pb-[100px]">
+    <div className="w-full flex flex-col items-center justify-start bg-gray-100 pb-[100px] overflow-x-hidden">
         {/* Background */}
       <div className=" relative w-full max-h-[800px] overflow-hidden">
         <img
