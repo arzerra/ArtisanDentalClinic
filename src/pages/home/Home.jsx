@@ -250,10 +250,10 @@ export default function Home() {
       </div>
 
 
-<div className="w-[95%] sm:w-full max-w-[1080px] h-auto sm:h-[130px] bg-white shadow-md rounded-2xl mt-20 mx-auto flex flex-col sm:flex-row items-center sm:justify-between justify-center text-center sm:text-left px-6 sm:px-10 py-6 sm:py-4" data-aos="fade-left">
-  <p className="text-gray-700 text-2xl sm:text-4xl font-medium mb-4 sm:mb-0">
-    Follow us on Facebook
-  </p>
+    <div className="w-[95%] sm:w-full max-w-[1080px] h-auto sm:h-[130px] bg-white shadow-md rounded-2xl mt-20 mx-auto flex flex-col sm:flex-row items-center sm:justify-between justify-center text-center sm:text-center px-6 sm:px-10 py-6 sm:py-6" data-aos="fade-left">
+      <p className="text-gray-700 text-2xl sm:text-4xl font-medium mb-4 sm:mb-0">
+        Follow us on Facebook
+      </p>
         <a
           href="https://www.facebook.com/iamartisandentalclinic"
           target="_blank"
