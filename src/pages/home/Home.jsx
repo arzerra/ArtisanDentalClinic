@@ -2,6 +2,7 @@ import Carousel from "./components/Carousel.jsx";
 import Typewriter from "typewriter-effect";
 import { useEffect, useRef, useState } from "react";
 import { FaFacebook   } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 
 export default function Home() {
@@ -47,18 +48,18 @@ export default function Home() {
           alt="background"
           className="
             object-cover object-[50%_100%]  w-full  blur-[1px] lg:blur-[1.6px]
-            h-[550px] sm:h-[600px] md:h-[600px] lg:h-[800px] 
+            h-[500px] sm:h-[600px] md:h-[600px] lg:h-[700px] 
             scale-100 sm:scale-150 md:scale-100 lg:scale-100
             transition-transform duration-4000 ease-in-out
             hover:scale-120 slide-up-scale
           "
         />
 
-        <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-black/10 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-black/10 to-transparent"></div>
 
         <div className="absolute inset-0 flex flex-col items-center justify-center px-4 text-center" >
-          <h1 className="font-medium text-white text-sm sm:text-xl md:text-xl drop-shadow-lg">
-            Today is {day} of {month}
+          <h1 className="font-medium text-[#E8D4B7] text-sm sm:text-xl md:text-xl drop-shadow-lg">
+            {day} of {month}
           </h1>
           <h1 className="font-['Archivo_Black'] text-white text-3xl sm:text-3xl md:text-5xl drop-shadow-lg mt-1 sm:mt-4">
             Your Trusted Dental Care that is
@@ -77,38 +78,43 @@ export default function Home() {
           </p>
         </div>
       </div>
-    <div>
 
-      <div className="max-w-[1100px] w-full -mt-25 sm:-mt-25 px-9 sm:px-4 relative z-10">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 sm:gap-10">
-          <div className="bg-white shadow-lg rounded-2xl p-10 sm:p-10 text-center hover:scale-105 transition-transform" data-aos="fade-up">
-            <h2 className="text-xl font-bold mb-2">High Quality Dental Care</h2>
-            <p className="text-gray-600">Delivering exceptional dental treatments with precision, care, and compassion.</p>
-          </div>
-          <div className="bg-white shadow-lg rounded-2xl p-10 sm:p-10 text-center hover:scale-105 transition-transform" data-aos="fade-up" data-aos-duration="2000">
-            <h2 className="text-xl font-bold mb-2">Experienced Professional</h2>
-            <p className="text-gray-600">Providing trusted dental care backed by years of skill and expertise.</p>
-          </div>
-          <div className="bg-white shadow-lg rounded-2xl p-10 sm:p-10 text-center hover:scale-105 transition-transform"  data-aos="fade-up" data-aos-duration="2500">
-            <h2 className="text-xl font-bold mb-2">Open from 10am to 5pm</h2>
-            <div className="text-gray-600 space-y-2">
-            <div className="flex justify-between">
-              <span>Mon - Fri:</span>
-              <span>10:00 AM - 5:00 PM</span>
+        <div className="max-w-[1100px] w-full -mt-25 sm:-mt-25 px-9 sm:px-4 relative z-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 sm:gap-10">
+            <Link to="/services">
+            <div className="bg-white shadow-lg rounded-2xl p-10 sm:p-10 text-center hover:scale-105 transition-transform" data-aos="fade-up">
+              <h2 className="text-xl font-bold mb-2">High Quality Dental Care</h2>
+              <p className="text-gray-600">Delivering exceptional dental treatments with precision, care, and compassion.</p>
             </div>
-            <div className="flex justify-between">
-              <span>Sat:</span>
-              <span>12:00 PM - 4:00 PM</span>
+            </Link>
+            <Link to="/dentist">
+            <div className="bg-white shadow-lg rounded-2xl p-10 sm:p-10 text-center hover:scale-105 transition-transform" data-aos="fade-up" data-aos-duration="2000">
+              <h2 className="text-xl font-bold mb-2">Experienced Professional</h2>
+              <p className="text-gray-600">Providing trusted dental care backed by years of skill and expertise.</p>
             </div>
-            <div className="flex justify-between">
-              <span>Sun:</span>
-              <span>Closed</span>
+            </Link>
+            <Link to="/contact">
+            <div className="bg-white shadow-lg rounded-2xl p-10 sm:p-10 text-center hover:scale-105 transition-transform"  data-aos="fade-up" data-aos-duration="2500">
+              <h2 className="text-xl font-bold mb-2">Clinic Hours</h2>
+              <div className="text-gray-600">
+                <div className="flex justify-between">
+                  <span>Mon - Fri:</span>
+                  <span>10:00 AM - 5:00 PM</span>
+                </div>
+                <div className="flex justify-between">
+                  <span>Sat:</span>
+                  <span>12:00 PM - 4:00 PM</span>
+                </div>
+                <div className="flex justify-between">
+                  <span>Sun:</span>
+                  <span>Closed</span>
+                </div>
+              </div>
             </div>
-          </div>
+            </Link>
           </div>
         </div>
-      </div>
-    </div>
+
 
     <div className="max-w-[1100px] w-full h-auto mt-20 flex flex-col items-center text-center">
         <h1 ref={ref} className="font-['Smooch_Sans'] text-black text-4xl sm:text-3xl md:text-5xl drop-shadow-lg mt-1 sm:mt-3" data-aos="zoom-in-up">What We Do</h1>
