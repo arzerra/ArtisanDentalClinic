@@ -23,26 +23,63 @@ export default function Dentist(){
                 </div>
             </div>
 
-            <div className="max-w-[1100px] w-full h-auto mt-20 flex flex-col sm:flex-row items-center text-center gap-10 mx-auto">
-
-              {/* Text Section */}
-              <div className="flex-1">
-                <h1 className="text-2xl font-semibold">Dr. Ellen Plariza-Pasamba</h1>
-                <h2 className="text-xl text-gray-700 mt-2">General Dentistry & Orthodontics</h2>
-                <p className="text-gray-600 mt-4">"𝖮𝗇𝖾 S𝗆𝗂𝗅𝖾 𝖺𝗍 𝖺 T𝗂𝗆𝖾"</p>
+          <div className="max-w-[1000px] w-[85%] sm:w-full mt-2 sm:mt-10">
+              <h1 className="font-['Barlow_Condensed'] mt-5 text-gray-500 text-xl sm:text-3xl text-center" data-aos="zoom-in-up">
+                  Our team ensures every visit is professional, friendly, and tailored to your needs.</h1>
+          </div>
+          
+            <div className="max-w-[1100px] w-full h-auto mt-5 sm:mt-20 flex flex-col sm:flex-row items-center text-center gap-10 mx-auto" data-aos="zoom-in-up">
+              <div className="flex-1 flex flex-col items-center order-2 sm:order-1">
+                <img 
+                  src="/images/pages/dentist/bg/5.jpg" 
+                  alt="profile" 
+                  className="w-[150px] sm:w-[200px] h-[150px] sm:h-[200px] border-6 border-[#FAD691] rounded-full hidden sm:block"
+                />
+                <h1 className="text-xl sm:text-3xl font-semibold mt-0 sm:mt-4">Dr. Ellen Plariza-Pasamba</h1>
+                <h2 className="text-sm sm:text-xl text-gray-700 mt-2">General Dentistry & Orthodontics</h2>
               </div>
-
-              {/* Image Section */}
-              <div className="flex-1 mt-6 sm:mt-0">
+              <div className="flex-1 mt-6 sm:mt-0 order-1 sm:order-2">
                 <img
                   src="/images/pages/dentist/bg/1.jpg"
                   alt="Dentist"
-                  className="w-full max-w-[500px] h-auto rounded-lg"
+                  className="w-full max-w-[300px] sm:max-w-[500px] h-auto rounded-lg
+                            w-[190px] h-[254px] bg-white border-3 border-black rounded-none 
+                            shadow-[15px_15px_0_-2.5px_#fff,15px_15px_0_0_#000]"
                 />
               </div>
-
             </div>
 
+            <div className="max-w-[1100px] w-full h-auto mt-20 flex flex-col sm:flex-row items-center text-center gap-10 mx-auto" data-aos="zoom-in-up">
+              <div className="flex-1 mt-6 sm:mt-0">
+                <img
+                  src="/images/pages/dentist/bg/2.jpg"
+                  alt="Dentist"
+                  className="w-full max-w-[300px] sm:max-w-[500px] h-auto rounded-lg w-[190px] h-[254px] bg-white border-3 border-black rounded-none 
+                             shadow-[15px_15px_0_-2.5px_#fff,15px_15px_0_0_#000]"
+                />
+              </div>
+              <div className="flex-1">
+                <h1 className="text-xl sm:text-3xl font-semibold">Stay Calm & Wear Your PPE</h1>
+                <h2 className="text-sm sm:text-xl text-gray-700 mt-2">Safety first, always protected</h2>
+              </div>
+            </div>
+
+            <div className="max-w-[1100px] w-full h-auto mt-20 flex flex-col sm:flex-row items-center text-center gap-10 mx-auto" data-aos="zoom-in-up">
+              <div className="flex-1 flex flex-col items-center order-2 sm:order-1">
+                <h1 className="text-xl sm:text-3xl font-semibold">Meet Our Secretary!</h1>
+                <h2 className="text-sm sm:text-xl text-gray-700 mt-2">Ever Reliable Grace</h2>
+              </div>
+              <div className="flex-1 mt-6 sm:mt-0 order-1 sm:order-2">
+                <img
+                  src="/images/pages/dentist/bg/3.jpg"
+                  alt="Dentist"
+                  className="w-full max-w-[300px] sm:max-w-[500px] h-auto rounded-lg w-[190px] h-[254px] bg-white border-3 border-black rounded-none 
+                             shadow-[15px_15px_0_-2.5px_#fff,15px_15px_0_0_#000]"
+                />    
+              </div>
+            </div>
+
+            
 
         </div>
         </>

@@ -22,7 +22,7 @@ export default function Services() {
         </div>
         
         <div className="max-w-[1100px] w-[85%] sm:w-full mt-2 sm:mt-5">
-            <h1 className="font-['Barlow_Condensed'] mt-5 text-gray-700 text-xl sm:text-3xl text-justify sm:text-center" data-aos="zoom-in-up">
+            <h1 className="font-['Barlow_Condensed'] mt-5 text-gray-500 text-xl sm:text-3xl text-justify sm:text-center" data-aos="zoom-in-up">
                 At Artisan Dental, we provide comprehensive care to keep your smile healthy and confident. 
                 From preventive checkups to advanced treatments, our team is here to meet your dental needs 
                 with compassion and expertise.</h1>

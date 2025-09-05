@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
+import { useSwipeable } from "react-swipeable"; // <-- import
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 export default function CenteredCarousel() {
-
   useEffect(() => {
     AOS.init({ duration: 1500 });
   }, []);
@@ -22,25 +22,31 @@ export default function CenteredCarousel() {
   const prevIndex = (currentIndex - 1 + images.length) % images.length;
   const nextIndex = (currentIndex + 1) % images.length;
 
-  const prevSlide = () => {
-    setCurrentIndex(prevIndex);
-  };
+  const prevSlide = () => setCurrentIndex(prevIndex);
+  const nextSlide = () => setCurrentIndex(nextIndex);
 
-  const nextSlide = () => {
-    setCurrentIndex(nextIndex);
-  };
+  // Swipe handlers
+  const handlers = useSwipeable({
+    onSwipedLeft: () => nextSlide(),
+    onSwipedRight: () => prevSlide(),
+    preventDefaultTouchmoveEvent: true,
+    trackMouse: true, // allows swipe with mouse as well
+  });
 
-    useEffect(() => {
+  // Auto-slide
+  useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
-    }, 3000); // Change 3000 to whatever delay you want in ms
-
-    return () => clearInterval(interval); // Cleanup
-  }, [currentIndex]); // Re-run when currentIndex changes
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [currentIndex]);
 
   return (
-    <div className="relative max-w-[1100px] w-full h-full mx-auto mt-5 sm:mt-15 flex items-center justify-center overflow-hidden" data-aos="zoom-in" >
-      
+    <div
+      {...handlers} // attach swipe handlers here
+      className="relative max-w-[1100px] w-full h-full mx-auto mt-5 sm:mt-15 flex items-center justify-center overflow-hidden"
+      data-aos="zoom-in"
+    >
       {/* Left image (previous) */}
       <img
         src={images[prevIndex]}
@@ -62,7 +68,7 @@ export default function CenteredCarousel() {
         className="absolute right-1 sm:right-0 w-1/3 h-full object-cover scale-90 blur-sm rounded-2xl transition-all duration-500"
       />
 
-      {/* Navigation */}
+      {/* Navigation buttons */}
       <button
         onClick={prevSlide}
         className="absolute top-1/2 left-60 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hidden sm:block"
