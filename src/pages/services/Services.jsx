@@ -21,25 +21,25 @@ export default function Services() {
           </div>
         </div>
         
-        <div className="max-w-[1100px] w-[85%] sm:w-full mt-2 sm:mt-10">
-            <h1 className="font-['Barlow_Condensed'] mt-5 text-gray-700 text-xl sm:text-3xl text-justify sm:text-center">
+        <div className="max-w-[1100px] w-[85%] sm:w-full mt-2 sm:mt-5">
+            <h1 className="font-['Barlow_Condensed'] mt-5 text-gray-700 text-xl sm:text-3xl text-justify sm:text-center" data-aos="zoom-in-up">
                 At Artisan Dental, we provide comprehensive care to keep your smile healthy and confident. 
                 From preventive checkups to advanced treatments, our team is here to meet your dental needs 
                 with compassion and expertise.</h1>
         </div>
 
-        <div  className="max-w-[1200px] mt-10 sm:mt-20 w-full px-6 ">
+        <div  className="max-w-[1200px] mt-10 sm:mt-10 w-full px-6 ">
 
-            <div id="preventive" className="scroll-mt-50 bg-white shadow-lg rounded-2xl px-10 py-6 hover:shadow-xl transition">
-            <img src="/images/icon/tooth/Preventive.png" alt="Preventive Care" className="w-25 h-25 mx-auto" />
-            <h2 className="text-xl font-semibold text-center mt-4">Preventive Care</h2>
-            <hr className="w-20 border-t-2 border-black mx-auto mt-3" />
+            <div id="preventive" className="scroll-mt-50 bg-white shadow-lg rounded-2xl px-10 py-10 hover:shadow-xl transition ">
+            <img src="/images/icon/tooth/Preventive.png" alt="Preventive Care" className="w-25 h-25 mx-auto" data-aos="zoom-in-up"/>
+            <h2 className="text-xl font-semibold text-center mt-4" data-aos="zoom-in-up">Preventive Care</h2>
+            <hr className="w-20 border-t-2 border-black mx-auto mt-3" data-aos="zoom-in-up" />
                 <ul className="text-gray-600 text-sm grid grid-cols-1 sm:grid-cols-2 gap-4 place-items-start mt-10">
-                    <li className="max-w-[520px] w-full flex items-start gap-4 bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition">
+                    <li className="max-w-[520px] w-full flex items-start gap-4 bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition" data-aos="zoom-in-right">
                     <img
                         src="/images/icon/tooth/general.png"
                         alt="Preventive Care"
-                        className="w-20 h-20 sm:w-25 sm:h-25 object-contain mt-1"
+                        className="w-20 h-20 sm:w-25 sm:h-25 object-contain mt-5 sm:mt-1"
                     />
                     <hr />
                     <div className="flex flex-col">
@@ -54,11 +54,11 @@ export default function Services() {
                         </span>
                     </div>
                     </li>
-                    <li className="max-w-[520px] w-full flex items-start gap-4 bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition">
+                    <li className="max-w-[520px] w-full flex items-start gap-4 bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition" data-aos="zoom-in-left">
                     <img
                         src="/images/icon/tooth/general.png"
                         alt="Preventive Care"
-                        className="w-20 h-20 sm:w-25 sm:h-25 object-contain mt-1"
+                        className="w-20 h-20 sm:w-25 sm:h-25 object-contain mt-5 sm:mt-1"
                     />
                     <div className="flex flex-col">
                         <h3 className="text-md sm:text-lg font-semibold text-gray-900">
@@ -72,11 +72,11 @@ export default function Services() {
                         </span>
                     </div>
                     </li>
-                    <li className="max-w-[520px] w-full flex items-start gap-4 bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition">
+                    <li className="max-w-[520px] w-full flex items-start gap-4 bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition" data-aos="zoom-in-right">
                     <img
                         src="/images/icon/tooth/general.png"
                         alt="Preventive Care"
-                        className="w-20 h-20 sm:w-25 sm:h-25 object-contain mt-1"
+                        className="w-20 h-20 sm:w-25 sm:h-25 object-contain mt-5 sm:mt-1"
                     />
                     <div className="flex flex-col">
                         <h3 className="text-md sm:text-lg font-semibold text-gray-900">
@@ -90,11 +90,11 @@ export default function Services() {
                         </span>
                     </div>
                     </li>
-                    <li className="max-w-[520px] w-full flex items-start gap-4 bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition">
+                    <li className="max-w-[520px] w-full flex items-start gap-4 bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition" data-aos="zoom-in-left">
                     <img
                         src="/images/icon/tooth/general.png"
                         alt="Preventive Care"
-                        className="w-20 h-20 sm:w-25 sm:h-25 object-contain mt-1"
+                        className="w-20 h-20 sm:w-25 sm:h-25 object-contain mt-5 sm:mt-1"
                     />
                     <div className="flex flex-col">
                         <h3 className="text-md sm:text-lg font-semibold text-gray-900">
@@ -108,11 +108,11 @@ export default function Services() {
                         </span>
                     </div>
                     </li>
-                    <li className="max-w-[520px] w-full flex items-start gap-4 bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition">
+                    <li className="max-w-[520px] w-full flex items-start gap-4 bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition" data-aos="zoom-in-right">
                     <img
                         src="/images/icon/tooth/general.png"
                         alt="Preventive Care"
-                        className="w-20 h-20 sm:w-25 sm:h-25 object-contain mt-1"
+                        className="w-20 h-20 sm:w-25 sm:h-25 object-contain mt-5 sm:mt-1"
                     />
                     <div className="flex flex-col">
                         <h3 className="text-md sm:text-lg font-semibold text-gray-900">
@@ -129,15 +129,16 @@ export default function Services() {
                 </ul>
             </div>
 
-            <div id="restorative" className="scroll-mt-50 bg-white shadow-lg rounded-2xl px-10 py-6 hover:shadow-xl transition mt-20">
-            <img src="/images/icon/tooth/Restorative.png" alt="Preventive Care" className="w-25 h-25 mx-auto" />
-            <h2 className="text-xl font-semibold text-center mt-4">Restorative Dentistry</h2>
+            <div id="restorative" className="scroll-mt-50 bg-white shadow-lg rounded-2xl px-10 py-10 hover:shadow-xl transition mt-20">
+            <img src="/images/icon/tooth/Restorative.png" alt="Preventive Care" className="w-25 h-25 mx-auto" data-aos="zoom-in-up" />
+            <h2 className="text-xl font-semibold text-center mt-4" data-aos="zoom-in-up">Restorative Dentistry</h2>
+            <hr className="w-20 border-t-2 border-black mx-auto mt-3" data-aos="zoom-in-up" />
                 <ul className="text-gray-600 text-sm grid grid-cols-1 sm:grid-cols-2 gap-4 place-items-start mt-10">
-                    <li className="max-w-[520px] w-full flex items-start gap-4 bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition">
+                    <li className="max-w-[520px] w-full flex items-start gap-4 bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition" data-aos="zoom-in-right">
                     <img
                         src="/images/icon/tooth/general.png"
                         alt="Preventive Care"
-                        className="w-20 h-20 sm:w-25 sm:h-25 object-contain mt-1"
+                        className="w-20 h-20 sm:w-25 sm:h-25 object-contain mt-5 sm:mt-1"
                     />
                     <div className="flex flex-col">
                         <h3 className="text-md sm:text-lg font-semibold text-gray-900">
@@ -151,11 +152,11 @@ export default function Services() {
                         </span>
                     </div>
                     </li>
-                    <li className="max-w-[520px] w-full flex items-start gap-4 bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition">
+                    <li className="max-w-[520px] w-full flex items-start gap-4 bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition" data-aos="zoom-in-left">
                     <img
                         src="/images/icon/tooth/general.png"
                         alt="Preventive Care"
-                        className="w-20 h-20 sm:w-25 sm:h-25 object-contain mt-1"
+                        className="w-20 h-20 sm:w-25 sm:h-25 object-contain mt-5 sm:mt-1"
                     />
                     <div className="flex flex-col">
                         <h3 className="text-md sm:text-lg font-semibold text-gray-900">
@@ -169,11 +170,11 @@ export default function Services() {
                         </span>
                     </div>
                     </li>
-                    <li className="max-w-[520px] w-full flex items-start gap-4 bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition">
+                    <li className="max-w-[520px] w-full flex items-start gap-4 bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition" data-aos="zoom-in-right">
                     <img
                         src="/images/icon/tooth/general.png"
                         alt="Preventive Care"
-                        className="w-20 h-20 sm:w-25 sm:h-25 object-contain mt-1"
+                        className="w-20 h-20 sm:w-25 sm:h-25 object-contain mt-5 sm:mt-1"
                     />
                     <div className="flex flex-col">
                         <h3 className="text-md sm:text-lg font-semibold text-gray-900">
@@ -187,11 +188,11 @@ export default function Services() {
                         </span>
                     </div>
                     </li>
-                    <li className="max-w-[520px] w-full flex items-start gap-4 bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition">
+                    <li className="max-w-[520px] w-full flex items-start gap-4 bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition" data-aos="zoom-in-left">
                     <img
                         src="/images/icon/tooth/general.png"
                         alt="Preventive Care"
-                        className="w-20 h-20 sm:w-25 sm:h-25 object-contain mt-1"
+                        className="w-20 h-20 sm:w-25 sm:h-25 object-contain mt-5 sm:mt-1"
                     />
                     <div className="flex flex-col">
                         <h3 className="text-md sm:text-lg font-semibold text-gray-900">
@@ -205,11 +206,11 @@ export default function Services() {
                         </span>
                     </div>
                     </li>
-                    <li className="max-w-[520px] w-full flex items-start gap-4 bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition">
+                    <li className="max-w-[520px] w-full flex items-start gap-4 bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition" data-aos="zoom-in-right">
                     <img
                         src="/images/icon/tooth/general.png"
                         alt="Preventive Care"
-                        className="w-20 h-20 sm:w-25 sm:h-25 object-contain mt-1"
+                        className="w-20 h-20 sm:w-25 sm:h-25 object-contain mt-5 sm:mt-1"
                     />
                     <div className="flex flex-col">
                         <h3 className="text-md sm:text-lg font-semibold text-gray-900">
@@ -226,15 +227,16 @@ export default function Services() {
                 </ul>
             </div>
 
-            <div id="cosmetic" className="scroll-mt-50 bg-white shadow-lg rounded-2xl px-10 py-6 hover:shadow-xl transition mt-20">
-            <img src="/images/icon/tooth/Cosmetic.png" alt="Preventive Care" className="w-25 h-25 mx-auto" />
-            <h2 className="text-xl font-semibold text-center mt-4">Cosmetic Dentistry</h2>
+            <div id="cosmetic" className="scroll-mt-50 bg-white shadow-lg rounded-2xl px-10 py-10 hover:shadow-xl transition mt-20">
+            <img src="/images/icon/tooth/Cosmetic.png" alt="Preventive Care" className="w-25 h-25 mx-auto" data-aos="zoom-in-up" />
+            <h2 className="text-xl font-semibold text-center mt-4" data-aos="zoom-in-up">Cosmetic Dentistry</h2>
+            <hr className="w-20 border-t-2 border-black mx-auto mt-3" data-aos="zoom-in-up" />
                 <ul className="text-gray-600 text-sm grid grid-cols-1 sm:grid-cols-2 gap-4 place-items-start mt-10">
-                    <li className="max-w-[520px] w-full flex items-start gap-4 bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition">
+                    <li className="max-w-[520px] w-full flex items-start gap-4 bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition" data-aos="zoom-in-right">
                     <img
                         src="/images/icon/tooth/general.png"
                         alt="Preventive Care"
-                        className="w-20 h-20 sm:w-25 sm:h-25 object-contain mt-1"
+                        className="w-20 h-20 sm:w-25 sm:h-25 object-contain mt-5 sm:mt-1"
                     />
                     <div className="flex flex-col">
                         <h3 className="text-md sm:text-lg font-semibold text-gray-900">
@@ -248,11 +250,11 @@ export default function Services() {
                         </span>
                     </div>
                     </li>
-                    <li className="max-w-[520px] w-full flex items-start gap-4 bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition">
+                    <li className="max-w-[520px] w-full flex items-start gap-4 bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition" data-aos="zoom-in-left">
                     <img
                         src="/images/icon/tooth/general.png"
                         alt="Preventive Care"
-                        className="w-20 h-20 sm:w-25 sm:h-25 object-contain mt-1"
+                        className="w-20 h-20 sm:w-25 sm:h-25 object-contain mt-5 sm:mt-1"
                     />
                     <div className="flex flex-col">
                         <h3 className="text-md sm:text-lg font-semibold text-gray-900">
@@ -266,11 +268,11 @@ export default function Services() {
                         </span>
                     </div>
                     </li>
-                    <li className="max-w-[520px] w-full flex items-start gap-4 bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition">
+                    <li className="max-w-[520px] w-full flex items-start gap-4 bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition" data-aos="zoom-in-right">
                     <img
                         src="/images/icon/tooth/general.png"
                         alt="Preventive Care"
-                        className="w-20 h-20 sm:w-25 sm:h-25 object-contain mt-1"
+                        className="w-20 h-20 sm:w-25 sm:h-25 object-contain mt-5 sm:mt-1"
                     />
                     <div className="flex flex-col">
                         <h3 className="text-md sm:text-lg font-semibold text-gray-900">
@@ -284,11 +286,11 @@ export default function Services() {
                         </span>
                     </div>
                     </li>
-                    <li className="max-w-[520px] w-full flex items-start gap-4 bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition">
+                    <li className="max-w-[520px] w-full flex items-start gap-4 bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition" data-aos="zoom-in-left">
                     <img
                         src="/images/icon/tooth/general.png"
                         alt="Preventive Care"
-                        className="w-20 h-20 sm:w-25 sm:h-25 object-contain mt-1"
+                        className="w-20 h-20 sm:w-25 sm:h-25 object-contain mt-5 sm:mt-1"
                     />
                     <div className="flex flex-col">
                         <h3 className="text-md sm:text-lg font-semibold text-gray-900">
@@ -305,15 +307,16 @@ export default function Services() {
                 </ul>
             </div>
 
-            <div id="orthodontics" className="scroll-mt-50 bg-white shadow-lg rounded-2xl px-10 py-6 hover:shadow-xl transition mt-20">
-            <img src="/images/icon/tooth/Orthodontics.png" alt="Preventive Care" className="w-25 h-25 mx-auto" />
-            <h2 className="text-xl font-semibold text-center mt-4">Orthodontics</h2>
+            <div id="orthodontics" className="scroll-mt-50 bg-white shadow-lg rounded-2xl px-10 py-10 hover:shadow-xl transition mt-20">
+            <img src="/images/icon/tooth/Orthodontics.png" alt="Preventive Care" className="w-25 h-25 mx-auto" data-aos="zoom-in-up" />
+            <h2 className="text-xl font-semibold text-center mt-4" data-aos="zoom-in-up">Orthodontics</h2>
+            <hr className="w-20 border-t-2 border-black mx-auto mt-3" data-aos="zoom-in-up" />
                 <ul className="text-gray-600 text-sm grid grid-cols-1 sm:grid-cols-2 gap-4 place-items-start mt-10">
-                    <li className="max-w-[520px] w-full flex items-start gap-4 bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition">
+                    <li className="max-w-[520px] w-full flex items-start gap-4 bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition" data-aos="zoom-in-right">
                     <img
                         src="/images/icon/tooth/general.png"
                         alt="Preventive Care"
-                        className="w-20 h-20 sm:w-25 sm:h-25 object-contain mt-1"
+                        className="w-20 h-20 sm:w-25 sm:h-25 object-contain mt-5 sm:mt-1"
                     />
                     <div className="flex flex-col">
                         <h3 className="text-md sm:text-lg font-semibold text-gray-900">
@@ -327,11 +330,11 @@ export default function Services() {
                         </span>
                     </div>
                     </li>
-                    <li className="max-w-[520px] w-full flex items-start gap-4 bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition">
+                    <li className="max-w-[520px] w-full flex items-start gap-4 bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition" data-aos="zoom-in-left">
                     <img
                         src="/images/icon/tooth/general.png"
                         alt="Preventive Care"
-                        className="w-20 h-20 sm:w-25 sm:h-25 object-contain mt-1"
+                        className="w-20 h-20 sm:w-25 sm:h-25 object-contain mt-5 sm:mt-1"
                     />
                     <div className="flex flex-col">
                         <h3 className="text-md sm:text-lg font-semibold text-gray-900">
@@ -345,11 +348,11 @@ export default function Services() {
                         </span>
                     </div>
                     </li>
-                    <li className="max-w-[520px] w-full flex items-start gap-4 bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition">
+                    <li className="max-w-[520px] w-full flex items-start gap-4 bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition" data-aos="zoom-in-right">
                     <img
                         src="/images/icon/tooth/general.png"
                         alt="Preventive Care"
-                        className="w-20 h-20 sm:w-25 sm:h-25 object-contain mt-1"
+                        className="w-20 h-20 sm:w-25 sm:h-25 object-contain mt-5 sm:mt-1"
                     />
                     <div className="flex flex-col">
                         <h3 className="text-md sm:text-lg font-semibold text-gray-900">
@@ -366,15 +369,16 @@ export default function Services() {
                 </ul>
             </div>
 
-            <div id="periodontal" className="scroll-mt-50 bg-white shadow-lg rounded-2xl px-10 py-6 hover:shadow-xl transition mt-20">
-            <img src="/images/icon/tooth/Periodontal.png" alt="Preventive Care" className="w-25 h-25 mx-auto" />
-            <h2 className="text-xl font-semibold text-center mt-4">Periodontal Care</h2>
+            <div id="periodontal" className="scroll-mt-50 bg-white shadow-lg rounded-2xl px-10 py-10 hover:shadow-xl transition mt-20">
+            <img src="/images/icon/tooth/Periodontal.png" alt="Preventive Care" className="w-25 h-25 mx-auto" data-aos="zoom-in-up" />
+            <h2 className="text-xl font-semibold text-center mt-4" data-aos="zoom-in-up">Periodontal Care</h2>
+            <hr className="w-20 border-t-2 border-black mx-auto mt-3" data-aos="zoom-in-up" />
                 <ul className="text-gray-600 text-sm grid grid-cols-1 sm:grid-cols-2 gap-4 place-items-start mt-10">
-                    <li className="max-w-[520px] w-full flex items-start gap-4 bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition">
+                    <li className="max-w-[520px] w-full flex items-start gap-4 bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition" data-aos="zoom-in-right">
                     <img
                         src="/images/icon/tooth/general.png"
                         alt="Preventive Care"
-                        className="w-20 h-20 sm:w-25 sm:h-25 object-contain mt-1"
+                        className="w-20 h-20 sm:w-25 sm:h-25 object-contain mt-5 sm:mt-1"
                     />
                     <div className="flex flex-col">
                         <h3 className="text-md sm:text-lg font-semibold text-gray-900">
@@ -388,12 +392,12 @@ export default function Services() {
                         </span>
                     </div>
                     </li>
-                    <li className="max-w-[520px] w-full flex items-start gap-4 bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition">
+                    <li className="max-w-[520px] w-full flex items-start gap-4 bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition" data-aos="zoom-in-left">
                     <img
                         src="/images/icon/tooth/general.png"
                         alt="Preventive Care"
-                        className="w-20 h-20 sm:w-25 sm:h-25 object-contain mt-1"
-                    />bg-white shadow-lg rounded-2xl px-10 py-6 hover:shadow-xl transition mt-
+                        className="w-20 h-20 sm:w-25 sm:h-25 object-contain mt-5 sm:mt-1"
+                    />
                     <div className="flex flex-col">
                         <h3 className="text-md sm:text-lg font-semibold text-gray-900">
                         Gum grafts
@@ -406,11 +410,11 @@ export default function Services() {
                         </span>
                     </div>
                     </li>
-                    <li className="max-w-[520px] w-full flex items-start gap-4 bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition">
+                    <li className="max-w-[520px] w-full flex items-start gap-4 bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition" data-aos="zoom-in-right">
                     <img
                         src="/images/icon/tooth/general.png"
                         alt="Preventive Care"
-                        className="w-20 h-20 sm:w-25 sm:h-25 object-contain mt-1"
+                        className="w-20 h-20 sm:w-25 sm:h-25 object-contain mt-5 sm:mt-1"
                     />
                     <div className="flex flex-col">
                         <h3 className="text-md sm:text-lg font-semibold text-gray-900">
@@ -427,15 +431,16 @@ export default function Services() {
                 </ul>
             </div>
 
-            <div id="oral" className="scroll-mt-50 bg-white shadow-lg rounded-2xl px-10 py-6 hover:shadow-xl transition mt-20">
-            <img src="/images/icon/tooth/Oral.png" alt="Preventive Care" className="w-25 h-25 mx-auto" />
-            <h2 className="text-xl font-semibold text-center mt-4">Oral Surgery</h2>
+            <div id="oral" className="scroll-mt-50 bg-white shadow-lg rounded-2xl px-10 py-10 hover:shadow-xl transition mt-20">
+            <img src="/images/icon/tooth/Oral.png" alt="Preventive Care" className="w-25 h-25 mx-auto" data-aos="zoom-in-up" />
+            <h2 className="text-xl font-semibold text-center mt-4" data-aos="zoom-in-up">Oral Surgery</h2>
+            <hr className="w-20 border-t-2 border-black mx-auto mt-3" data-aos="zoom-in-up" />
                 <ul className="text-gray-600 text-sm grid grid-cols-1 sm:grid-cols-2 gap-4 place-items-start mt-10">
-                    <li className="max-w-[520px] w-full flex items-start gap-4 bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition">
+                    <li className="max-w-[520px] w-full flex items-start gap-4 bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition" data-aos="zoom-in-right">
                     <img
                         src="/images/icon/tooth/general.png"
                         alt="Preventive Care"
-                        className="w-20 h-20 sm:w-25 sm:h-25 object-contain mt-1"
+                        className="w-20 h-20 sm:w-25 sm:h-25 object-contain mt-5 sm:mt-1"
                     />
                     <div className="flex flex-col">
                         <h3 className="text-md sm:text-lg font-semibold text-gray-900">
@@ -449,11 +454,11 @@ export default function Services() {
                         </span>
                     </div>
                     </li>
-                    <li className="max-w-[520px] w-full flex items-start gap-4 bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition">
+                    <li className="max-w-[520px] w-full flex items-start gap-4 bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition" data-aos="zoom-in-left">
                     <img
                         src="/images/icon/tooth/general.png"
                         alt="Preventive Care"
-                        className="w-20 h-20 sm:w-25 sm:h-25 object-contain mt-1"
+                        className="w-20 h-20 sm:w-25 sm:h-25 object-contain mt-5 sm:mt-1"
                     />
                     <div className="flex flex-col">
                         <h3 className="text-md sm:text-lg font-semibold text-gray-900">
@@ -467,11 +472,11 @@ export default function Services() {
                         </span>
                     </div>
                     </li>
-                    <li className="max-w-[520px] w-full flex items-start gap-4 bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition">
+                    <li className="max-w-[520px] w-full flex items-start gap-4 bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition" data-aos="zoom-in-right">
                     <img
                         src="/images/icon/tooth/general.png"
                         alt="Preventive Care"
-                        className="w-20 h-20 sm:w-25 sm:h-25 object-contain mt-1"
+                        className="w-20 h-20 sm:w-25 sm:h-25 object-contain mt-5 sm:mt-1"
                     />
                     <div className="flex flex-col">
                         <h3 className="text-md sm:text-lg font-semibold text-gray-900">
@@ -488,15 +493,16 @@ export default function Services() {
                 </ul>
             </div>
 
-            <div id="pediatric" className="scroll-mt-50 bg-white shadow-lg rounded-2xl px-10 py-6 hover:shadow-xl transition mt-20">
-            <img src="/images/icon/tooth/Pediatric.png" alt="Preventive Care" className="w-25 h-25 mx-auto" />
-            <h2 className="text-xl font-semibold text-center mt-4">Pediatric Dentistry</h2>
+            <div id="pediatric" className="scroll-mt-50 bg-white shadow-lg rounded-2xl px-10 py-10 hover:shadow-xl transition mt-20">
+            <img src="/images/icon/tooth/Pediatric.png" alt="Preventive Care" className="w-25 h-25 mx-auto" data-aos="zoom-in-up" />
+            <h2 className="text-xl font-semibold text-center mt-4" data-aos="zoom-in-up">Pediatric Dentistry</h2>
+            <hr className="w-20 border-t-2 border-black mx-auto mt-3" data-aos="zoom-in-up" />
                 <ul className="text-gray-600 text-sm grid grid-cols-1 sm:grid-cols-2 gap-4 place-items-start mt-10">
-                    <li className="max-w-[520px] w-full flex items-start gap-4 bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition">
+                    <li className="max-w-[520px] w-full flex items-start gap-4 bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition" data-aos="zoom-in-right">
                     <img
                         src="/images/icon/tooth/general.png"
                         alt="Preventive Care"
-                        className="w-20 h-20 sm:w-25 sm:h-25 object-contain mt-1"
+                        className="w-20 h-20 sm:w-25 sm:h-25 object-contain mt-5 sm:mt-1"
                     />
                     <div className="flex flex-col">
                         <h3 className="text-md sm:text-lg font-semibold text-gray-900">
@@ -510,11 +516,11 @@ export default function Services() {
                         </span>
                     </div>
                     </li>
-                    <li className="max-w-[520px] w-full flex items-start gap-4 bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition">
+                    <li className="max-w-[520px] w-full flex items-start gap-4 bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition" data-aos="zoom-in-left">
                     <img
                         src="/images/icon/tooth/general.png"
                         alt="Preventive Care"
-                        className="w-20 h-20 sm:w-25 sm:h-25 object-contain mt-1"
+                        className="w-20 h-20 sm:w-25 sm:h-25 object-contain mt-5 sm:mt-1"
                     />
                     <div className="flex flex-col">
                         <h3 className="text-md sm:text-lg font-semibold text-gray-900">
@@ -528,11 +534,11 @@ export default function Services() {
                         </span>
                     </div>
                     </li>
-                    <li className="max-w-[520px] w-full flex items-start gap-4 bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition">
+                    <li className="max-w-[520px] w-full flex items-start gap-4 bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition" data-aos="zoom-in-right">
                     <img
                         src="/images/icon/tooth/general.png"
                         alt="Preventive Care"
-                        className="w-20 h-20 sm:w-25 sm:h-25 object-contain mt-1"
+                        className="w-20 h-20 sm:w-25 sm:h-25 object-contain mt-5 sm:mt-1"
                     />
                     <div className="flex flex-col">
                         <h3 className="text-md sm:text-lg font-semibold text-gray-900">
@@ -549,15 +555,16 @@ export default function Services() {
                 </ul>
             </div>
 
-            <div id="emergency" className="scroll-mt-50 bg-white shadow-lg rounded-2xl px-10 py-6 hover:shadow-xl transition mt-20">
-            <img src="/images/icon/tooth/Emergency.png" alt="Preventive Care" className="w-25 h-25 mx-auto" />
-            <h2 className="text-xl font-semibold text-center mt-4">Emergency Dentistry</h2>
+            <div id="emergency" className="scroll-mt-50 bg-white shadow-lg rounded-2xl px-10 py-10 hover:shadow-xl transition mt-20">
+            <img src="/images/icon/tooth/Emergency.png" alt="Preventive Care" className="w-25 h-25 mx-auto" data-aos="zoom-in-up" />
+            <h2 className="text-xl font-semibold text-center mt-4" data-aos="zoom-in-up">Emergency Dentistry</h2>
+            <hr className="w-20 border-t-2 border-black mx-auto mt-3" data-aos="zoom-in-up" />
                 <ul className="text-gray-600 text-sm grid grid-cols-1 sm:grid-cols-2 gap-4 place-items-start mt-10">
-                    <li className="max-w-[520px] w-full flex items-start gap-4 bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition">
+                    <li className="max-w-[520px] w-full flex items-start gap-4 bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition" data-aos="zoom-in-right">
                     <img
                         src="/images/icon/tooth/general.png"
                         alt="Preventive Care"
-                        className="w-20 h-20 sm:w-25 sm:h-25 object-contain mt-1"
+                        className="w-20 h-20 sm:w-25 sm:h-25 object-contain mt-5 sm:mt-1"
                     />
                     <div className="flex flex-col">
                         <h3 className="text-md sm:text-lg font-semibold text-gray-900">
@@ -571,11 +578,11 @@ export default function Services() {
                         </span>
                     </div>
                     </li>
-                    <li className="max-w-[520px] w-full flex items-start gap-4 bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition">
+                    <li className="max-w-[520px] w-full flex items-start gap-4 bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition" data-aos="zoom-in-left">
                     <img
                         src="/images/icon/tooth/general.png"
                         alt="Preventive Care"
-                        className="w-20 h-20 sm:w-25 sm:h-25 object-contain mt-1"
+                        className="w-20 h-20 sm:w-25 sm:h-25 object-contain mt-5 sm:mt-1"
                     />
                     <div className="flex flex-col">
                         <h3 className="text-md sm:text-lg font-semibold text-gray-900">
@@ -589,11 +596,11 @@ export default function Services() {
                         </span>
                     </div>
                     </li>
-                    <li className="max-w-[520px] w-full flex items-start gap-4 bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition">
+                    <li className="max-w-[520px] w-full flex items-start gap-4 bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition" data-aos="zoom-in-right">
                     <img
                         src="/images/icon/tooth/general.png"
                         alt="Preventive Care"
-                        className="w-20 h-20 sm:w-25 sm:h-25 object-contain mt-1"
+                        className="w-20 h-20 sm:w-25 sm:h-25 object-contain mt-5 sm:mt-1"
                     />
                     <div className="flex flex-col">
                         <h3 className="text-md sm:text-lg font-semibold text-gray-900">
@@ -611,7 +618,7 @@ export default function Services() {
             </div>
 
         <div className="max-w-[1100px] w-full mt-2 sm:mt-10">
-            <h1 className="font-['M_PLUS_Rounded_1c'] mt-10 text-gray-800 text-md sm:text-xl text-center sm:text-center">
+            <h1 className="font-['M_PLUS_Rounded_1c'] mt-10 text-gray-800 text-md sm:text-xl text-center sm:text-center" data-aos="zoom-in-up">
                 The times listed are approximate and may vary depending on each patient’s needs.</h1>
         </div>
 

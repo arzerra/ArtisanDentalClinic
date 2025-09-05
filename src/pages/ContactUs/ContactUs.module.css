@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 .contactContainer {
     width: 100%;
@@ -14,40 +16,48 @@
 }
 
 .contactBackground {
+  position: relative;
   width: 100%;
   height: 350px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  padding-bottom: 90px; 
+  padding-bottom: 100px;
+  overflow: hidden;
+}
 
-  background-image: 
-    linear-gradient(
-      to bottom,
-      rgba(128, 128, 128, 0.3),  
-      rgba(128, 128, 128, 0.0)   
-    ),
-    url("/images/pages/contactUs/bg/contactUs.jpg");
-    
+.contactBackground::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("/images/pages/contactUs/bg/contactUs7.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed; 
+  background-attachment: fixed;
+
+  filter: blur(5px);
+  z-index: 0;
+}
+
+.contactBackground>* {
+  position: relative;
+  z-index: 1;
 }
 
 .contactBackground h1 {
   text-align: center;
   color: white;
-  font-size: 4rem;
-  font-weight: bold;
+  font-size: 3rem;
   font-family: "Archivo Black", sans-serif;
   text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.4);
 }
 
 .contentTitle{
   margin-top: 30px;
-  font-size: 2.7rem;
-  font-family: "Dancing Script", cursive;
+  font-size: 1.875rem;
+  font-family: "Barlow Condensed", cursive;
+  color: #374151;
 }
 
 .contactContent {
@@ -136,17 +146,11 @@
 }
     .contactContent {
       flex-direction: column;
-      /* stack items */
       align-items: center;
-      /* center them */
       text-align: center;
-      /* center text */
       gap: 20px;
-      /* reduce spacing */
       padding: 20px;
-      /* smaller padding */
       max-width: 100%;
-      /* take full width */
     }
   .contactInfo {
       text-align: center;

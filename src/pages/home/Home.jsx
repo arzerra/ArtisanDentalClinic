@@ -253,19 +253,27 @@ export default function Home() {
       </div>
 
 
-      <div className="w-full h-[280px] sm:h-[400px] mt-20 sm:mt-30 relative overflow-hidden bg-cover bg-center bg-no-repeat"
-            style={{ backgroundImage: "url('/images/pages/home/bg/8.jpg')" }} >
-        <div className="absolute inset-0 bg-black/20"></div>
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
-          <h1 className="text-white text-3xl sm:text-6xl font-bold drop-shadow-lg" data-aos="fade-right">
-            "Time Heals Everything" 
-          </h1>
-          <p className="text-white text-md sm:text-3xl mt-2 sm:mt-4 drop-shadow-md" data-aos="fade-left">
-            ...except cavities, they need a dentist!
-          </p>
-        </div>
+    <div className="w-full h-[280px] sm:h-[400px] mt-20 sm:mt-30 relative overflow-hidden">
+      <img
+        src="/images/pages/home/bg/8.jpg"
+        alt="Time Heals Everything"
+        className="
+          w-full h-full object-cover
+          scale-100 sm:scale-150 md:scale-100 lg:scale-100
+          transition-transform duration-[4000ms] ease-in-out
+          hover:scale-110 slide-up-scale
+        "
+      />
+      <div className="absolute inset-0 bg-black/20"></div>
+      <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
+        <h1 className="text-white text-3xl sm:text-6xl font-bold drop-shadow-lg" data-aos="fade-right">
+          "Time Heals Everything" 
+        </h1>
+        <p className="text-white text-md sm:text-3xl mt-2 sm:mt-4 drop-shadow-md" data-aos="fade-left">
+          ...except cavities, they need a dentist!
+        </p>
       </div>
-
+    </div>
 
     <div className="w-[95%] sm:w-full max-w-[1080px] h-auto sm:h-[130px] bg-white shadow-md rounded-2xl mt-20 mx-auto flex flex-col sm:flex-row items-center sm:justify-between justify-center text-center sm:text-center px-6 sm:px-10 py-6 sm:py-6">
       <p className="text-gray-700 text-2xl sm:text-4xl font-medium mb-4 sm:mb-0" data-aos="fade-right">
