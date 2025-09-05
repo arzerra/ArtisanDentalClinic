@@ -1,6 +1,7 @@
 import Carousel from "./components/Carousel.jsx";
 import Typewriter from "typewriter-effect";
 import { useEffect, useRef, useState } from "react";
+import { FaFacebook   } from "react-icons/fa";
 
 
 export default function Home() {
@@ -55,14 +56,14 @@ export default function Home() {
 
         <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-black/10 to-transparent"></div>
 
-        <div className="absolute inset-0 flex flex-col items-center justify-start mt-40 sm:mt-75 px-4 text-center" >
+        <div className="absolute inset-0 flex flex-col items-center justify-start mt-40 sm:mt-80 md:mt-60 px-4 text-center" >
           <h1 className="font-medium text-white text-sm sm:text-xl md:text-xl drop-shadow-lg">
             Today is {day} of {month}
           </h1>
           <h1 className="font-['Archivo_Black'] text-white text-3xl sm:text-3xl md:text-5xl drop-shadow-lg mt-1 sm:mt-4">
             Your Trusted Dental Care that is
           </h1>
-          <h1 className="font-['Archivo_Black'] text-white text-3xl sm:text-3xl md:text-5xl drop-shadow-lg mt-2 sm:mt-10">
+          <h1 className="font-['Archivo_Black'] text-white text-3xl sm:text-3xl md:text-5xl drop-shadow-lg">
             <Typewriter
               options={{
                 strings: ["Quality", "Affordable", "Exceptional"],
@@ -223,17 +224,18 @@ export default function Home() {
     </div>
 
       <div className="max-w-[1100px] w-full h-auto mt-20 flex flex-col items-center text-center">
-        <h1 ref={ref} className="font-['Smooch_Sans'] text-black text-4xl sm:text-3xl md:text-5xl drop-shadow-lg mt-1 sm:mt-3" data-aos="zoom-in-up">Our Work</h1>
+        <h1 ref={ref} className="font-['Smooch_Sans'] text-black text-4xl sm:text-3xl md:text-5xl drop-shadow-lg" data-aos="zoom-in-up">Our Work</h1>
         <p className="text-gray-600 text-md sm:text-xl mt-2 sm:mt-4 px-10" data-aos="zoom-in-up"> Take a look at some of the results we’ve achieved for our patients. </p>
         <Carousel/>
       </div>
+
 
       <div className="w-full h-[280px] sm:h-[400px] mt-20 sm:mt-30 relative overflow-hidden bg-cover bg-center bg-no-repeat"
             style={{ backgroundImage: "url('/images/pages/home/bg/8.jpg')" }} data-aos="fade-right">
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
           <h1 className="text-white text-3xl sm:text-6xl font-bold drop-shadow-lg">
-            "Time heals everything" 
+            "Time Heals Everything" 
           </h1>
           <p className="text-white text-md sm:text-3xl mt-2 sm:mt-4 drop-shadow-md">
             ...except cavities, they need a dentist!
@@ -241,7 +243,27 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="max-w-[1100px] w-full mx-auto mt-10 items-center text-center px-3" >
+
+      <div className="w-[95%] sm:w-full max-w-[1080px] h-[150px] sm:h-[130px] bg-white shadow-md rounded-2xl mt-20 mx-auto flex flex-col sm:flex-row items-center justify-between px-10 py-4">
+        <p className="text-gray-700 text-3xl sm:text-4xl font-medium mb-5 sm:mb-0">
+          Follow us on Facebook
+        </p>
+        <a
+          href="https://www.facebook.com/yourpage"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="relative flex items-center gap-x-2 px-8 py-4 overflow-hidden group bg-blue-600 hover:bg-blue-700 text-white text-xl font-semibold rounded-full transition-all ease-out duration-300"
+        >
+          <span
+            className="absolute right-0 w-10 h-full top-0 transition-all duration-1000 transform translate-x-12 bg-white opacity-20 -skew-x-12 group-hover:-translate-x-40 ease"
+          ></span>
+
+          <FaFacebook className="relative text-xl" />
+          <span className="relative">@ArtisanDental</span>
+        </a>
+      </div>
+
+      <div className="max-w-[1100px] w-full mx-auto mt-20 items-center text-center px-3" >
         <h1 ref={ref} className="font-['Smooch_Sans'] text-black text-4xl sm:text-3xl md:text-5xl drop-shadow-lg mt-1 sm:mt-4" data-aos="zoom-in-up">Our Location</h1>
         <p className="text-gray-600 text-md sm:text-xl mt-2 sm:mt-4 px-2" data-aos="zoom-in-up"> Room 8, 2nd Floor, Emilia Mindanao Souvenir Center, CM Recto St., Claveria, Davao City</p>
         <div className="w-full max-w-[1100px] mx-auto rounded-3xl overflow-hidden border-5 sm:border-8 border-[#FFFFF0] mt-5 sm:mt-10" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
