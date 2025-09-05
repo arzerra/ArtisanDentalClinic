@@ -128,8 +128,8 @@
 
 @media (max-width: 600px) {
   .contactBackground {
-    height: 250px;
-    padding-bottom: 50px; 
+    height: 350px;
+    padding-bottom: 120px; 
   }
   .contactBackground h1 {
   font-size: 3rem;

@@ -3,6 +3,7 @@ import Typewriter from "typewriter-effect";
 import { useEffect, useRef, useState } from "react";
 import { FaFacebook   } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 
 
 export default function Home() {
@@ -122,6 +123,7 @@ export default function Home() {
     <div className="max-w-[1100px] w-full h-auto mt-2 sm:mt-5 grid grid-cols-2 sm:grid-cols-4">
 
       {/* Preventive */}
+      <HashLink smooth  to="/services#preventive">
       <div className="group w-36 sm:w-44 h-44 [perspective:1000px] mx-auto" data-aos="zoom-in">
         <div className="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
           {/* Front */}
@@ -135,8 +137,10 @@ export default function Home() {
           </div>
         </div>
       </div>
+      </HashLink >
 
       {/* Restorative */}
+      <HashLink smooth  to="/services#restorative">
       <div className="group w-36 sm:w-44 h-44 [perspective:1000px] mx-auto" data-aos="zoom-in">
         <div className="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
           <div className="absolute inset-0 flex flex-col items-center justify-center backface-hidden">
@@ -148,8 +152,10 @@ export default function Home() {
           </div>
         </div>
       </div>
+      </HashLink >
 
       {/* Cosmetic */}
+      <HashLink smooth  to="/services#cosmetic">
       <div className="group w-36 sm:w-44 h-44 [perspective:1000px] mx-auto" data-aos="zoom-in">
         <div className="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
           <div className="absolute inset-0 flex flex-col items-center justify-center backface-hidden">
@@ -161,8 +167,10 @@ export default function Home() {
           </div>
         </div>
       </div>
+      </HashLink >
 
       {/* Orthodontics */}
+      <HashLink smooth  to="/services#orthodontics">
       <div className="group w-36 sm:w-44 h-44 [perspective:1000px] mx-auto" data-aos="zoom-in">
         <div className="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
           <div className="absolute inset-0 flex flex-col items-center justify-center backface-hidden">
@@ -174,8 +182,10 @@ export default function Home() {
           </div>
         </div>
       </div>
+      </HashLink >
 
       {/* Periodontal */}
+      <HashLink smooth  to="/services#periodontal">
       <div className="group w-36 sm:w-44 h-44 [perspective:1000px] mx-auto" data-aos="zoom-in">
         <div className="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
           <div className="absolute inset-0 flex flex-col items-center justify-center backface-hidden">
@@ -187,8 +197,10 @@ export default function Home() {
           </div>
         </div>
       </div>
+      </HashLink >
 
       {/* Oral Surgery */}
+      <HashLink smooth  to="/services#oral">
       <div className="group w-36 sm:w-44 h-44 [perspective:1000px] mx-auto" data-aos="zoom-in">
         <div className="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
           <div className="absolute inset-0 flex flex-col items-center justify-center backface-hidden">
@@ -200,8 +212,10 @@ export default function Home() {
           </div>
         </div>
       </div>
+      </HashLink >
 
       {/* Pediatric */}
+      <HashLink smooth  to="/services#pediatric">
       <div className="group w-36 sm:w-44 h-44 [perspective:1000px] mx-auto" data-aos="zoom-in">
         <div className="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
           <div className="absolute inset-0 flex flex-col items-center justify-center backface-hidden">
@@ -213,8 +227,10 @@ export default function Home() {
           </div>
         </div>
       </div>
+      </HashLink >
 
       {/* Emergency */}
+      <HashLink smooth  to="/services#emergency">
       <div className="group w-36 sm:w-44 h-44 [perspective:1000px] mx-auto" data-aos="zoom-in">
         <div className="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
           <div className="absolute inset-0 flex flex-col items-center justify-center backface-hidden">
@@ -226,6 +242,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      </HashLink >
     </div>
     </div>
 
