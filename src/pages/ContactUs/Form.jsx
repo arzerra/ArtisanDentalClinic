@@ -47,7 +47,7 @@ const StyledWrapper = styled.div`
     text-align: center;
     align-items: center;
     font-family: 'Quicksand', sans-serif;
-
+    font-size: 1.3rem;
   }
 
   .message {

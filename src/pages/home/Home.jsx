@@ -1,4 +1,5 @@
 import Carousel from "./components/Carousel.jsx";
+import BentoInsta from "./components/BentoInsta.jsx";
 import Typewriter from "typewriter-effect";
 import { useEffect, useRef, useState } from "react";
 import { FaFacebook   } from "react-icons/fa";
@@ -287,7 +288,7 @@ export default function Home() {
       </div>
     </div>
 
-
+        {/* <BentoInsta/> */}
 
       <div className="max-w-[1100px] w-full mx-auto mt-20 items-center text-center px-3" >
         <h1 ref={ref} className="font-['Smooch_Sans'] text-black text-4xl sm:text-3xl md:text-5xl drop-shadow-lg mt-1 sm:mt-4" data-aos="zoom-in-up">Our Location</h1>

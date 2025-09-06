@@ -47,23 +47,23 @@ function Header() {
       <nav className={menuOpen ? style["nav-open"] : ""}>
         <ul>
           <li className={currentPath === "/" ? style.active : ""}>
-            <Link to="/" onClick={handleLinkClick}>Home</Link>
+            <Link to="/" onClick={(e) => {e.preventDefault(); window.location.href = "/";}}>Home</Link>
           </li>
           <li className={currentPath === "/about" ? style.active : ""}>
-            <Link to="/about" onClick={handleLinkClick}>About Us</Link>
+            <Link to="/about" onClick={(e) => {e.preventDefault(); window.location.href = "/about";}}>About Us</Link>
           </li>
           <li className={currentPath === "/services" ? style.active : ""}>
-            <Link to="/services" onClick={handleLinkClick}>Services</Link>
+            <Link to="/services" onClick={(e) => {e.preventDefault(); window.location.href = "/services";}}>Services</Link>
           </li>
           <li className={currentPath === "/dentist" ? style.active : ""}>
-            <Link to="/dentist" onClick={handleLinkClick}>Dentist</Link>
+            <Link to="/dentist" onClick={(e) => {e.preventDefault(); window.location.href = "/dentist";}}>Dentist</Link>
           </li>
           <li className={currentPath === "/contact" ? style.active : ""}>
-            <Link to="/contact" onClick={handleLinkClick}>Contact Us</Link>
+            <Link to="/contact" onClick={(e) => {e.preventDefault(); window.location.href = "/contact";}}>Contact Us</Link>
           </li>
           <span>|</span>
           <button className={currentPath === "/appointments" ? style.active : ""}>
-            <Link to="/appointments" onClick={handleLinkClick}>Appointment</Link></button>
+            <Link to="/appointments" onClick={(e) => {e.preventDefault(); window.location.href = "/appointments";}}>Appointment</Link></button>
         </ul>
       </nav>
     </header>
