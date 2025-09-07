@@ -23,14 +23,15 @@ export default function AboutUs() {
           </div>         
         </div>
 
-        <div className="max-w-[1100px] w-[85%] sm:w-full mt-2 sm:mt-5">
-            <h1 className="font-['Anton'] mt-5 text-gray-8s00 text-xl sm:text-5xl text-justify sm:text-center" >
-                Welcome to Artisan Dental</h1>
+        <div className="max-w-[1100px] w-[85%] sm:w-full mt-1 sm:mt-5">
+            <div className="flex items-center justify-center mt-10">
+            <img src="images/logo/adc1.png" alt="Artisan" className="w-120"/>
+            </div>
         </div>
         <div className="max-w-[1100px] w-[85%] sm:w-full mt-2 sm:mt-5">
             <h1 className="font-['Barlow_Condensed'] mt-5 text-gray-500 text-xl sm:text-3xl text-justify sm:text-center" >
                 Where healthy smiles are crafted with care, comfort, and expertise. 
-                We’re here to make your dental journey stress-free and give you every reason to smile with confidence..</h1>
+                We’re here to make your dental journey stress-free and give you every reason to smile with confidence.</h1>
         </div>
 
               <section className="max-w-[1100px] w-full px-6 sm:px-0 mt-12 mx-auto">
