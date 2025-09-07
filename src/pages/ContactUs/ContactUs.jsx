@@ -5,9 +5,29 @@ import Form from './Form';
 export default function ContactUs() {
   return (
     <div className={styles.contactContainer}>
-      <div className={styles.contactBackground}>
-        <h1>Contact Us</h1>
-      </div>
+        <div className="relative w-full max-h-[800px] overflow-hidden">
+          <img
+            src="/images/pages/contactUs/bg/4.jpg"
+            loading="eager"
+            fetchPriority="high"
+            alt="background"
+            className="
+              object-cover object-[50%_20%] sm:object-[50%_45%] w-full blur-[1px] lg:blur-[5px]
+              h-[350px] sm:h-[600px] md:h-[600px] lg:h-[350px]
+            "
+
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-transparent via-black/10 to-black/40"></div>
+
+          <div className="absolute inset-0 flex flex-col items-center justify-center px-4 text-center pt-0 sm:pt-20">
+            <h1 className="font-['Rock_Salt'] text-white text-5xl sm:text-7xl font-bold drop-shadow-lg"             
+            style={{
+            textShadow: '1px 1px 0px black'
+            }}>
+              Contact Us
+            </h1>
+          </div>
+        </div>
 
       <h1 className={styles.contentTitle} data-aos="zoom-in-up">Hi, how can we help?</h1>
 

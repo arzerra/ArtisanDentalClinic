@@ -5,7 +5,7 @@ const Form = () => {
   return (
     <StyledWrapper>
       <form className="form">
-        <h1>Send us a message</h1>
+        <h1>Send us a Message</h1>
           <label>
             <input required  type="text" className="input" />
             <span>Name</span>

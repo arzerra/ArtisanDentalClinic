@@ -29,7 +29,6 @@ function NumberCounter() {
             <div className="flex flex-col items-center justify-center">
                 <p className='text-5xl'>
                 <CountUp 
-                start={0} 
                 end={3} 
                 duration={3} 
                 enableScrollSpy={true} 
