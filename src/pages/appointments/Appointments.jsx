@@ -1,4 +1,4 @@
-import SmsForm from "./components/smsForm.jsx";
+import SmsForm from "./components/SmsForm.jsx";
 import { FaFacebook   } from "react-icons/fa";
 
 
