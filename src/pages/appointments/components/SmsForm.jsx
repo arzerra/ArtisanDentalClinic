@@ -9,7 +9,7 @@ function SmsForm() {
             className="flex items-center justify-between p-2 md:p-5 border-b rounded-t"
         >
               <div>
-                    <h3 className="text-lg font-semibold text-gray-900 flex items-center gap-2">
+                    <h3 className="text-base sm:text-lg font-semibold text-gray-900 flex items-center gap-2">
                     To: Artisan Dental Clinic <img src="images/pages/appointment/bg/tooth.png" alt="tooth" className='w-6 h-6' />
                     </h3>
                     <p className="text-[12px] sm:text-sm text-gray-700 mt-1 ml-7">0961-943-7592 / 0917-717-5300</p>
