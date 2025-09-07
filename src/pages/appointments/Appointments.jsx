@@ -12,7 +12,7 @@ export default function Appointments(){
                     alt="background"
                     className="
                     object-cover object-[50%_53%] w-full blur-[0.5px] lg:blur-[0.5px]
-                    h-[350px] sm:h-[600px] md:h-[600px] lg:h-[900px]
+                    h-[350px] sm:h-[600px] md:h-[600px] lg:h-[350px]
                     "
                 />
             <div className="absolute inset-0 bg-gradient-to-t from-transparent via-black/10 to-black/40"></div>
