@@ -26,7 +26,7 @@ export default function Appointments(){
 
                 <ul className="font-['Quicksand'] text-gray-600 text-sm grid grid-cols-1 gap-10 w-full px-4 sm:px-0 mt-10">
                 <li className="w-full flex justify-center">
-                    <div className="max-w-[1100px] w-full flex flex-col py-8 gap-4 bg-white shadow-md rounded-2xl p-4 hover:shadow-lg transition">
+                    <div className="max-w-[1100px] w-full flex flex-col py-8 gap-4 bg-white shadow-md rounded-3xl p-4 hover:shadow-lg transition">
                     
                     <h1 
                         className="font-['Quicksand'] text-2xl sm:text-3xl font-semibold text-gray-900 text-center mt-3 mb-10" 
@@ -52,6 +52,97 @@ export default function Appointments(){
                     </div>
                     </div>
                 </li>
+                <li className="w-full flex justify-center">
+                    <div className="max-w-[1100px] w-full flex flex-col py-8 gap-4 bg-white shadow-md rounded-3xl p-4 hover:shadow-lg transition">
+                    
+                    <h1 
+                        className="font-['Quicksand'] text-2xl sm:text-3xl font-semibold text-gray-900 text-center mt-3 mb-3" 
+                        data-aos="zoom-in-up"
+                    >
+                        CALL US
+                    </h1>
+                    
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
+                        
+                        <div className="flex justify-center order-1 sm:order-2 mb-3">
+                        <img 
+                            src="/images/pages/appointment/bg/call2.svg" 
+                            alt="SMS Form" 
+                            className="w-50 sm:w-100 h-auto max-w-full" 
+                            data-aos="fade-up"
+                        />
+                        </div>
+                        
+                        <div className="flex flex-col justify-center text-sm sm:text-xl mx-5 sm:mx-10 order-2 sm:order-1" data-aos="fade-up">
+                            <div className="font-['Quicksand'] text-black text-xl sm:text-3xl text-center sm:text-start items-center sm:items-left mt-0 sm:-mt-3">
+                                <h3 className="mt-1">
+                                To arrange your appointment, contact us through any of these numbers:
+                                </h3>
+                                </div>
+                                <div className="text-2xl text-center items-center">
+                                <h3 className="text-black mt-5 sm:mt-1">
+                                SMART
+                                </h3>
+                                <h3 className="text-gray-600 mt-1">
+                                0961-943-7592 
+                                </h3>
+                                <h3 className="text-black mt-5">
+                                Globe
+                                </h3>
+                                <h3 className="text-gray-600 mt-1">
+                                0917-717-5300
+                                </h3>
+                                </div>
+                                <div className="text-gray-600 text-sm text-center items-left mt-5 sm:mt-10">
+                                <h3 className="mt-1">
+                                We’ll gladly assist you in arranging your preferred appointment schedule.
+                                </h3>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    </div>
+                </li>
+                {/* <li className="max-w-[1100px] w-full flex justify-center items-center mt-5 sm:mt-10 py-8 gap-4 bg-white shadow-md rounded-2xl p-4 hover:shadow-lg transition">
+                        <div className="flex flex-col w-full">
+                            <h1 className="font-['Quicksand'] text-2xl sm:text-3xl font-semibold text-gray-900 text-center mt-3" data-aos="zoom-in-up">
+                            CALL US
+                            </h1>
+                            <div className="grid grid-cols-1 sm:grid-cols-2 justify-center">
+                                <div className="w-auto sm:w-full flex flex-col mt-0 sm:mt-3 mx-5 sm:mx-10 order-2 sm:order-1" data-aos="fade-up">
+                                    
+                                    <div className="font-['Quicksand'] text-black text-xl sm:text-3xl text-center sm:text-start items-center sm:items-left mt-5 sm:mt-10">
+                                        <h3 className="mt-1">
+                                        To arrange your appointment, contact us through any of these numbers:
+                                        </h3>
+                                        </div>
+                                        <div className="text-2xl text-center items-center">
+                                        <h3 className="text-black mt-5 sm:mt-10">
+                                        SMART
+                                        </h3>
+                                        <h3 className="text-gray-600 mt-1">
+                                        0961-943-7592 
+                                        </h3>
+                                        <h3 className="text-black mt-5">
+                                        Globe
+                                        </h3>
+                                        <h3 className="text-gray-600 mt-1">
+                                        0917-717-5300
+                                        </h3>
+                                        </div>
+                                        <div className="text-gray-600 text-sm text-center items-left mt-5 sm:mt-10">
+                                        <h3 className="mt-1">
+                                        We’ll gladly assist you in arranging your preferred appointment schedule.
+                                        </h3>
+                                    </div>
+                                </div>
+
+                                <div className="flex flex-col items-start text-left mt-3 sm:-mt-3 mx-10 order-1 sm:order-2" data-aos="fade-up">
+                                    <img src="/images/pages/appointment/bg/call2.svg" alt="Appointment" className="w-60 sm:w-120 h-60 sm:h-120 mx-auto max-w-full"/>
+                                </div>
+                            </div>
+                        </div>
+                    </li> */}
                 </ul>
 
 
