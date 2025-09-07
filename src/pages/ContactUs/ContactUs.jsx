@@ -9,7 +9,7 @@ export default function ContactUs() {
         <h1>Contact Us</h1>
       </div>
 
-      <h1 className={styles.contentTitle}>Hi, how can we help?</h1>
+      <h1 className={styles.contentTitle} data-aos="zoom-in-up">Hi, how can we help?</h1>
 
       {/* Flex row wrapper */}
       <div className={styles.contactContent}>

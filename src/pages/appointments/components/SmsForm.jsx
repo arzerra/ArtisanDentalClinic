@@ -53,7 +53,7 @@ function SmsForm() {
                 id="hs-textarea-ex-2"
                 className="p-4 pb-12 block w-full h-60 bg-gray-100 border-none rounded-lg text-md 
                 focus:border-none focus:ring-0 focus:outline-none resize-none 
-                placeholder-black placeholder:text-xl sm:placeholder:text-lg"
+                placeholder-gray-700 placeholder:text-lg sm:placeholder:text-xl"
                 rows="6"
                 placeholder="Name:
 Contact Number:

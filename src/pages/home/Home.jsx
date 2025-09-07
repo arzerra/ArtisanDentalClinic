@@ -275,19 +275,18 @@ export default function Home() {
         </p>
         <Link
           to="/appointments"
+          onClick={(e) => {e.preventDefault(); window.location.href = "/appointments";}}
           rel="noopener noreferrer"
-          data-aos="fade-left"
-          className="relative flex items-center gap-x-2 px-6 sm:px-8 py-3 sm:py-4 mt-5 overflow-hidden group bg-[#B87C4C] text-white text-xl font-semibold rounded-full transition-all ease-out duration-300"
+          // data-aos="fade-left"
+          className="relative flex items-center gap-x-2 px-6 sm:px-12 py-3 sm:py-4 mt-5 overflow-hidden group bg-[#1C6EA4] text-white text-xl font-semibold rounded-full transition-all ease-out duration-300"
         >
           <span
             className="absolute right-0 w-10 h-full top-0 transition-all duration-1000 transform translate-x-12 bg-white opacity-20 -skew-x-12 group-hover:-translate-x-40 ease"
           ></span>
-          <span className="relative">Book Now!</span>
+          <span className="relative text-xl">Book Now!</span>
         </Link>
       </div>
     </div>
-
-        {/* <BentoInsta/> */}
 
       <div className="max-w-[1100px] w-full mx-auto mt-20 items-center text-center px-3" >
         <h1 ref={ref} className="font-['Smooch_Sans'] text-black text-4xl sm:text-3xl md:text-5xl drop-shadow-lg mt-1 sm:mt-4" data-aos="zoom-in-up">Our Location</h1>
