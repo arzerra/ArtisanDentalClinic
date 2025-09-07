@@ -19,22 +19,22 @@ export default function Appointments(){
             </div>
 
             <div  className="max-w-[1200px] mt-10 sm:mt-10 w-full px-6 px-10 py-0">
-            <h2 className="text-3xl sm:text-5xl font-semibold text-center mt-4">Appointment Guidelines</h2>
-            <hr className="w-20 border-t-2 border-black mx-auto mt-5"/>
-                <ul className="text-gray-600 text-sm grid grid-cols-1 gap-10 place-items-center mt-10">
+            <h2 className="font-['Barlow_Condensed'] text-gray-800 text-4xl sm:text-5xl font-semibold text-center mt-4" data-aos="zoom-in-up" >Appointment Guidelines</h2>
+            <hr className="w-20 border-t-2 border-black mx-auto mt-5" data-aos="zoom-in-up"/>
 
+            <ul className="font-['Quicksand'] text-gray-600 text-sm grid grid-cols-1 gap-10 place-items-center mt-10">
                 <li className="max-w-[1100px] w-full flex justify-center items-center py-8 gap-4 bg-white shadow-md rounded-2xl p-4 hover:shadow-lg transition">
                     <div className="flex flex-col w-full">
-                        <h1 className="text-2xl sm:text-3xl font-semibold text-gray-900 text-center mt-3 mb-10">
+                        <h1 className="font-['Quicksand'] text-2xl sm:text-3xl font-semibold text-gray-900 text-center mt-3 mb-10" data-aos="zoom-in-up">
                         SMS FORM
                         </h1>
 
                         <div className="grid grid-cols-1 sm:grid-cols-2">
                             <div className="flex flex-col items-start text-left mt-0 sm:mt-3 mx-10">
-                                <img src="/images/pages/appointment/bg/sms.svg" alt="Appointment" className="w-50 sm:w-100 h-50 sm:h-100 mx-auto"/>
+                                <img src="/images/pages/appointment/bg/sms.svg" alt="Appointment" className="w-50 sm:w-100 h-50 sm:h-100 mx-auto" data-aos="fade-up-right"/>
                             </div>
                             
-                            <div className="flex flex-col justify-center text-sm sm:text-xl text-left">
+                            <div className="flex flex-col justify-center text-sm sm:text-xl text-left" data-aos="fade-up-left">
                                 <SmsForm/>
                             </div>
                         </div>
@@ -43,32 +43,42 @@ export default function Appointments(){
 
                 <li className="max-w-[1100px] w-full flex justify-center items-center py-8 gap-4 bg-white shadow-md rounded-2xl p-4 hover:shadow-lg transition">
                 <div className="flex flex-col w-full">
-                    <h1 className="text-lg sm:text-3xl font-semibold text-gray-900 text-center mt-3">
-                    CALL US
+                    <h1 className="font-['Quicksand'] text-2xl sm:text-3xl font-semibold text-gray-900 text-center mt-3">
+                    CALL US FORM
                     </h1>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 justify-center">
 
-                        <div className="flex flex-col items-start  text-2xl text-left mt-3 mx-10 order-2 sm:order-1">
-                            <h3 className="text-gray-600 mt-1 text-start items-left">
-                            Name: 
+                        <div className="w-auto sm:w-full flex flex-col mt-0 sm:mt-3 mx-5 sm:mx-10 order-2 sm:order-1">
+                            
+                            <div className="font-['Quicksand'] text-black text-xl sm:text-3xl text-center sm:text-start items-center sm:items-left mt-5 sm:mt-10">
+                            <h3 className="mt-1">
+                            To arrange your appointment, contact us through any of these numbers:
                             </h3>
-                            <h3 className="text-gray-600 mt-1 text-start items-left">
-                            Contact Number: 
+                            </div>
+                            <div className="text-2xl text-center items-center">
+                            <h3 className="text-black mt-5 sm:mt-10">
+                            SMART
                             </h3>
-                            <h3 className="text-gray-600 mt-1 text-start items-left">
-                            Preferred Date: 
+                            <h3 className="text-gray-600 mt-1">
+                            0961-943-7592 
                             </h3>
-                            <h3 className="text-gray-600 mt-1 text-start items-left">
-                            Preferred Time Slot: (10am - 12pm / 1pm - 5pm) 
+                            <h3 className="text-black mt-5">
+                            Globe
                             </h3>
-                            <h3 className="text-gray-600 mt-1 text-start items-left">
-                            Type of Service Need: asdfasdf
+                            <h3 className="text-gray-600 mt-1">
+                            0917-717-5300
                             </h3>
+                            </div>
+                            <div className="text-gray-600 text-sm text-center items-left mt-5 sm:mt-10">
+                            <h3 className="mt-1">
+                            We’ll gladly assist you in arranging your preferred appointment schedule.
+                            </h3>
+                            </div>
                         </div>
 
-                        <div className="flex flex-col items-start text-left mt-3 mx-10 order-1 sm:order-2">
-                            <img src="/images/pages/appointment/bg/call2.svg" alt="Appointment" className="w-60 sm:w-100 h-60 sm:h-100 mx-auto"/>
+                        <div className="flex flex-col items-start text-left mt-3 sm:-mt-3 mx-10 order-1 sm:order-2">
+                            <img src="/images/pages/appointment/bg/call2.svg" alt="Appointment" className="w-60 sm:w-120 h-60 sm:h-120 mx-auto"/>
                         </div>
 
                     </div>
