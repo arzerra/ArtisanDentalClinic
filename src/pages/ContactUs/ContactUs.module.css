@@ -138,7 +138,7 @@
 
 @media (max-width: 600px) {
   .contactBackground {
-    height: 600px;
+    height: 350px;
     padding-bottom: 120px; 
   }
   .contactBackground h1 {
@@ -183,5 +183,11 @@
       font-size: 1.3rem;
       font-family: 'Quicksand', sans-serif;
       color: rgba(88, 87, 87, 0.822);
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .contactBackground {
+      height: 600px;
     }
 }
