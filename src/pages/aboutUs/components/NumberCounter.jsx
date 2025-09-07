@@ -4,8 +4,7 @@ import CountUp from 'react-countup'
 function NumberCounter() {
   return (
     <>
-        {/* bg-[url('/images/pages/about/bg/3.jpg')] bg-cover bg-center */}
-      <div className="font-['Barlow_Condensed'] text-gray-700 py-12 mt-20">
+      <div className="font-['Barlow_Condensed'] text-gray-700 py-12 mt-5 sm:mt-10">
         <div className="max-w-[1100px] w-full mx-auto grid grid-cols-2 sm:grid-cols-4 gap-8">
             <div className="flex flex-col items-center justify-center">
                 <p className='text-5xl'>
