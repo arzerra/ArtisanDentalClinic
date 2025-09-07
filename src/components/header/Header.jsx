@@ -62,8 +62,9 @@ function Header() {
             <Link to="/contact" onClick={(e) => {e.preventDefault(); window.location.href = "/contact";}}>Contact Us</Link>
           </li>
           <span>|</span>
+          <Link to="/appointments" onClick={(e) => {e.preventDefault(); window.location.href = "/appointments";}}>
           <button className={currentPath === "/appointments" ? style.active : ""}>
-            <Link to="/appointments" onClick={(e) => {e.preventDefault(); window.location.href = "/appointments";}}>Appointment</Link></button>
+            Appointment</button></Link>
         </ul>
       </nav>
     </header>

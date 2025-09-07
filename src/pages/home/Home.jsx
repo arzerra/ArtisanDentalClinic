@@ -275,7 +275,6 @@ export default function Home() {
         </p>
         <Link
           to="/appointments"
-          target="_blank"
           rel="noopener noreferrer"
           data-aos="fade-left"
           className="relative flex items-center gap-x-2 px-6 sm:px-8 py-3 sm:py-4 mt-5 overflow-hidden group bg-[#B87C4C] text-white text-xl font-semibold rounded-full transition-all ease-out duration-300"
