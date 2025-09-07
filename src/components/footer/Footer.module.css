@@ -34,7 +34,8 @@
 .row {
   display: flex;
   align-items: center;
-  gap: 15px; /* space between items in each row */
+  gap: 15px;
+  
 }
 
 .row img {
@@ -102,7 +103,7 @@
 
 .bottom {
   border-top: 1px solid #333;
-  margin-top: 30px;
+  margin-top: 10px;
   padding-top: 15px;
 
   display: flex;
