@@ -31,7 +31,7 @@ function Header() {
         menuOpen ? style["nav-open"] : ""
       }`}
     >
-      <Link to="/" className={style.logo} onClick={handleLinkClick}>
+      <Link to="/" className={style.logo} onClick={(e) => {e.preventDefault(); window.location.href = "/";}}>
         <span className={style.logoArtisan}>Artisan</span>
         <span className={style.logoClinic}>Dental Clinic</span>
       </Link>
