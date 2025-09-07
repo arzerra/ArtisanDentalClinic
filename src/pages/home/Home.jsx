@@ -277,7 +277,7 @@ export default function Home() {
           to="/appointments"
           onClick={(e) => {e.preventDefault(); window.location.href = "/appointments";}}
           rel="noopener noreferrer"
-          // data-aos="fade-left"
+          data-aos="fade-left"
           className="relative flex items-center gap-x-2 px-6 sm:px-12 py-3 sm:py-4 mt-5 overflow-hidden group bg-[#1C6EA4] text-white text-xl font-semibold rounded-full transition-all ease-out duration-300"
         >
           <span

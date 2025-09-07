@@ -1,3 +1,4 @@
+import NumberCounter from './components/NumberCounter.jsx';
 
 export default function AboutUs() {
   return (
@@ -22,19 +23,27 @@ export default function AboutUs() {
             </h1>
           </div>         
         </div>
-
+        <div className="max-w-[1100px] w-[85%] sm:w-full mt-2 sm:mt-5">
+            <h1 className="font-['Barlow_Condensed'] mt-5 text-gray-700 text-2xl sm:text-4xl text-center" >
+                Welcome to</h1>
+        </div>
         <div className="max-w-[1100px] w-[85%] sm:w-full mt-1 sm:mt-5">
-            <div className="flex items-center justify-center mt-10">
+            <div className="flex items-center justify-center mt-0">
             <img src="images/logo/adc1.png" alt="Artisan" className="w-120"/>
             </div>
         </div>
         <div className="max-w-[1100px] w-[85%] sm:w-full mt-2 sm:mt-5">
-            <h1 className="font-['Barlow_Condensed'] mt-5 text-gray-500 text-xl sm:text-3xl text-justify sm:text-center" >
+            <h1 className="font-['Barlow_Condensed'] mt-5 text-gray-700 text-xl sm:text-3xl text-justify sm:text-center" >
                 Where healthy smiles are crafted with care, comfort, and expertise. 
                 We’re here to make your dental journey stress-free and give you every reason to smile with confidence.</h1>
         </div>
 
-              <section className="max-w-[1100px] w-full px-6 sm:px-0 mt-12 mx-auto">
+        <div className="w-full">
+          <NumberCounter/>
+        </div>
+
+
+      <section className="max-w-[1100px] w-full px-6 sm:px-0 mt-12 mx-auto">
         <h3 className="text-2xl sm:text-3xl font-semibold text-center mb-6">
           Our Core Values
         </h3>
@@ -60,10 +69,6 @@ export default function AboutUs() {
           </div>
         </div>
       </section>
-
-        <div className="max-w-[1100px] w-[85%] h-[400px] sm:w-full mt-2 sm:mt-5">
-
-        </div>
 
       </div>
     </>
