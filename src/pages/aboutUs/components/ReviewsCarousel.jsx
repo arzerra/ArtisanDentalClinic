@@ -43,21 +43,15 @@ function ReviewsCarousel() {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 2,   // Default (desktop)
+    slidesToShow: 2,
     slidesToScroll: 1,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
     responsive: [
       {
-        breakpoint: 1194, // screens smaller than 1024px
+        breakpoint: 600,
         settings: {
-          slidesToShow: 1, // keep 2 on tablets too
-        },
-      },
-      {
-        breakpoint: 600, // screens smaller than 768px (mobile)
-        settings: {
-          slidesToShow: 1, // switch to 1 slide
+          slidesToShow: 1,
         },
       },
     ],

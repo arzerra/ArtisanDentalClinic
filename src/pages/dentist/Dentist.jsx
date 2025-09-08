@@ -17,7 +17,7 @@ export default function Dentist(){
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-transparent via-black/10 to-black/40"></div>
                 <div className="absolute inset-0 flex flex-col items-center justify-center px-4 text-center pt-0 sm:pt-20">
-                    <h1 className="font-['Rock_Salt'] text-white text-5xl sm:text-7xl font-bold drop-shadow-lg"             
+                    <h1 className="font-['Archivo_Black'] text-white text-5xl sm:text-7xl font-bold drop-shadow-lg"             
                     style={{
                     textShadow: '1px 1px 0px black'
                     }}>
