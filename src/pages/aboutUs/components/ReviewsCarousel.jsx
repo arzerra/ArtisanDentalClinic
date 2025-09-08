@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
+// Next Button
 const NextArrow = ({ onClick }) => (
   <button
     onClick={onClick}
@@ -13,13 +14,14 @@ const NextArrow = ({ onClick }) => (
       bg-white text-black rounded-full shadow-lg
       opacity-80 hover:opacity-100 hover:bg-gray-300
       transition duration-300 ease-in-out
-      hidden sm:flex
+      hidden md:flex
     "
   >
     <span className="text-xl font-bold">&rarr;</span>
   </button>
 );
 
+// Prev Button
 const PrevArrow = ({ onClick }) => (
   <button
     onClick={onClick}
@@ -29,39 +31,45 @@ const PrevArrow = ({ onClick }) => (
       bg-white text-black rounded-full shadow-lg
       opacity-80 hover:opacity-100 hover:bg-gray-300
       transition duration-300 ease-in-out
-      hidden sm:flex
+      hidden md:flex
     "
   >
     <span className="text-xl font-bold">&larr;</span>
   </button>
 );
 
-
 function ReviewsCarousel() {
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 2,       
+    slidesToShow: 2,   // Default (desktop)
     slidesToScroll: 1,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 1024, // screens smaller than 1024px
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
+          slidesToShow: 2, // keep 2 on tablets too
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 600, // screens smaller than 768px (mobile)
+        settings: {
+          slidesToShow: 1, // switch to 1 slide
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   const posts = [
     "https://www.facebook.com/paulote88/posts/pfbid0288srnwzUrr8XgcKpxnc4rLHGjdMQEybnvrs7a9eNRwfn9hyqaVpf4TrSgUtDQb9ul",
     "https://www.facebook.com/heidemay.velez/posts/pfbid0EiEu1tReA4yj7QgpZ7mfd1Hh6KW5oCs4HTK8GqGQ5MsXCawnyA2B6fNM3LYjb4tRl",
     "https://www.facebook.com/sabeth.murphy/posts/pfbid02wY8e5g3qo89HJuWwHWdpbV1ApyYD6HuLWBUKsiKkHyvfpRbH3ZUZ8VSD5EsDPW75l",
-    "https://www.facebook.com/daisymae.babiera/posts/pfbid02WRGcuKXRBn7gYQZPii4dsUYg47Rb56dAGyPGe9ss2vLZeg6hUNpAng54hDn1jzb4l"
+    "https://www.facebook.com/daisymae.babiera/posts/pfbid02WRGcuKXRBn7gYQZPii4dsUYg47Rb56dAGyPGe9ss2vLZeg6hUNpAng54hDn1jzb4l",
   ];
 
   return (
