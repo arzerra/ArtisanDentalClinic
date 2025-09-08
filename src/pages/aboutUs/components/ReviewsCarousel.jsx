@@ -49,17 +49,15 @@ function ReviewsCarousel() {
     prevArrow: <PrevArrow />,
     responsive: [
       {
-        breakpoint: 1024, // screens smaller than 1024px
+        breakpoint: 1194, // screens smaller than 1024px
         settings: {
-          slidesToShow: 2, // keep 2 on tablets too
-          slidesToScroll: 1,
+          slidesToShow: 1, // keep 2 on tablets too
         },
       },
       {
         breakpoint: 600, // screens smaller than 768px (mobile)
         settings: {
           slidesToShow: 1, // switch to 1 slide
-          slidesToScroll: 1,
         },
       },
     ],
