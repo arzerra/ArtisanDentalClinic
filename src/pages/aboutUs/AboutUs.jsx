@@ -98,7 +98,7 @@ export default function AboutUs() {
                 target="_blank"
                 rel="noopener noreferrer"
                 data-aos="fade-left"
-                className="relative flex items-center gap-x-2 px-6 sm:px-8 py-3 sm:py-4 overflow-hidden group bg-[#E73879] hover:bg-[#E73880  ] text-white text-xl font-semibold rounded-full transition-all ease-out duration-300"
+                className="relative flex items-center gap-x-2 px-6 sm:px-8 py-3 sm:py-4 overflow-hidden group bg-[#EA5B6F] hover:bg-[#EA5B6F  ] text-white text-xl font-semibold rounded-full transition-all ease-out duration-300"
             >
                 <span
                 className="absolute right-0 w-10 h-full top-0 transition-all duration-1000 transform translate-x-12 bg-white opacity-20 -skew-x-12 group-hover:-translate-x-50 ease"
