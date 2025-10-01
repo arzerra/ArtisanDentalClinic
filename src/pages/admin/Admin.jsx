@@ -9,21 +9,35 @@ export default function Admin() {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    // listen to auth state
-    const { data: subscription } = supabase.auth.onAuthStateChange(
-      (_event, session) => {
-        if (!session?.user) {
-          navigate("/login"); // redirect if no user
-        } else {
-          setUser(session.user);
-        }
-        setLoading(false);
-      }
-    );
+useEffect(() => {
+  const getSession = async () => {
+    const { data } = await supabase.auth.getSession();
+    if (!data.session?.user) {
+      navigate("/login");
+    } else {
+      setUser(data.session.user);
+    }
+    setLoading(false);
+  };
 
-    return () => subscription.subscription.unsubscribe();
-  }, [navigate]);
+  getSession();
+
+  const { data: authListener } = supabase.auth.onAuthStateChange(
+    (_event, session) => {
+      if (!session?.user) {
+        navigate("/login");
+      } else {
+        setUser(session.user);
+      }
+    }
+  );
+
+  return () => {
+    authListener.subscription.unsubscribe(); // ✅ correct way
+  };
+}, [navigate]);
+
+
 
   if (loading) return <p>Loading...</p>;
 
