@@ -58,22 +58,10 @@ export default function Footer() {
 
         <div className={style.bottom}>
           <p> &copy; Artisan Dental Clinic {new Date().getFullYear()} - All Rights Reserved</p>
-          {/* <div className='flex flex-row gap-3'>
-            <a href="/"><p>Home</p></a>
-            <a href="/about"><p>About</p></a>
-            <a href="/services"><p>Services</p></a>
-            <a href="/dentist"><p>Dentist</p></a>
-            <a href="/contact"><p>Contact</p></a>
-            <a href="/appointments"><p>Appointment</p></a>
-          </div> */}
           <div className={style.socials}>
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
               <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
-              {/* <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><FaYoutube  /></a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><FaLinkedin  /></a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><FaTiktok  /></a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><FaTelegram  /></a> */}
           </div>
         </div>
     </footer>
