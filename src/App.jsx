@@ -9,6 +9,8 @@ import AboutUs from "./pages/aboutUs/AboutUs.jsx";
 import ContactUs from "./pages/ContactUs/ContactUs.jsx";
 import Services from "./pages/services/Services.jsx";
 import Dentist from "./pages/dentist/Dentist.jsx";
+import Login from "./pages/login/Login.jsx";
+import Admin from "./pages/admin/Admin.jsx";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -31,6 +33,8 @@ function App() {
           <Route path="/dentist" element={<Dentist/>} />
           <Route path="/contact" element={<ContactUs/>} />
           <Route path="/appointments" element={<Appointments/>} />
+          <Route path="/login" element={<Login/>} />
+          <Route path="/admin" element={<Admin/>} />
         </Routes>
       <Footer/>
     </Router>
