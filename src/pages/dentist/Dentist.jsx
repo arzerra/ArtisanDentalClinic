@@ -45,8 +45,8 @@ export default function Dentist(){
                 <img
                   src="/images/pages/dentist/bg/1.jpg"
                   alt="Dentist"
-                  className="w-full max-w-[300px] sm:max-w-[500px] h-auto rounded-lg
-                            w-[190px] h-[254px] bg-white border-3 border-black rounded-none 
+                  className="w-full max-w-[300px] sm:max-w-[500px] h-auto 
+                             bg-white border-3 border-black rounded-none 
                             shadow-[15px_15px_0_-2.5px_#fff,15px_15px_0_0_#000]"
                 />
               </div>
@@ -57,7 +57,7 @@ export default function Dentist(){
                 <img
                   src="/images/pages/dentist/bg/2.jpg"
                   alt="Dentist"
-                  className="w-full max-w-[300px] sm:max-w-[500px] h-auto rounded-lg w-[190px] h-[254px] bg-white border-3 border-black rounded-none 
+                  className="w-full max-w-[300px] sm:max-w-[500px] h-auto  bg-white border-3 border-black rounded-none 
                              shadow-[15px_15px_0_-2.5px_#fff,15px_15px_0_0_#000]"
                 />
               </div>
@@ -76,7 +76,7 @@ export default function Dentist(){
                 <img
                   src="/images/pages/dentist/bg/3.jpg"
                   alt="Dentist"
-                  className="w-full max-w-[300px] sm:max-w-[500px] h-auto rounded-lg w-[190px] h-[254px] bg-white border-3 border-black rounded-none 
+                  className="w-full max-w-[300px] sm:max-w-[500px] h-auto bg-white border-3 border-black rounded-none 
                              shadow-[15px_15px_0_-2.5px_#fff,15px_15px_0_0_#000]"
                 />    
               </div>
