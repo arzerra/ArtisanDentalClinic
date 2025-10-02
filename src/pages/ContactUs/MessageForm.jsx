@@ -1,28 +1,93 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
+import { supabase } from "../../supabase.js";
+import Swal from "sweetalert2";
 
-const Form = () => {
+const MessageForm = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [contactNum, setContactNum] = useState("");
+  const [message, setMessage] = useState("");
+  const [contactMessage, setContactMessage] = useState([]);
+
+  const addMessage = async (e) => {
+    e.preventDefault();
+    const newMessageData = {name, email, contact_num: contactNum, message};
+
+    const {data, error} = await supabase
+      .from("messages")
+      .insert([newMessageData])
+      .select()
+      .single();
+
+    if (error) {
+      Swal.fire({ title: "Error", text: error.message, icon: "error" });
+    } else if (data) {
+      Swal.fire({
+        title: "Message Sent!",
+        text: "Your message was sent to the dentist and will be taken care of accordingly.",
+        icon: "success",
+      });
+
+      setContactMessage((prev) => [...prev, data]);
+      setName("");
+      setEmail("");
+      setContactNum("");
+      setMessage("");
+    }
+  };
+
+  // const fetchMessage = async () => {
+  //   const {data, error} = await supabase.form("messages").select("*");
+
+  //   if (error){
+  //     Swal.fire({ title: "Error", text: error.message, icon: "error" });
+  //   } else {
+  //     setContactMessage(data ?? []);
+  //   }
+  // };
+
+  // useEffect(() => {
+  //   fetchMessage();
+  // }, []);
+
   return (
     <StyledWrapper>
-      <form className="form">
+      <form className="form" >
         <h1>Send us a Message</h1>
           <label>
-            <input required  type="text" className="input" />
+            <input required  
+            type="text" 
+            className="input" 
+            value={name}
+            onChange={(e) => setName(e.target.value)}/>
             <span>Name</span>
           </label>
         <label>
-          <input required  type="email" className="input" />
+          <input required  
+          type="email" 
+          className="input" 
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}/>
           <span>Email</span>
         </label> 
         <label>
-          <input required type="number"  className="input" />
+          <input required 
+          type="number"  
+          className="input" 
+          value={contactNum}
+          onChange={(e) => setContactNum(e.target.value)}/>
           <span>Contact Number</span>
         </label>
         <label>
-          <textarea required rows={10}  className="input01" defaultValue={""} />
+          <textarea required rows={10}  
+          className="input01" 
+          defaultValue={""} 
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}/>
           <span>Message</span>
         </label>
-        <button className="fancy" href="#">
+        <button className="fancy" onClick={addMessage}>
           <span className="top-key" />
           <span className="text">Submit</span>
           <span className="bottom-key-1" />
@@ -231,4 +296,4 @@ const StyledWrapper = styled.div`
     width: 0;
   }`;
 
-export default Form;
+export default MessageForm;

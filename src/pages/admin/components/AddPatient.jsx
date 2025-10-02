@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { supabase } from "../../../supabase.js"; // adjust path
+import { supabase } from "../../../supabase.js";
 import Swal from "sweetalert2";
 
 function AddPatient() {

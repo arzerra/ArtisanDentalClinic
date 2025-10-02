@@ -1,6 +1,6 @@
 import { FaPhone, FaEnvelope, FaFacebookMessenger, FaFacebook   } from "react-icons/fa";
 import styles from './ContactUs.module.css';
-import Form from './Form';
+import MessageForm from './MessageForm';
 
 export default function ContactUs() {
   return (
@@ -73,7 +73,7 @@ export default function ContactUs() {
           </div>
         </div>
         <div className={styles.contactForm} data-aos="zoom-in">
-          <Form />
+          <MessageForm />
         </div>
       </div>
     </div>
