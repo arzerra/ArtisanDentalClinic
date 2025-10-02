@@ -73,8 +73,10 @@ const MessageForm = () => {
         </label> 
         <label>
           <input required 
-          type="number"  
+          type="tel"  
           className="input" 
+          pattern="\d{11}"
+          maxLength={11}
           value={contactNum}
           onChange={(e) => setContactNum(e.target.value)}/>
           <span>Contact Number</span>
@@ -234,7 +236,6 @@ const StyledWrapper = styled.div`
     display: block;
     text-align: left;
     transition: all 0.3s ease-in-out;
-    text-transform: lowercase;
     text-decoration: none;
     color: #818181;
     transform: translateX(30%);
