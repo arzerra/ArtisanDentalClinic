@@ -14,7 +14,7 @@ function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) { // scroll threshold
+      if (window.scrollY > 50) {
         setScrolled(true);
       } else {
         setScrolled(false);

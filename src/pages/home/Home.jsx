@@ -75,10 +75,10 @@ export default function Home() {
               }}
             />
           </h1>
-          <p className="text-white font-light text-lg sm:text-lg md:text-2xl font-bold drop-shadow-lg mt-8 sm:mt-10">
+          <p className="text-white font-light text-lg sm:text-lg md:text-2xl drop-shadow-lg mt-8 sm:mt-10">
             As your dental care partner, we’re dedicated to keeping your smile strong and healthy.
           </p>
-        </div>
+        </div>-
       </div>
 
         <div className="max-w-[1100px] w-full -mt-25 sm:-mt-25 px-9 sm:px-4 relative z-10">

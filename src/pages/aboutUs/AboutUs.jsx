@@ -45,7 +45,7 @@ export default function AboutUs() {
             </div>
           </div>
           <div className="mt-2 sm:mt-12 mr-0 sm:mr-15">
-            <h1 className="font-['Darker_Grotesque'] mt-5 text-gray-700 text-2xl sm:text-3xl text-justify sm:text-justify" data-aos="fade-left">
+            <h1 className="font-['Darker_Grotesque'] mt-5 text-gray-700 text-2xl sm:text-3xl text-justify sm:text-justify" data-aos="fade-right">
               Where healthy smiles are crafted with care, comfort, and expertise. We’re here to make your dental journey 
               stress-free and give you every reason to smile with confidence.</h1>
           </div>
@@ -66,7 +66,7 @@ export default function AboutUs() {
             </h3>
             <hr className="w-20 border-t-2 border-black mx-auto mt-2" data-aos="zoom-in-up" />
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center font-['Barlow_Condensed'] text-base sm:text-xl mt-7">
-              <div className="p-4 border border-gray-500 rounded-lg shadow-sm" data-aos="fade-right">
+              <div className="p-4 border border-gray-500 rounded-lg shadow-sm" data-aos="fade-up">
                 <h4 className="font-semibold text-gray-700" >Compassion & Comfort</h4>
                 <p className="mt-2 text-gray-600">
                   We put your comfort first at every step of your dental journey.
@@ -78,7 +78,7 @@ export default function AboutUs() {
                   Our team applies the latest dental techniques with a gentle touch.
                 </p>
               </div>
-              <div className="p-4 border border-gray-500 rounded-lg shadow-sm" data-aos="fade-left">
+              <div className="p-4 border border-gray-500 rounded-lg shadow-sm" data-aos="fade-up">
                 <h4 className="font-semibold text-gray-700" >Trust & Integrity</h4>
                 <p className="mt-2 text-gray-600">
                   Delivering honest, personalized care that earns your smile and
@@ -90,14 +90,14 @@ export default function AboutUs() {
         </div>
 
           <div className="max-w-[1080px] w-[90%] sm:w-full h-auto sm:h-[130px] bg-white shadow-md rounded-4xl mt-10 sm:mt-20 mx-auto flex flex-col sm:flex-row items-center sm:justify-between justify-center text-center px-6 sm:px-10 py-6 sm:py-6">
-            <p className="text-gray-700 text-2xl sm:text-3xl font-medium mb-4 sm:mb-0" data-aos="fade-right">
+            <p className="text-gray-700 text-2xl sm:text-3xl font-medium mb-4 sm:mb-0" data-aos="fade-down">
             Visit us on Instagrams
             </p>
             <a
                 href="https://www.instagram.com/artisandentalclinicdavao/"
                 target="_blank"
                 rel="noopener noreferrer"
-                data-aos="fade-left"
+                data-aos="fade-down"
                 className="relative flex items-center gap-x-2 px-6 sm:px-8 py-3 sm:py-4 overflow-hidden group bg-[#EA5B6F] hover:bg-[#EA5B6F  ] text-white text-xl font-semibold rounded-full transition-all ease-out duration-300"
             >
                 <span
@@ -109,7 +109,7 @@ export default function AboutUs() {
             </a>
         </div>
 
-        <div className="max-w-[1100px] w-full mt-10 sm:mt-20">
+        {/* <div className="max-w-[1100px] w-full mt-10 sm:mt-20">
           <h1 className="font-['Jura'] mt-5 text-gray-800 drop-shadow-sm text-2xl sm:text-4xl text-center" data-aos="fade-up">
             See How We Made Them Smile
           </h1>
@@ -123,16 +123,13 @@ export default function AboutUs() {
           <div>
           <ReviewsCarousel/>
           </div>
-          {/* <div>
-          <p>Facebook review: 4 out of 4 reviews.</p>
-          </div> */}
-        </div>
+        </div> */}
 
-        <div className="max-w-[1100px] w-full mt-10 sm:mt-20">
+        {/* <div className="max-w-[1100px] w-full mt-10 sm:mt-20">
           <h1 className="font-['Jura'] mt-5 text-gray-800 drop-shadow-sm text-3xl sm:text-4xl text-center" >
             Take a Tour at our Clinic
           </h1>
-        </div>
+        </div> */}
 
 
       </div>
