@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import style from "./Header.module.css";
 import { Link, useLocation } from "react-router-dom";
-import Modal from "../modal/login/loginModal.jsx";
+import Modal from "../modal/loginModal.jsx";
 
 function Header() {
   const location = useLocation();
@@ -71,8 +71,7 @@ function Header() {
             Admin Login</button>
         </ul>
       </nav>
-
-      {/* Modal */}
+      
       <Modal show={showModal} onClose={() => setShowModal(false)} />
     </header>
 
