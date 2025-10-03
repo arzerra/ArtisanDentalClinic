@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { supabase } from "../../supabase.js";
 import { Link, useNavigate,  } from "react-router-dom";
-import LoginForm from "./components/LoginForm.jsx";
 import styled from 'styled-components';
 
-export default function Login() {
-  const navigate = useNavigate();
+const LoginForm = () => {
+
+    const navigate = useNavigate();
   const [form, setForm] = useState({ email: "", password: "" });
   const [error, setError] = useState("");
 
@@ -37,40 +37,7 @@ export default function Login() {
   };
 
   return (
-    <>
-    <div className="bg-cover bg-center h-screen" style={{ backgroundImage: "url('/images/pages/login/bg2.png')" }}>
-      {/* <div className="flex flex-col w-[400px] mx-auto pt-20">
-        <h1 className="text-xl mb-4">Admin Login</h1>
-        <form onSubmit={login} className="flex flex-col">
-          <input
-            type="text"
-            name="email"
-            placeholder="Email"
-            value={form.email}
-            onChange={handleChange}
-            className="border p-2 mb-2"
-          />
-          <input
-            type="password"
-            name="password"
-            placeholder="Password"
-            value={form.password}
-            onChange={handleChange}
-            className="border p-2 mb-2"
-          />
-          {error && <p className="text-red-500 mb-2">{error}</p>}
-          <button
-            type="submit"
-            className="bg-blue-600 text-white p-2 rounded hover:bg-blue-700 cursor-pointer"
-          >
-            Login
-          </button>
-        </form>
-        <Link to="/">Back</Link>
-      <LoginForm/>
-      </div> */}
-      <div className="pt-20">
-      <StyledWrapper>
+    <StyledWrapper>
         <form className="form" onSubmit={login}>
           <Link to="/">← back</Link>
           <div className="title">Welcome,<br /><span>sign up to continue</span></div>
@@ -103,11 +70,7 @@ export default function Login() {
           {error && <p className="text-red-500 mb-2">{error}</p>}
           <button className="button-confirm" type="submit">Let`s go →</button>
         </form>
-      </StyledWrapper>
-      </div>
-
-    </div>
-    </>
+    </StyledWrapper>
   );
 }
 
@@ -218,3 +181,5 @@ const StyledWrapper = styled.div`
     color: var(--font-color);
     cursor: pointer;
   }`;
+
+export default LoginForm;

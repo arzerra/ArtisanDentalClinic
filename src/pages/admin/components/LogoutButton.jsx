@@ -6,7 +6,7 @@ export default function LogoutButton() {
 
   const handleLogout = async () => {
     await supabase.auth.signOut();
-    navigate("/login"); // redirect back to login page
+    navigate("/"); // redirect back to login page
   };
 
   return (

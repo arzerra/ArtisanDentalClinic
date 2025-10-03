@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
 import style from "./Header.module.css";
 import { Link, useLocation } from "react-router-dom";
+import Modal from "../modal/login/loginModal.jsx";
 
 function Header() {
   const location = useLocation();
   const currentPath = location.pathname;
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [showModal, setShowModal] =useState(false);
 
   const handleLinkClick = () => {
     setMenuOpen(false);
@@ -65,12 +67,16 @@ function Header() {
             <Link to="/appointments" onClick={(e) => {e.preventDefault(); window.location.href = "/appointments";}}>Appointments</Link>
           </li>
           <span>|</span>
-          <Link to="/login" onClick={(e) => {e.preventDefault(); window.location.href = "/login";}}>
-          <button className={currentPath === "/login" ? style.active : ""}>
-            Admin Login</button></Link>
+          <button onClick={() => setShowModal(true)}>
+            Admin Login</button>
         </ul>
       </nav>
+
+      {/* Modal */}
+      <Modal show={showModal} onClose={() => setShowModal(false)} />
     </header>
+
+
   );
 }
 
