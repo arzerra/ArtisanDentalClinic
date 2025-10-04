@@ -43,49 +43,66 @@ function LoginModal({ show, onClose }) {
       onClick={onClose}
     >
       <div
-        className="w-[90%] sm:w-[80%] md:max-w-[595px] bg-white p-6 rounded-lg relative shadow-lg"
+        className="w-[90%] sm:w-[70%] md:max-w-[545px] bg-white p-6 rounded-2xl relative shadow-lg"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Close button */}
         <button
           onClick={onClose}
-          className="absolute top-2 right-2 text-gray-500 hover:text-gray-800"
+          className="absolute top-5 right-5 text-gray-500 hover:text-gray-800"
         >
           ✕
         </button>
 
         {/* Login form */}
-        <form onSubmit={login} className="flex flex-col gap-4">
-          <div>
-            <label className="block text-sm font-medium">Email</label>
-            <input
-              type="email"
-              name="email"
-              value={form.email}
-              onChange={handleChange}
-              className="w-full border px-3 py-2 rounded-md"
-              required
-            />
+        <form onSubmit={login} className="flex flex-col gap-4 font-['Quicksand']">
+          <div className="flex items-center justify-center py-5">
+            <h1 className="text-3xl font-bold ">LOGIN</h1>
           </div>
-          <div>
-            <label className="block text-sm font-medium">Password</label>
-            <input
-              type="password"
-              name="password"
-              value={form.password}
-              onChange={handleChange}
-              className="w-full border px-3 py-2 rounded-md"
-              required
-            />
-          </div>
-          {error && <p className="text-red-500 text-sm">{error}</p>}
+            <div className="flex flex-col items-center justify-center w-[90%] sm:w-[495px] mx-auto p-6 rounded-lg">
+              <div className="flex flex-col">
+              <label className="text-sm font-medium mb-1">Email</label>
+              <input
+                type="email"
+                name="email"
+                value={form.email}
+                onChange={handleChange}
+                className="w-80 sm:w-110 border px-3 py-2 rounded-md"
+                required
+              />
+              </div>
+            
+              <div className="flex flex-col">
+              <label className="text-sm font-medium mb-1">Password</label>
+              <input
+                type="password"
+                name="password"
+                value={form.password}
+                onChange={handleChange}
+                className="w-80 sm:w-110 border px-3 py-2 rounded-md"
+                required
+              />
+              </div>
 
-          <button
-            type="submit"
-            className="mt-2 bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700"
-          >
-            Login
-          </button>
+              <div className="flex flex-row items-center justify-between w-80 sm:w-110">
+                <div className="flex justify-start">
+                  {error && <p className="text-red-500 text-sm">{error}</p>}
+                </div>
+                <div className="flex justify-end">
+                  <h2 className="text-sm mt-2 cursor-pointer hover:underline">
+                    Forgot Password?
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <div className="flex justify-center">
+              <button
+                type="submit"
+                className="mb-2 bg-blue-600 text-white py-2 rounded-xl hover:bg-blue-700 w-110 "
+              >
+                Login
+              </button>
+            </div>
         </form>
       </div>
     </div>,
