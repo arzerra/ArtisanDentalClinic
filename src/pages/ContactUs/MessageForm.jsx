@@ -12,7 +12,7 @@ const MessageForm = () => {
 
   const addMessage = async (e) => {
     e.preventDefault();
-    const newMessageData = {name, email, contact_num: contactNum, message};
+    const newMessageData = {full_name: name, email, contact_num: contactNum, message};
 
     const {data, error} = await supabase
       .from("messages")

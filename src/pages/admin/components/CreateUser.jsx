@@ -39,7 +39,7 @@ function CreateUser() {
         {
           user_id: authData.user.id,
           email: formData.email,
-          name: formData.fullName,
+          full_name: formData.fullName,
           role: formData.role,
         },
       ]);
