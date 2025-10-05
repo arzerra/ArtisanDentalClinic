@@ -1,4 +1,4 @@
-import { supabase } from "../../../supabase";
+import { supabase } from "../../supabase";
 import { useNavigate } from "react-router-dom";
 
 export default function LogoutButton() {

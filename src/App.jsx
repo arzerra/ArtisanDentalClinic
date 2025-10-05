@@ -12,10 +12,11 @@ import Dentist from "./pages/dentist/Dentist.jsx";
 import Admin from "./pages/admin/Admin.jsx";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Dashbord from "./pages/dashboard/Dashbord.jsx";
 
 function LayoutWrapper({ children }) {
   const location = useLocation();
-  const hideLayout = ["/login", "/admin"].includes(location.pathname);
+  const hideLayout = ["/login", "/admin", "/dashboard"].includes(location.pathname);
 
   return (
     <>
@@ -42,6 +43,7 @@ function App() {
           <Route path="/dentist" element={<Dentist />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/appointments" element={<Appointments />} />
+          <Route path="/dashboard" element={<Dashbord />} />
           <Route path="/admin" element={<Admin />} />
         </Routes>
       </LayoutWrapper>

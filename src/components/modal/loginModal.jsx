@@ -20,22 +20,33 @@ function LoginModal({ show, onClose }) {
     e.preventDefault();
     setError("");
 
-    const { error } = await supabase.auth.signInWithPassword({
+    const { data: authData, error: authError } = await supabase.auth.signInWithPassword({
       email: form.email,
       password: form.password,
     });
-
-    if (error) {
-      setError(error.message);
+    
+    if (authError) {
+      setError(authError.message);
       return;
     }
 
-    if (form.email === "admin@artisandental.com") {
+    const { data: profileData, error: profileError } = await supabase
+      .from("profiles")
+      .select("role")
+      .eq("user_id", authData.user.id)
+      .single();
+
+    if (profileError || !profileData) {
+      setError("Failed to retrieve user profile.");
+      return;
+    }
+
+    if (profileData.role === "admin") {
       navigate("/admin");
     } else {
-      setError("Unauthorized: Only admin can login.");
-      await supabase.auth.signOut();
+      navigate("/dashboard");
     }
+    onClose();
   };
 
   useEffect(() => {
@@ -101,7 +112,7 @@ function LoginModal({ show, onClose }) {
             <div className="flex justify-center">
               <button
                 type="submit"
-                className="mb-2 bg-blue-600 text-white py-2 rounded-xl hover:bg-blue-700 w-110 "
+                className="mb-2 bg-blue-600 text-white py-2 rounded-xl hover:bg-blue-700 w-110 cursor-pointer "
               >
                 Login
               </button>

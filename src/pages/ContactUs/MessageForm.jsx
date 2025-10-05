@@ -37,20 +37,6 @@ const MessageForm = () => {
     }
   };
 
-  // const fetchMessage = async () => {
-  //   const {data, error} = await supabase.form("messages").select("*");
-
-  //   if (error){
-  //     Swal.fire({ title: "Error", text: error.message, icon: "error" });
-  //   } else {
-  //     setContactMessage(data ?? []);
-  //   }
-  // };
-
-  // useEffect(() => {
-  //   fetchMessage();
-  // }, []);
-
   return (
     <StyledWrapper>
       <form className="form" >

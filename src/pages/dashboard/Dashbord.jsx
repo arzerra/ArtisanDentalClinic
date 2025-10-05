@@ -2,11 +2,10 @@ import { useEffect, useState } from "react";
 import { supabase } from "../../supabase";
 import { useNavigate } from "react-router-dom";
 import LogoutButton from "../../components/button/LogoutButton.jsx";
-import AddPatient from "./components/AddPatient.jsx";
-import CreateUser from "./components/CreateUser.jsx";
 
-export default function Admin() {
-  const navigate = useNavigate();
+
+function Dashbord() {
+    const navigate = useNavigate();
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
 
@@ -39,15 +38,14 @@ useEffect(() => {
 }, [navigate]);
 
   if (loading) return <p>Loading...</p>;
-
   return (
     <>
-      <div className="flex justify-between p-4">
-        <div className="flex">Welcome {user?.email}</div>
+    <div className="flex justify-between p-4">
+        <div className="flex">Welcome to your dashboard {user?.email}</div>
         <div className="flex"><LogoutButton /></div>
-      </div>
-      <AddPatient />
-      <CreateUser />
+    </div>
     </>
-  );
+  )
 }
+
+export default Dashbord
