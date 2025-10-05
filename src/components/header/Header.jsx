@@ -35,8 +35,8 @@ function Header() {
       }`}
     >
       <Link to="/" className={style.logo} onClick={(e) => {e.preventDefault(); window.location.href = "/";}}>
-        <span className={style.logoArtisan}>Artisan</span>
-        <span className={style.logoClinic}>Dental Clinic</span>
+        <span className="text-5xl font-normal leading-[1.1] -mb-3 font-['Allura']">Artisan</span>
+        <span className="text-[1rem] leading-[1.2] mt-0 font-sans">Dental Clinic</span>
       </Link>
 
       <button
