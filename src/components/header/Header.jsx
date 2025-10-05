@@ -27,6 +27,7 @@ function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  
   return (
     <header
       className={`${style.header} ${scrolled ? style.scrolled : ""} ${

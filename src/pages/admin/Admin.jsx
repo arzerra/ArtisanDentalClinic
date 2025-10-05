@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { supabase } from "../../supabase"; // adjust path to your supabase.js
+import { supabase } from "../../supabase";
 import { useNavigate } from "react-router-dom";
 import LogoutButton from "./components/LogoutButton.jsx";
 import AddPatient from "./components/AddPatient";
@@ -13,7 +13,7 @@ useEffect(() => {
   const getSession = async () => {
     const { data } = await supabase.auth.getSession();
     if (!data.session?.user) {
-      navigate("/login");
+      navigate("/");
     } else {
       setUser(data.session.user);
     }
@@ -25,7 +25,7 @@ useEffect(() => {
   const { data: authListener } = supabase.auth.onAuthStateChange(
     (_event, session) => {
       if (!session?.user) {
-        navigate("/login");
+        navigate("/");
       } else {
         setUser(session.user);
       }
@@ -33,11 +33,9 @@ useEffect(() => {
   );
 
   return () => {
-    authListener.subscription.unsubscribe(); // ✅ correct way
+    authListener.subscription.unsubscribe();
   };
 }, [navigate]);
-
-
 
   if (loading) return <p>Loading...</p>;
 
