@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect  } from "react";
 import { supabase } from "../../supabase.js";
 import { useNavigate } from "react-router-dom";
 import { createPortal } from "react-dom";
+import {Toaster, toast} from "react-hot-toast";
 
 function LoginModal({ show, onClose }) {
   if (!show) return null;
@@ -37,11 +38,18 @@ function LoginModal({ show, onClose }) {
     }
   };
 
+  useEffect(() => {
+    if (error) {
+      toast.error(error, { duration: 4000 });
+    }
+  }, [error]);
+
   return createPortal(
     <div
       className="fixed inset-0 bg-black/30 backdrop-blur-sm flex items-center justify-center z-[9999]"
       onClick={onClose}
     >
+      <Toaster position="top-center" />
       <div
         className="w-[90%] sm:w-[70%] md:max-w-[545px] bg-white p-6 rounded-2xl relative shadow-lg"
         onClick={(e) => e.stopPropagation()}
@@ -84,15 +92,10 @@ function LoginModal({ show, onClose }) {
               />
               </div>
 
-              <div className="flex flex-row items-center justify-between w-80 sm:w-110">
-                <div className="flex justify-start">
-                  {error && <p className="text-red-500 text-sm">{error}</p>}
-                </div>
-                <div className="flex justify-end">
+              <div className="flex flex-row items-center justify-end w-80 sm:w-110">
                   <h2 className="text-sm mt-2 cursor-pointer hover:underline">
                     Forgot Password?
                   </h2>
-                </div>
               </div>
             </div>
             <div className="flex justify-center">
