@@ -10,13 +10,14 @@ import ContactUs from "./pages/ContactUs/ContactUs.jsx";
 import Services from "./pages/services/Services.jsx";
 import Dentist from "./pages/dentist/Dentist.jsx";
 import Admin from "./pages/admin/Admin.jsx";
+import Dashbord from "./pages/dashboard/Dashbord.jsx";
+import ResetPassword from "./components/auth/ResetPassword.jsx";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Dashbord from "./pages/dashboard/Dashbord.jsx";
 
 function LayoutWrapper({ children }) {
   const location = useLocation();
-  const hideLayout = ["/login", "/admin", "/dashboard"].includes(location.pathname);
+  const hideLayout = ["/login", "/admin", "/dashboard", "/reset-password"].includes(location.pathname);
 
   return (
     <>
@@ -45,6 +46,7 @@ function App() {
           <Route path="/appointments" element={<Appointments />} />
           <Route path="/dashboard" element={<Dashbord />} />
           <Route path="/admin" element={<Admin />} />
+          <Route path="/reset-password" element={<ResetPassword />} />
         </Routes>
       </LayoutWrapper>
     </Router>

@@ -1,7 +1,8 @@
 import React, { useState, useEffect  } from "react";
-import { supabase } from "../../supabase.js";
+import { supabase } from "../../../supabase.js";
 import { useNavigate } from "react-router-dom";
 import { createPortal } from "react-dom";
+import ResetPasswordModal from "./ResetPasswordModal.jsx";
 import {Toaster, toast} from "react-hot-toast";
 
 function LoginModal({ show, onClose }) {
@@ -10,6 +11,7 @@ function LoginModal({ show, onClose }) {
   const navigate = useNavigate();
   const [form, setForm] = useState({ email: "", password: "" });
   const [error, setError] = useState("");
+  const [showResetModal, setShowResetModal] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -104,7 +106,10 @@ function LoginModal({ show, onClose }) {
               </div>
 
               <div className="flex flex-row items-center justify-end w-80 sm:w-110">
-                  <h2 className="text-sm mt-2 cursor-pointer hover:underline">
+                  <h2 
+                  className="text-sm mt-2 cursor-pointer hover:underline"
+                  onClick={() => {setShowResetModal(true);}}
+                  >
                     Forgot Password?
                   </h2>
               </div>
@@ -119,6 +124,11 @@ function LoginModal({ show, onClose }) {
             </div>
         </form>
       </div>
+      <ResetPasswordModal
+        show={showResetModal}
+        onClose={() => setShowResetModal(false)}
+      />
+
     </div>,
     document.body
   );

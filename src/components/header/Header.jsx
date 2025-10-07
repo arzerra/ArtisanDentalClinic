@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import style from "./Header.module.css";
 import { Link, useLocation } from "react-router-dom";
-import Modal from "../modal/loginModal.jsx";
+import Modal from "../../components/auth/modal/loginModal.jsx";
 
 function Header() {
   const location = useLocation();
