@@ -4,13 +4,14 @@ import { useNavigate } from "react-router-dom";
 import LogoutButton from "../../components/button/LogoutButton.jsx";
 import AddPatient from "./components/AddPatient.jsx";
 import CreateUser from "./components/CreateUser.jsx";
+import Sidebar from "./components/Sidebar.jsx";
 
 export default function Admin() {
   const navigate = useNavigate();
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
 
-useEffect(() => {
+  useEffect(() => {
   const getSession = async () => {
     const { data } = await supabase.auth.getSession();
     if (!data.session?.user) {
@@ -42,12 +43,11 @@ useEffect(() => {
 
   return (
     <>
-      <div className="flex justify-between p-4">
-        <div className="flex">Welcome {user?.email}</div>
-        <div className="flex"><LogoutButton /></div>
-      </div>
-      <AddPatient />
-      <CreateUser />
+    <main className="Admin">
+      <Sidebar>
+        {/* <SidebarItem/> */}
+      </Sidebar>
+    </main>
     </>
   );
 }

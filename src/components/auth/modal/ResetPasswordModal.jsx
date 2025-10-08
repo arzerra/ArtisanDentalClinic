@@ -30,7 +30,7 @@ function ResetPasswordModal({ show, onClose }) {
     }
 
     const { error } = await supabase.auth.resetPasswordForEmail(email, {
-      redirectTo: `${window.location.origin}/reset-password`, // Page to update password
+      redirectTo: `${window.location.origin}/reset-password`,
     });
 
     if (error) {
@@ -38,7 +38,6 @@ function ResetPasswordModal({ show, onClose }) {
       toast.error(error.message);
     } else {
       toast.success("Password reset link sent! Check your inbox.");
-      // onClose(); // Close modal after success
     }
   };
 
