@@ -12,42 +12,40 @@ export default function Admin() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-  const getSession = async () => {
-    const { data } = await supabase.auth.getSession();
-    if (!data.session?.user) {
-      navigate("/");
-    } else {
-      setUser(data.session.user);
-    }
-    setLoading(false);
-  };
-
-  getSession();
-
-  const { data: authListener } = supabase.auth.onAuthStateChange(
-    (_event, session) => {
-      if (!session?.user) {
+    const getSession = async () => {
+      const { data } = await supabase.auth.getSession();
+      if (!data.session?.user) {
         navigate("/");
       } else {
-        setUser(session.user);
+        setUser(data.session.user);
       }
-    }
-  );
+      setLoading(false);
+    };
 
-  return () => {
-    authListener.subscription.unsubscribe();
-  };
-}, [navigate]);
+    getSession();
+
+    const { data: authListener } = supabase.auth.onAuthStateChange(
+      (_event, session) => {
+        if (!session?.user) {
+          navigate("/");
+        } else {
+          setUser(session.user);
+        }
+      }
+    );
+
+    return () => {
+      authListener.subscription.unsubscribe();
+    };
+  }, [navigate]);
 
   if (loading) return <p>Loading...</p>;
 
   return (
     <>
-    <main className="Admin">
-      <Sidebar>
-        {/* <SidebarItem/> */}
-      </Sidebar>
-    </main>
+      <main className="Admin">
+        <Sidebar>{/* <SidebarItem/> */}</Sidebar>
+      </main>
     </>
   );
 }

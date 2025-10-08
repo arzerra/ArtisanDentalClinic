@@ -1,5 +1,10 @@
 import { useState, useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
 import TopBar from "./components/topBar/TopBar.jsx";
 import Header from "./components/header/Header.jsx";
 import Footer from "./components/footer/Footer.jsx";
@@ -17,7 +22,12 @@ import "aos/dist/aos.css";
 
 function LayoutWrapper({ children }) {
   const location = useLocation();
-  const hideLayout = ["/login", "/admin", "/dashboard", "/reset-password"].includes(location.pathname);
+  const hideLayout = [
+    "/login",
+    "/admin",
+    "/dashboard",
+    "/reset-password",
+  ].includes(location.pathname);
 
   return (
     <>

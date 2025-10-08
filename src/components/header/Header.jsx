@@ -8,7 +8,7 @@ function Header() {
   const currentPath = location.pathname;
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [showModal, setShowModal] =useState(false);
+  const [showModal, setShowModal] = useState(false);
 
   const handleLinkClick = () => {
     setMenuOpen(false);
@@ -27,16 +27,26 @@ function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  
   return (
     <header
       className={`${style.header} ${scrolled ? style.scrolled : ""} ${
         menuOpen ? style["nav-open"] : ""
       }`}
     >
-      <Link to="/" className={style.logo} onClick={(e) => {e.preventDefault(); window.location.href = "/";}}>
-        <span className="text-4xl sm:text-5xl font-normal leading-[1.1] -mb-3 font-['Allura']">Artisan</span>
-        <span className="text-[.8rem] sm:text-[1rem] leading-[1.2] mt-0 font-sans">Dental Clinic</span>
+      <Link
+        to="/"
+        className={style.logo}
+        onClick={(e) => {
+          e.preventDefault();
+          window.location.href = "/";
+        }}
+      >
+        <span className="text-4xl sm:text-5xl font-normal leading-[1.1] -mb-3 font-['Allura']">
+          Artisan
+        </span>
+        <span className="text-[.8rem] sm:text-[1rem] leading-[1.2] mt-0 font-sans">
+          Dental Clinic
+        </span>
       </Link>
 
       <button
@@ -50,33 +60,78 @@ function Header() {
       <nav className={menuOpen ? style["nav-open"] : ""}>
         <ul>
           <li className={currentPath === "/" ? style.active : ""}>
-            <Link to="/" onClick={(e) => {e.preventDefault(); window.location.href = "/";}}>Home</Link>
+            <Link
+              to="/"
+              onClick={(e) => {
+                e.preventDefault();
+                window.location.href = "/";
+              }}
+            >
+              Home
+            </Link>
           </li>
           <li className={currentPath === "/about" ? style.active : ""}>
-            <Link to="/about" onClick={(e) => {e.preventDefault(); window.location.href = "/about";}}>About Us</Link>
+            <Link
+              to="/about"
+              onClick={(e) => {
+                e.preventDefault();
+                window.location.href = "/about";
+              }}
+            >
+              About Us
+            </Link>
           </li>
           <li className={currentPath === "/services" ? style.active : ""}>
-            <Link to="/services" onClick={(e) => {e.preventDefault(); window.location.href = "/services";}}>Services</Link>
+            <Link
+              to="/services"
+              onClick={(e) => {
+                e.preventDefault();
+                window.location.href = "/services";
+              }}
+            >
+              Services
+            </Link>
           </li>
           <li className={currentPath === "/dentist" ? style.active : ""}>
-            <Link to="/dentist" onClick={(e) => {e.preventDefault(); window.location.href = "/dentist";}}>Dentist</Link>
+            <Link
+              to="/dentist"
+              onClick={(e) => {
+                e.preventDefault();
+                window.location.href = "/dentist";
+              }}
+            >
+              Dentist
+            </Link>
           </li>
           <li className={currentPath === "/contact" ? style.active : ""}>
-            <Link to="/contact" onClick={(e) => {e.preventDefault(); window.location.href = "/contact";}}>Contact Us</Link>
+            <Link
+              to="/contact"
+              onClick={(e) => {
+                e.preventDefault();
+                window.location.href = "/contact";
+              }}
+            >
+              Contact Us
+            </Link>
           </li>
           <li className={currentPath === "/appointments" ? style.active : ""}>
-            <Link to="/appointments" onClick={(e) => {e.preventDefault(); window.location.href = "/appointments";}}>Appointments</Link>
+            <Link
+              to="/appointments"
+              onClick={(e) => {
+                e.preventDefault();
+                window.location.href = "/appointments";
+              }}
+            >
+              Appointments
+            </Link>
           </li>
           <span>|</span>
-          <button onClick={() => setShowModal(true)}>
-            Admin Login</button>
+          <button onClick={() => setShowModal(true)}>Admin Login</button>
         </ul>
       </nav>
-      
+
       <Modal show={showModal} onClose={() => setShowModal(false)} />
     </header>
-
-
   );
 }
 

@@ -1,9 +1,9 @@
-import React, { useState, useEffect  } from "react";
+import React, { useState, useEffect } from "react";
 import { supabase } from "../../../supabase.js";
 import { useNavigate } from "react-router-dom";
 import { createPortal } from "react-dom";
 import ResetPasswordModal from "./ResetPasswordModal.jsx";
-import {Toaster, toast} from "react-hot-toast";
+import { Toaster, toast } from "react-hot-toast";
 
 function LoginModal({ show, onClose }) {
   if (!show) return null;
@@ -22,11 +22,12 @@ function LoginModal({ show, onClose }) {
     e.preventDefault();
     setError("");
 
-    const { data: authData, error: authError } = await supabase.auth.signInWithPassword({
-      email: form.email,
-      password: form.password,
-    });
-    
+    const { data: authData, error: authError } =
+      await supabase.auth.signInWithPassword({
+        email: form.email,
+        password: form.password,
+      });
+
     if (authError) {
       setError(authError.message);
       return;
@@ -76,12 +77,15 @@ function LoginModal({ show, onClose }) {
         </button>
 
         {/* Login form */}
-        <form onSubmit={login} className="flex flex-col gap-4 font-['Quicksand']">
+        <form
+          onSubmit={login}
+          className="flex flex-col gap-4 font-['Quicksand']"
+        >
           <div className="flex items-center justify-center py-5">
             <h1 className="text-3xl font-bold ">LOGIN</h1>
           </div>
-            <div className="flex flex-col items-center justify-center w-[90%] sm:w-[495px] mx-auto p-6 rounded-lg">
-              <div className="flex flex-col">
+          <div className="flex flex-col items-center justify-center w-[90%] sm:w-[495px] mx-auto p-6 rounded-lg">
+            <div className="flex flex-col">
               <label className="text-sm font-medium mb-1">Email</label>
               <input
                 type="email"
@@ -91,9 +95,9 @@ function LoginModal({ show, onClose }) {
                 className="w-80 sm:w-110 border px-3 py-2 rounded-md"
                 required
               />
-              </div>
-            
-              <div className="flex flex-col">
+            </div>
+
+            <div className="flex flex-col">
               <label className="text-sm font-medium mb-1">Password</label>
               <input
                 type="password"
@@ -103,32 +107,33 @@ function LoginModal({ show, onClose }) {
                 className="w-80 sm:w-110 border px-3 py-2 rounded-md"
                 required
               />
-              </div>
+            </div>
 
-              <div className="flex flex-row items-center justify-end w-80 sm:w-110">
-                  <h2 
-                  className="text-sm mt-2 cursor-pointer hover:underline"
-                  onClick={() => {setShowResetModal(true);}}
-                  >
-                    Forgot Password?
-                  </h2>
-              </div>
-            </div>
-            <div className="flex justify-center">
-              <button
-                type="submit"
-                className="mb-2 bg-blue-600 text-white py-2 rounded-xl hover:bg-blue-700 w-110 cursor-pointer "
+            <div className="flex flex-row items-center justify-end w-80 sm:w-110">
+              <h2
+                className="text-sm mt-2 cursor-pointer hover:underline"
+                onClick={() => {
+                  setShowResetModal(true);
+                }}
               >
-                Login
-              </button>
+                Forgot Password?
+              </h2>
             </div>
+          </div>
+          <div className="flex justify-center">
+            <button
+              type="submit"
+              className="mb-2 bg-blue-600 text-white py-2 rounded-xl hover:bg-blue-700 w-110 cursor-pointer "
+            >
+              Login
+            </button>
+          </div>
         </form>
       </div>
       <ResetPasswordModal
         show={showResetModal}
         onClose={() => setShowResetModal(false)}
       />
-
     </div>,
     document.body
   );

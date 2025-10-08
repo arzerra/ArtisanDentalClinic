@@ -10,7 +10,12 @@ function AddPatient() {
   const [patients, setPatients] = useState([]);
 
   const addPatient = async () => {
-    const newPatientData = { full_name: name, contact_num: contactNum, birthdate, gender };
+    const newPatientData = {
+      full_name: name,
+      contact_num: contactNum,
+      birthdate,
+      gender,
+    };
 
     const { data, error } = await supabase
       .from("patients")
