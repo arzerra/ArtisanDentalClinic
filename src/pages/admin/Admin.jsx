@@ -14,6 +14,17 @@ export default function Admin() {
   const [loading, setLoading] = useState(true);
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
+  const navItems = [
+    { name: "Dashboard", icon: "/images/icon/dashboard/nav/dashboard.png" },
+    { name: "Patients", icon: "/images/icon/dashboard/nav/patients.png" },
+    { name: "Messages", icon: "/images/icon/dashboard/nav/messages.png" },
+    {
+      name: "Appointments",
+      icon: "/images/icon/dashboard/nav/appointments.png",
+    },
+    { name: "Create Staff", icon: "/images/icon/dashboard/nav/staff.png" },
+  ];
+
   useEffect(() => {
     const getSession = async () => {
       const { data } = await supabase.auth.getSession();
@@ -59,6 +70,23 @@ export default function Admin() {
             <div className="lg:hidden" onClick={() => setSidebarOpen(false)}>
               X
             </div>
+          </div>
+          {/* navbar */}
+          <div className="p-4 space-y-5">
+            {navItems.map((item, index) => {
+              return (
+                <div key={index} className="flex p=2 items-center gap-3">
+                  <div>
+                    <img
+                      src={item.icon}
+                      alt={`${item.name} icon`}
+                      className="w-5"
+                    />
+                  </div>
+                  <div className="text-lg">{item.name}</div>
+                </div>
+              );
+            })}
           </div>
         </div>
 
