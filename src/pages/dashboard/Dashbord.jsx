@@ -2,50 +2,53 @@ import { useEffect, useState } from "react";
 import { supabase } from "../../supabase";
 import { useNavigate } from "react-router-dom";
 import LogoutButton from "../../components/button/LogoutButton.jsx";
-
+import Preloader from "../../components/preloader/Preloader.jsx";
 
 function Dashbord() {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
 
-useEffect(() => {
-  const getSession = async () => {
-    const { data } = await supabase.auth.getSession();
-    if (!data.session?.user) {
-      navigate("/");
-    } else {
-      setUser(data.session.user);
-    }
-    setLoading(false);
-  };
-
-  getSession();
-
-  const { data: authListener } = supabase.auth.onAuthStateChange(
-    (_event, session) => {
-      if (!session?.user) {
+  useEffect(() => {
+    const getSession = async () => {
+      const { data } = await supabase.auth.getSession();
+      if (!data.session?.user) {
         navigate("/");
       } else {
-        setUser(session.user);
+        setUser(data.session.user);
       }
-    }
-  );
+      const timer = setTimeout(() => setLoading(false), 1500);
+      return () => clearTimeout(timer);
+    };
 
-  return () => {
-    authListener.subscription.unsubscribe();
-  };
-}, [navigate]);
+    getSession();
 
-  if (loading) return <p>Loading...</p>;
+    const { data: authListener } = supabase.auth.onAuthStateChange(
+      (_event, session) => {
+        if (!session?.user) {
+          navigate("/");
+        } else {
+          setUser(session.user);
+        }
+      }
+    );
+
+    return () => {
+      authListener.subscription.unsubscribe();
+    };
+  }, [navigate]);
+
+  if (loading) return <Preloader />;
   return (
     <>
-    <div className="flex justify-between p-4">
+      <div className="flex justify-between p-4">
         <div className="flex">Welcome to your dashboard {user?.email}</div>
-        <div className="flex"><LogoutButton /></div>
-    </div>
+        <div className="flex">
+          <LogoutButton />
+        </div>
+      </div>
     </>
-  )
+  );
 }
 
-export default Dashbord
+export default Dashbord;

@@ -6,6 +6,7 @@ import AddPatient from "./components/AddPatient.jsx";
 import CreateUser from "./components/CreateUser.jsx";
 import Sidebar from "./components/Sidebar.jsx";
 import { BsLayoutSidebar } from "react-icons/bs";
+import Preloader from "../../components/preloader/Preloader.jsx";
 
 export default function Admin() {
   const navigate = useNavigate();
@@ -21,7 +22,8 @@ export default function Admin() {
       } else {
         setUser(data.session.user);
       }
-      setLoading(false);
+      const timer = setTimeout(() => setLoading(false), 1500);
+      return () => clearTimeout(timer);
     };
 
     getSession();
@@ -41,7 +43,7 @@ export default function Admin() {
     };
   }, [navigate]);
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <Preloader />;
 
   return (
     <>
