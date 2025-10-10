@@ -61,32 +61,43 @@ export default function Admin() {
       <div className="flex bg-gray-100 h-screen">
         {/* sidebar */}
         <div
-          className={`fixed bg-white w-64 h-screen shadow ${
+          className={`fixed bg-white w-64 h-screen shadow flex flex-col justify-between ${
             sidebarOpen ? "-translate-x-0" : "-translate-x-64"
           } lg:translate-x-0 lg:static`}
         >
-          <div className="p-4 flex justify-between">
-            <div className="text-xl font-semibold">Logo</div>
-            <div className="lg:hidden" onClick={() => setSidebarOpen(false)}>
-              X
+          {/* Top Section */}
+          <div>
+            <div className="p-4 flex justify-between items-center">
+              <div className="text-xl font-semibold">Logo</div>
+              <div
+                className="lg:hidden cursor-pointer"
+                onClick={() => setSidebarOpen(false)}
+              >
+                X
+              </div>
             </div>
-          </div>
-          {/* navbar */}
-          <div className="p-4 space-y-5">
-            {navItems.map((item, index) => {
-              return (
-                <div key={index} className="flex p=2 items-center gap-3">
-                  <div>
-                    <img
-                      src={item.icon}
-                      alt={`${item.name} icon`}
-                      className="w-5"
-                    />
-                  </div>
+
+            {/* Navbar */}
+            <div className="p-4 space-y-5">
+              {navItems.map((item, index) => (
+                <div
+                  key={index}
+                  className="flex items-center gap-3 cursor-pointer"
+                >
+                  <img
+                    src={item.icon}
+                    alt={`${item.name} icon`}
+                    className="w-5"
+                  />
                   <div className="text-lg">{item.name}</div>
                 </div>
-              );
-            })}
+              ))}
+            </div>
+          </div>
+
+          {/* Bottom Section */}
+          <div className="p-4 border-t">
+            <LogoutButton />
           </div>
         </div>
 

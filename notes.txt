@@ -1,0 +1,39 @@
+Good question — and this is super important 👇
+
+❌ No, you can’t directly use npx shadcn@latest add dashboard-01 on a plain React project (like a Vite or Create React App setup).
+
+That command only works for Next.js projects that use:
+
+TypeScript
+
+Tailwind CSS
+
+shadcn/ui (which depends on Next.js conventions like /app or /components folders and tsx files)
+
+🧩 Why it doesn’t work in plain React:
+
+The shadcn CLI expects Next.js routing and layout structure.
+
+It automatically creates files that use server components, TypeScript (.tsx), and Next-specific imports like next/link.
+
+If you try it in React, you’ll get missing module errors.
+
+✅ But here’s what you can do:
+
+You can still use shadcn/ui components in your React project manually.
+
+Here’s how:
+
+Make sure you have Tailwind CSS installed and configured.
+
+Visit the official shadcn/ui site
+.
+
+Copy component code manually from there (each has a “Copy code” button).
+
+Paste it into your React project’s components/ folder.
+
+Replace imports like next/link with React equivalents (e.g. react-router-dom’s Link).
+
+If you want, I can show you how to set up shadcn/ui manually in a React project (with one working dashboard component).
+Would you like that?
