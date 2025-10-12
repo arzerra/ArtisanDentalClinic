@@ -98,6 +98,8 @@ export default function Admin() {
           {/* Bottom Section */}
           <div className="p-4 border-t">
             <LogoutButton />
+            <LogoutButton />
+            <LogoutButton />
           </div>
         </div>
 
