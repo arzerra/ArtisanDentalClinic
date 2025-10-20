@@ -99,6 +99,7 @@ export default function Admin() {
           <div className="p-4 border-t">
             <LogoutButton />
             <LogoutButton />
+            <LogoutButton />
           </div>
         </div>
 
