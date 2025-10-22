@@ -101,6 +101,7 @@ export default function Admin() {
             <LogoutButton />
             <LogoutButton />
             <LogoutButton />
+            <LogoutButton />
           </div>
         </div>
 
