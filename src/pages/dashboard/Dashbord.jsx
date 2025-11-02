@@ -45,13 +45,6 @@ function Dashbord() {
         <div className="flex">Welcome to your dashboard {user?.email}</div>
         <div className="flex">
           <LogoutButton />
-          <LogoutButton />
-          <LogoutButton />
-          <LogoutButton />
-          <LogoutButton />
-          <LogoutButton />
-          <LogoutButton />
-          <LogoutButton />
         </div>
       </div>
     </>
